@@ -1,0 +1,51 @@
+#+TITLE: Applied Category Theory
+
+
+The main text:
+[[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]].
+
+This is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory courseware]] from MIT.
+
+You should also get at least one of these two supplemental texts:
+
+  [[%5B%5Bhttp://pi.math.cornell.edu/~hatcher/AT/ATpage.html%5D%5BAlegraic%20Topology%5D%5D%0Ahttps://www.barnesandnoble.com/p/conceptual-mathematics-f-william-lawvere/1100948021/2694607767497?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Textbooks+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=EAIaIQobChMI_P-XgLH_4QIVRz0MCh1jPgqqEAQYASABEgK59vD_BwE][Conceptual Mathematics: A first introduction to categories]], Lawvere and
+  Schanual; this is the most approachable one I've found yet.
+
+  [[http://www.math.jhu.edu/~eriehl/context.pdf][Category Theory in Context]], Emily Riehl; for the mathematically inclined.
+
+* Background
+
+  [[http://math.ucr.edu/home/baez/books.html][How to learn math and physics]], John Baez's advice.
+
+  [[https://pimbook.org/][A Programmer's Introduction to Mathematics]], Jeremy Kun
+
+  [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Awodey]] is a gentle introduction to category theory
+
+* Papers
+  
+  [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
+
+* Exercises
+
+** Blood Algebra
+   
+   Check out the diagrams about halfway through the
+   [[https://en.wikipedia.org/wiki/Blood_type][Wikipedia article on blood types]].
+
+   You can derive many mappings from this article.
+   There is a mapping from people to blood types.
+   The diagrams show donor/recipient type compatibility as a partial order.
+
+   Can a category be formed using blood types as objects? What would the arrows be?
+
+   Is the mapping of people to blood types a monomorphism? epimorphism? iso?
+   Could it be an endomorphism?
+
+   How would you describe compatibility as an equivalence relation?
+   What equivalence classes are induced by it?
+
+** Filesystem
+
+   [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
+
+   
