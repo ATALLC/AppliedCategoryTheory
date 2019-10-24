@@ -70,6 +70,17 @@ You should also get at least one of these two supplemental texts:
   in Baez's materials.
   So what should we call these?
 
+** Baez puzzles 1
+   
+Puzzle 1. What is a "poset" according to Chapter 1 of Fong and Spivak's book?
+
+Puzzle 2. How does their definition differ from the usual definition found in, e.g., Wikipedia or the nLab?
+
+Puzzle 3. What do mathematicians usually call the thing that Fong and Spivak call a poset?
+          I think I want to use the usual mathematical term: I don't want to release 70 students into the world who use a nonstandard definition of "poset".
+
+Puzzle 4. List some interesting and important examples of posets that haven't already been listed in other comments in this thread.
+
 ** Blood Algebra
    
    Check out the diagrams about halfway through the
