@@ -15,11 +15,10 @@ commercializing verifiable systems.
   
 The main text:
 [[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]].
-This is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory courseware]] from MIT.
+This is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory lectures]] from MIT.
 
 You should also get at least one of these two supplemental texts:
-
-  * [[%5B%5Bhttp://pi.math.cornell.edu/~hatcher/AT/ATpage.html%5D%5BAlegraic%20Topology%5D%5D%0Ahttps://www.barnesandnoble.com/p/conceptual-mathematics-f-william-lawvere/1100948021/2694607767497?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Textbooks+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=EAIaIQobChMI_P-XgLH_4QIVRz0MCh1jPgqqEAQYASABEgK59vD_BwE][Conceptual Mathematics: A first introduction to categories]], Lawvere and
+  * [[https://www.amazon.com/Conceptual-Mathematics-First-Introduction-Categories/dp/052171916X][Conceptual Mathematics: A first introduction to categories]], Lawvere and
     Schanuel; this is the most approachable one I've found yet.
 
   * [[http://www.math.jhu.edu/~eriehl/context.pdf][Category Theory in Context]], Emily Riehl; for the mathematically inclined.
@@ -35,13 +34,17 @@ You should also get at least one of these two supplemental texts:
   We'll do all the exercises.  Answers are in the book, and also in the
   forums for Baez's study group.
 
-  Schedule:  Let's try a chapter a month.
-
+  Schedule:  Let's try a chapter a month.  That gives:
+  
+  | Nov 2019 | Chapter 1: Ordered Sets         |
+  | Dec 2019 | Chapter 2: Resource Theories    |
+  | Jan 2020 | Chapter 3: Databases            |
+  | Feb 2020 | Chapter 4: Collaborative Design |
 
 * Background
   
-  It helps to have studied abstract algebra -- groups, monoids, homomorphisms.
-  Here's some resources to help you get up to speed.
+  It helps to have studied abstract algebra -- groups, monoids, homomorphisms,
+  and the like. Here's some resources to help you get up to speed.
 
   [[http://math.ucr.edu/home/baez/books.html][How to learn math and physics]], John Baez's advice.
 
