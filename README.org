@@ -1,31 +1,71 @@
 #+TITLE: Applied Category Theory
 
+Here's some resources for an informal study group in Applied Category Theory for
+fall 2019. Most, but not all, participants are employees of ATA, which is
+primarily a "data science" company.
 
+We'll emphasize applications to data modeling and processing, in particular data
+migrations (a kind of model transformation).
+
+Applied Category Theory is one of the underpinnings of the StateBox language,
+an open specification being developed by [[https://statebox.org/][statebox.org]] as part of their work
+commercializing verifiable systems.
+
+* Texts
+  
 The main text:
 [[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]].
-
 This is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory courseware]] from MIT.
 
 You should also get at least one of these two supplemental texts:
 
-  [[%5B%5Bhttp://pi.math.cornell.edu/~hatcher/AT/ATpage.html%5D%5BAlegraic%20Topology%5D%5D%0Ahttps://www.barnesandnoble.com/p/conceptual-mathematics-f-william-lawvere/1100948021/2694607767497?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Textbooks+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=EAIaIQobChMI_P-XgLH_4QIVRz0MCh1jPgqqEAQYASABEgK59vD_BwE][Conceptual Mathematics: A first introduction to categories]], Lawvere and
-  Schanual; this is the most approachable one I've found yet.
+  * [[%5B%5Bhttp://pi.math.cornell.edu/~hatcher/AT/ATpage.html%5D%5BAlegraic%20Topology%5D%5D%0Ahttps://www.barnesandnoble.com/p/conceptual-mathematics-f-william-lawvere/1100948021/2694607767497?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Textbooks+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=EAIaIQobChMI_P-XgLH_4QIVRz0MCh1jPgqqEAQYASABEgK59vD_BwE][Conceptual Mathematics: A first introduction to categories]], Lawvere and
+    Schanuel; this is the most approachable one I've found yet.
 
-  [[http://www.math.jhu.edu/~eriehl/context.pdf][Category Theory in Context]], Emily Riehl; for the mathematically inclined.
+  * [[http://www.math.jhu.edu/~eriehl/context.pdf][Category Theory in Context]], Emily Riehl; for the mathematically inclined.
+
+* Syllabus
+
+  We'll generally follow the same outline used in John Baez's [[https://forum.azimuthproject.org/discussion/1807/lecture-1-introduction][online study group]]
+  from 2018. That goes through the first four chapters of Seven Sketches,
+  and has excellent [[https://www.azimuthproject.org/azimuth/show/Applied+Category+Theory+Course#Course][ACT Lectures]] by John Baez.
+  We supplement that material with papers and exercises that apply
+  what we've learned to the problems we encounter in data science.
+  
+  We'll do all the exercises.  Answers are in the book, and also in the
+  forums for Baez's study group.
+
+  Schedule:  Let's try a chapter a month.
+
 
 * Background
+  
+  It helps to have studied abstract algebra -- groups, monoids, homomorphisms.
+  Here's some resources to help you get up to speed.
 
   [[http://math.ucr.edu/home/baez/books.html][How to learn math and physics]], John Baez's advice.
 
   [[https://pimbook.org/][A Programmer's Introduction to Mathematics]], Jeremy Kun
 
-  [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Awodey]] is a gentle introduction to category theory
+  [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Awodey]] is a gentle introduction to category theory with "remedial" algebra
 
 * Papers
   
   [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
 
+  [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
+  
+  [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]]
+  
 * Exercises
+  
+  These supplement the ones in the book and lectures. 
+  They tie the ACT material to our own everyday experience
+  and relate them to the kinds of problems we routinely deal with.
+
+  "Exercises" mean those in Seven Sketches.  "Puzzles" means the problems posed
+  in Baez's materials.
+  So what should we call these?
 
 ** Blood Algebra
    
@@ -36,7 +76,8 @@ You should also get at least one of these two supplemental texts:
    There is a mapping from people to blood types.
    The diagrams show donor/recipient type compatibility as a partial order.
 
-   Can a category be formed using blood types as objects? What would the arrows be?
+   Can a category be formed using blood types as objects? What would the arrows
+   be?
 
    Is the mapping of people to blood types a monomorphism? epimorphism? iso?
    Could it be an endomorphism?
@@ -44,8 +85,25 @@ You should also get at least one of these two supplemental texts:
    How would you describe compatibility as an equivalence relation?
    What equivalence classes are induced by it?
 
-** Filesystem
+** File System Model Checking
 
-   [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
+   Install the [[http://alloytools.org][Alloy]] model-checking tool.
+   Work through the [[http://alloytools.org/tutorials/online/index.html][Alloy Tutorial]] that models a simple filesystem.
+
+   Read [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]].
+   Extend the filesystem model to incorporate the versioning semantics
+   described there.
+
+** Migrations
+
+   [[https://www.hillelwayne.com/post/formally-modeling-migrations/][Formally Modeling Migrations]]
 
    
+* Other resources
+
+  Category Theory for Programmers, Bartosz Milewski
+  Bartosz Milewski's lectures
+
+  [[https://cat.boffosocko.com/][UCLA Category Theory Study Group]]; [[https://www.youtube.com/watch?v=soGQ286EaCs][associated hangout video]]
+
+
