@@ -2,9 +2,13 @@
 
 This collection is not well-ordered.
 
-* Podcasts
+* Podcasts and Videos
 
-[[https://corecursive.com/035-bartosz-milewski-category-theory/][Bartosz Milewski on Category Theory in Programming]]
+   * [[https://corecursive.com/035-bartosz-milewski-category-theory/][Bartosz Milewski on Category Theory in Programming]]
+     If you're a programmer, listen to this first!
+
+   * [[https://www.youtube.com/watch?v=P6DvIfTJhx8&feature=youtu.be][Category Theory: The Beginner's Introduction]] six-part series
+     that uses music theory.
 
 * References
 
@@ -87,8 +91,6 @@ audience of programming language aficionados, especially in functional
 language communities such as Haskell and type-theorists, and formal
 proof systems.
 
-[[https://www.youtube.com/watch?v=P6DvIfTJhx8&feature=youtu.be][Category Theory: The Beginner's Introduction]] six-part series that uses music
-theory.
 
 [[https://johncarlosbaez.wordpress.com/2018/01/22/statebox-a-universal-language-of-distributed-systems/][Statebox: A Universal Language of Distributed Systems]] describes the
 open project that aims to build a programming language based on
