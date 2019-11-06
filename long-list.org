@@ -90,6 +90,8 @@ theory should have a wider audience in computer science.
 
 [[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]]
 
+[[https://arxiv.org/abs/0810.1279][Set Theory for Category Theory]]
+
 
 [[https://statebox.org/][statebox.org]] is commercializing verifiable systems
 
@@ -101,6 +103,8 @@ distributed systems, even complex ones.
 
 [[https://summit.statebox.org/static.html][StateBox summit]]
 
+
+[[https://www.mit.edu/~eadam/eadam_PhDThesis.pdf][Systems, Generativity and Interactional Effects by Elie M. Adam]]
 
 [[https://arxiv.org/pdf/1305.0297.pdf][The Operad of Wiring Diagrams]] explains operads, which are a way of studying
 hierarchies where each "layer" is composed of components in a lower layer.
@@ -307,6 +311,11 @@ Semiotics is also about epistemology.
 
    * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
 
+   * [[https://ncatlab.org/nlab/show/partial+combinatory+algebra][Partial Combinatory Algebra]] describes what happens
+     in untyped languages, where what would be type mismatches
+     manifest as runtime errors.
+     
+   * [[https://arxiv.org/abs/1911.00818][A Practical Type System for Symmetric Monoidal Categories]]
 
 
 * Books

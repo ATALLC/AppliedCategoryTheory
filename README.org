@@ -62,12 +62,16 @@ You should also get at least one of these two supplemental texts:
 
 * Papers
   
-  [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
+  See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]] and the [[file:long-list.org][long list]] of
+  resources.
+  
+  * [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
 
-  [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
+  * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
   
-  [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]]
-  
+  * [[https://www.mit.edu/~eadam/eadam_PhDThesis.pdf][Systems, Generativity and Interactional Effects by Elie M. Adam]] is
+    the thesis mentioned in Chapter 1.
+
 * Exercises
   
   These supplement the ones in the book and lectures. 
