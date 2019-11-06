@@ -1,6 +1,8 @@
 #+TITLE: Long List of ACT Resources
 
-This collection is not well-ordered.
+This is a rather disorganized collection of links.
+
+See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * Podcasts and Videos
 
@@ -9,8 +11,32 @@ This collection is not well-ordered.
 
    * [[https://www.youtube.com/watch?v=P6DvIfTJhx8&feature=youtu.be][Category Theory: The Beginner's Introduction]] six-part series
      that uses music theory.
+     
+   * [[https://youtu.be/I8LbkfSSR58?t=2674][Bartosz Milewski Category Theory]] multi-part lecture series
 
-* References
+   * [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory lectures]] from MIT uses Seven Sketches textbook.
+
+* Meetup groups
+
+   * [[https://www.meetup.com/Category-Theory/][SF Category Theory meetup]]
+
+* Software engineering
+  
+   * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Versioned Filesystem]]: Developers are intimately familiar
+     with filesystems.  This paper shows how to model them mathematically
+     and uses the model to introduce CT concepts.
+     
+   * [[https://gsd.uwaterloo.ca/sites/default/files/Accat12-paper7.pdf][Category Theory and Model-Driven Engineering]]: SE is fundamentally about
+     building conceptual models and then faithfully transforming them into 
+     execution models.  This paper makes that explicit.
+
+   * [[https://pdfs.semanticscholar.org/6967/97cd745dbe49a225eac5912d76c845d8dfdf.pdf][A Mathematical Toolbox for the Software Architect]]
+
+   * [[https://arxiv.org/pdf/1311.3903.pdf][A Categorical Theory of Patches]] gives a mathematical basis for revision
+     control, eg describes merges as pushouts
+
+
+* Data engineering
 
 [[http://math.mit.edu/~dspivak/informatics/talks/CTDBIntroductoryTalk][Categorical Databases]] presentation slides, spivak
 
@@ -29,22 +55,6 @@ Furthermore, we consider basic SPARQL CONSTRUCT and SELECT queries and formalize
 their operational semantics following a novel algebraic graph transformation
 approach called POIM.
 
-[[https://statebox.org/][statebox.org]] is commercializing verifiable systems
-
-[[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]]
-
-[[https://arxiv.org/pdf/1311.3903.pdf][A Categorical Theory of Patches]] gives a mathematical basis for revision control,
-eg describes merges as pushouts
-
-[[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]]
-is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory courseware]] from MIT.
-
-[[https://arxiv.org/pdf/1305.0297.pdf][The Operad of Wiring Diagrams]] explains operads, which are a way of studying
-hierarchies where each "layer" is composed of components in a lower layer.
-
-[[https://apps.dtic.mil/docs/citations/AD1060774][Categorical Approach to Agent Interactions]] proposal by Spivak.
-[[https://apps.dtic.mil/dtic/tr/fulltext/u2/1060774.pdf][Categorical Approach to Agent Interactions final report]]
-
 [[https://arxiv.org/pdf/1202.2591.pdf][Database Queries and Constraints as Lifting Problems]] discusses deriving RDF
 triples from a database instance.
 
@@ -55,31 +65,61 @@ triples from a database instance.
 [[http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2539429][Using Category Theory to Facilitate Multiple Manufacturing Service Database
 Integration]] semantic integration
 
-[[https://arxiv.org/pdf/1311.3903.pdf][A Categorical Theory of Patches]] is motivated by the revision-control problem.
+[[http://www.cs.cmu.edu/~natassa/courses/15-823/current/papers/CLIO-SIGMOD2005.pdf][Clio,  IBM Research  system  for  expressing  declarative  schemamappings]]
+
+[[https://arxiv.org/pdf/1209.1011.pdf][Kleisli Database Instances]]
+
+[[https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=7C32AA38CA2A65FABCC98A50D728C854?doi=10.1.1.42.4942&rep=rep1&type=pdf][The Kleisli System]]
+
+[[https://arxiv.org/pdf/0904.2012.pdf][Simplicial Databases]]
+
+   * [[https://arxiv.org/pdf/1910.09017.pdf][Demystifying Graph Databases: Analysis and Taxonomy of Data Organization,
+     System Designs, and Graph Queries]]
+
+
+* References
+  
+[[https://ncatlab.org/nlab/show/A+Categorical+Manifesto][A Categorical Manifesto]] and [[http://www.j-paine.org/make_category_theory_intuitive.html][Make Category Theory Intuitive]] explain why category
+theory should have a wider audience in computer science.
+
+[[https://plato.stanford.edu/entries/category-theory/][Stanford Encyclopedia on Category Theory]]
+
+[[https://groupoids.org.uk/pdffiles/Analogy-and-Comparison.pdf][Category Theory: A Framework for Analogy and Comparison]]
+
+[[https://arxiv.org/pdf/1809.05923.pdf][What is Applied Category Theory?]]
+
+[[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]]
+
+
+[[https://statebox.org/][statebox.org]] is commercializing verifiable systems
+
+[[https://johncarlosbaez.wordpress.com/2018/01/22/statebox-a-universal-language-of-distributed-systems/][Statebox: A Universal Language of Distributed Systems]] describes the
+open project that aims to build a programming language based on
+universal mathematical principles.  The aim is to apply these
+principles to solving problems of coordination in large-scale
+distributed systems, even complex ones.
 
 [[https://summit.statebox.org/static.html][StateBox summit]]
 
+
+[[https://arxiv.org/pdf/1305.0297.pdf][The Operad of Wiring Diagrams]] explains operads, which are a way of studying
+hierarchies where each "layer" is composed of components in a lower layer.
+
+[[https://apps.dtic.mil/docs/citations/AD1060774][Categorical Approach to Agent Interactions]] proposal by Spivak.
+[[https://apps.dtic.mil/dtic/tr/fulltext/u2/1060774.pdf][Categorical Approach to Agent Interactions final report]]
+
 [[https://arxiv.org/pdf/1504.05625.pdf][A Compositional Framework for Passive Linear Networks]]
+
 [[https://arxiv.org/abs/1704.02051][A Compositional Framework for Reaction Networks]]
 
 [[https://golem.ph.utexas.edu/category/2018/02/linguistics_using_category_the.html][Linguistics using Category Theory]] is a summary of the paper [[https://arxiv.org/abs/1003.4394][Mathematical
 Foundations for a Compositional Distributional Model of Meaning]].
-
-[[http://www.cs.cmu.edu/~natassa/courses/15-823/current/papers/CLIO-SIGMOD2005.pdf][Clio,  IBM Research  system  for  expressing  declarative  schemamappings]]
-
-[[https://arxiv.org/pdf/1209.1011.pdf][Kleisli Database Instances]]
-[[https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=7C32AA38CA2A65FABCC98A50D728C854?doi=10.1.1.42.4942&rep=rep1&type=pdf][The Kleisli System]]
-
-[[https://arxiv.org/pdf/0904.2012.pdf][Simplicial Databases]]
 
 [[Https://air.unimi.it/retrieve/handle/2434/155499/138859/phd_unimi_R07647.pdf][Hierarchical-Granularity Holonic Modelling]]
 
 [[https://arxiv.org/abs/1910.03118][The Query Translation Landscape: A Survey]]
 
 [[https://cseweb.ucsd.edu/~goguen/pps/ifi04.pdf][Information Integration in Institutions]]
-
-   * [[https://arxiv.org/pdf/1910.09017.pdf][Demystifying Graph Databases: Analysis and Taxonomy of Data Organization,
-     System Designs, and Graph Queries]]
 
 ** Category Theory
 
@@ -92,12 +132,6 @@ language communities such as Haskell and type-theorists, and formal
 proof systems.
 
 
-[[https://johncarlosbaez.wordpress.com/2018/01/22/statebox-a-universal-language-of-distributed-systems/][Statebox: A Universal Language of Distributed Systems]] describes the
-open project that aims to build a programming language based on
-universal mathematical principles.  The aim is to apply these
-principles to solving problems of coordination in large-scale
-distributed systems, even complex ones.
-
 [[http://abel.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is one thing equal to another?]] Barry Mazur, on equivalence
 
 [[https://ncatlab.org/nlab/show/HomePage][nCat Lab]] is a wikipedia-like site for "category theory in the large": using
@@ -105,17 +139,6 @@ category theory to describe EVERYTHING.
 
 John Baez's [[http://math.ucr.edu/home/baez/week73.html#tale][description of n-Categories]] was the most illuminating I've found.
 The other articles in that blog are well worth reading, too.
-
-[[https://ncatlab.org/nlab/show/A+Categorical+Manifesto][A Categorical Manifesto]] and [[http://www.j-paine.org/make_category_theory_intuitive.html][Make Category Theory Intuitive]] explain why category
-theory should have a wider audience in computer science.
-
-[[https://plato.stanford.edu/entries/category-theory/][Stanford Encyclopedia on Category Theory]]
-
-[[https://groupoids.org.uk/pdffiles/Analogy-and-Comparison.pdf][Category Theory: A Framework for Analogy and Comparison]]
-
-[[https://arxiv.org/pdf/1809.05923.pdf][What is Applied Category Theory?]]
-
-[[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]]
 
 
 [[https://github.com/jwiegley/category-theory][Category Theoretic constructions in Coq]]
@@ -167,21 +190,16 @@ Semiotics]]
 Design]]
 
 [[http://www.few.vu.nl/~rplanque/Onderwijs/MathBio/PapersForProject/Rosen.pdf][Robert Rosen: The Representation of Biological Systems from the Standpoint of
-the Theory of Categories]]
+the Theory of Categories]] 1958
 
 [[https://www.academia.edu/20729996/Category_Theory_as_a_Mathematics_for_Formalizing_Ontologies][Category Theory as a Mathematics for Formalizing Ontologies]]
 
 [[http://delivery.acm.org/10.1145/3240000/3236765/icfp18main-p18-p.pdf][Simple Essence of Automatic Differentiation]] application in machine learning
 (video of [[https://www.youtube.com/watch?v=MmkNSsGAZhw&feature=youtu.be&__s=zqzmedcvejvhpuaznsfv][Simple essence of automatic differentiation Talk]])
 
-[[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Versioned Filesystem]]
-
-[[https://pdfs.semanticscholar.org/6967/97cd745dbe49a225eac5912d76c845d8dfdf.pdf][A Mathematical Toolbox for the Software Architect]]
-
 [[https://apps.dtic.mil/dtic/tr/fulltext/u2/a297528.pdf][FORMAL FOUNDATIONS FOR THE SPECIFICATION OF SOFTWARE ARCHITECTURE
 DISSERTATION Mark James Gerken]]
 
-[[https://gsd.uwaterloo.ca/sites/default/files/Accat12-paper7.pdf][Category Theory and Model-Driven Engineering]]
 
 [[http://math.ucr.edu/home/baez/SYCO4/][Applied Category Theory talks at SYCO4]]
 
@@ -231,37 +249,6 @@ Semiotics is also about epistemology.
 [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
 
 [[https://arxiv.org/abs/1703.08314][Interacting Conceptual Spaces I : Grammatical Composition of Concepts]]
-
-Jules Hedges, [02.10.19 07:19]
-I'm proud to announce I've invented the term "yoloidal category" for a
-non-strict monoidal category that you pretend is strict so you can interpret
-string diagrams there
-
-sg495, [02.10.19 07:22]
-What about "fomoidal categories"? They are not really monoidal, but they will
-pretend to be if that gets them into the party.
-
-sg495, [02.10.19 07:24]
-(e.g. the cartesian closed categories in which you add duals and they become
-2-categories but you pick both background colours to be transparent so your
-diagrams look like they live in a monoidal category)
-
-Jules Hedges, [02.10.19 07:25]
-That's both fomoidal and yoloidal - you need to pretend that the product is
-strictly associative
-
-Jules Hedges, [02.10.19 07:25]
-Yoloidal categories are a technical trick to avoid thinking about the Mac Lane
-coherence theorem 100 times a day, by pretending it doesn't exist
-
-Jules Hedges, [02.10.19 07:36]
-Abramsky's "Arrow's theorem by arrow theory" for example
-https://arxiv.org/abs/1401.4585
-
-Johannes Drever, [02.10.19 08:01]
-[In reply to Jules Hedges]
-William Wilson published a paper where categorical compositionality is computed
-to a cognitive property called “systematicity”.
 
 [[https://www.researchgate.net/publication/254920369_Compositionality_and_Systematicity][Compositionality and Systematicity]]
 
@@ -320,12 +307,19 @@ to a cognitive property called “systematicity”.
 
    * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
 
+
+
 * Books
 
 ** Introductory
+   
+   [[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]]
+   is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory courseware]] from MIT.
 
-   Category Theory for the Sciences, David I. Spivak
-   There is an abridged free version of this, too.
+   [[https://www.amazon.com/Category-Theory-Sciences-MIT-Press/dp/0262028131][Category Theory for the Sciences]], David I. Spivak
+   There is an [[http://math.mit.edu/~dspivak/CT4S.pdf][abridged free version]] of this, too.
+   
+   [[https://github.com/hmemcpy/milewski-ctfp-pdf][Category Theory for Programmers]] Bartosz Milewski
 
    [[%5B%5Bhttp://pi.math.cornell.edu/~hatcher/AT/ATpage.html%5D%5BAlegraic%20Topology%5D%5D%0Ahttps://www.barnesandnoble.com/p/conceptual-mathematics-f-william-lawvere/1100948021/2694607767497?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Textbooks+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=EAIaIQobChMI_P-XgLH_4QIVRz0MCh1jPgqqEAQYASABEgK59vD_BwE][Conceptual Mathematics: A first introduction to categories]], Lawvere and Schanuel
    is the most approachable one I've found yet.
@@ -339,8 +333,42 @@ to a cognitive property called “systematicity”.
 
 ** Background
 
-   
-   [[http://pi.math.cornell.edu/~hatcher/AT/ATpage.html][Alegraic Topology]], Hatcher
+   * [[http://pi.math.cornell.edu/~hatcher/AT/ATpage.html][Alegraic Topology]], Hatcher
 
-   [[https://www.amazon.com/Software-Abstractions-Logic-Language-Analysis/dp/0262528908/][Software Abstractions]] introduction to formal methods
+   * [[https://www.amazon.com/Software-Abstractions-Logic-Language-Analysis/dp/0262528908/][Software Abstractions]] introduction to formal methods
+
+   * [[https://en.m.wikipedia.org/wiki/Laws_of_Form][Laws of Form]]
+
+* Breakthroughs :)
+
+Jules Hedges, [02.10.19 07:19]
+I'm proud to announce I've invented the term "yoloidal category" for a
+non-strict monoidal category that you pretend is strict so you can interpret
+string diagrams there
+
+sg495, [02.10.19 07:22]
+What about "fomoidal categories"? They are not really monoidal, but they will
+pretend to be if that gets them into the party.
+
+sg495, [02.10.19 07:24]
+(e.g. the cartesian closed categories in which you add duals and they become
+2-categories but you pick both background colours to be transparent so your
+diagrams look like they live in a monoidal category)
+
+Jules Hedges, [02.10.19 07:25]
+That's both fomoidal and yoloidal - you need to pretend that the product is
+strictly associative
+
+Jules Hedges, [02.10.19 07:25]
+Yoloidal categories are a technical trick to avoid thinking about the Mac Lane
+coherence theorem 100 times a day, by pretending it doesn't exist
+
+Jules Hedges, [02.10.19 07:36]
+Abramsky's "Arrow's theorem by arrow theory" for example
+https://arxiv.org/abs/1401.4585
+
+Johannes Drever, [02.10.19 08:01]
+[In reply to Jules Hedges]
+William Wilson published a paper where categorical compositionality is computed
+to a cognitive property called “systematicity”.
 

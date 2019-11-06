@@ -1,23 +1,30 @@
 #+TITLE: Applied Category Theory
 
-Here's some resources for an informal study group in Applied Category Theory for
-fall 2019. Most, but not all, participants are employees of ATA, which is
-primarily a "data science" company.
+Here's some resources for an informal study group in Applied Category
+Theory for fall 2019. Most, but not all, participants are employees of
+ATA, which is primarily a "data science" company.
 
-We'll emphasize applications to data modeling and processing, in particular data
-migrations (a kind of model transformation).
+We'll emphasize applications to data modeling and processing, in
+particular data migrations (a kind of model transformation).
 
-Applied Category Theory is one of the underpinnings of the StateBox language,
-an open specification being developed by [[https://statebox.org/][statebox.org]] as part of their work
-commercializing verifiable systems.
+Applied Category Theory is one of the underpinnings of the StateBox
+language, an open specification being developed by [[https://statebox.org/][statebox.org]] as part
+of their work commercializing verifiable systems.
+
+Why study ACT: "The basic idea of category theory ... is that if one
+pays careful attention to structures and coherence, the resulting
+systems will be extremely reliable and interoperable."
+If you need more motivation, see [[Why Study ACT?]]
 
 * Texts
   
 The main text:
-[[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]].
-This is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory lectures]] from MIT.
+
+   * [[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]].
+     This is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory lectures]] from MIT.
 
 You should also get at least one of these two supplemental texts:
+
   * [[https://www.amazon.com/Conceptual-Mathematics-First-Introduction-Categories/dp/052171916X][Conceptual Mathematics: A first introduction to categories]], Lawvere and
     Schanuel; this is the most approachable one I've found yet.
 
@@ -26,14 +33,14 @@ You should also get at least one of these two supplemental texts:
 * Syllabus
 
   We'll generally follow the same outline used in John Baez's [[https://forum.azimuthproject.org/discussion/1807/lecture-1-introduction][online study group]]
-  from 2018. That goes through the first four chapters of Seven Sketches,
-  and has excellent [[https://www.azimuthproject.org/azimuth/show/Applied+Category+Theory+Course#Course][ACT Lectures]] by John Baez.
-  We supplement that material with papers and exercises that apply
-  what we've learned to the problems we encounter in data science.
+  from 2018. That goes through the first four chapters of Seven Sketches, and
+  has excellent [[https://www.azimuthproject.org/azimuth/show/Applied+Category+Theory+Course#Course][ACT Lectures]] by John Baez. We supplement that material with
+  papers and exercises that apply what we've learned to the problems we
+  encounter in data science.
   
   We'll do all the exercises.  Answers are in the book, and also in the
-  forums for Baez's study group.
-
+  [[https://forum.azimuthproject.org/categories/applied-category-theory-exercises][forums for John Baez's study group]].
+  
   Schedule:  Let's try a chapter a month.  That gives:
   
   | Nov 2019 | Chapter 1: Ordered Sets         |
@@ -51,6 +58,7 @@ You should also get at least one of these two supplemental texts:
   [[https://pimbook.org/][A Programmer's Introduction to Mathematics]], Jeremy Kun
 
   [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Awodey]] is a gentle introduction to category theory with "remedial" algebra
+  
 
 * Papers
   
@@ -69,6 +77,9 @@ You should also get at least one of these two supplemental texts:
   "Exercises" mean those in Seven Sketches.  "Puzzles" means the problems posed
   in Baez's materials.
   So what should we call these?
+  
+  Here's the [[https://forum.azimuthproject.org/categories/applied-category-theory-exercises][discussions on exercises]] from John Baez's course.
+  
 
 ** Baez puzzles 1
    
@@ -115,9 +126,34 @@ Puzzle 4. List some interesting and important examples of posets that haven't al
    
 * Other resources
 
-  Category Theory for Programmers, Bartosz Milewski
-  Bartosz Milewski's lectures
+  * [[https://github.com/hmemcpy/milewski-ctfp-pdf][Category Theory for Programmers]] Bartosz Milewski
+
+  * [[https://youtu.be/I8LbkfSSR58?t=2674][Bartosz Milewski Category Theory]] multi-part lecture series
 
   [[https://cat.boffosocko.com/][UCLA Category Theory Study Group]]; [[https://www.youtube.com/watch?v=soGQ286EaCs][associated hangout video]]
 
+  [[https://arxiv.org/pdf/1809.05923.pdf][What is Applied Category Theory?]] and [[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]]
+  
+
+* Why Study ACT?
+
+From the description of [[https://seemannworkshop.netcorebcn.group/][Mark Seemann's workshop]] on Universal Design Patterns:
+
+#+begin_quote
+ Most programmers try to ‘invent’ abstractions from scratch. This is an elusive
+ goal. It requires a level of foresight rarely available. What if, instead, you
+ could use existing, universal abstractions? For decades, programmers have
+ dreamt of being able to assemble software from building blocks, like Lego
+ bricks. In order to do this, such building blocks must be composable, like Lego
+ bricks. What makes an abstraction composable?
+
+It turns out that lambda calculus, abstract algebra, and category theory can
+teach us about composability and other fundamental abstractions of programming.
+Furthermore, it turns out that some of the most important design patterns in the
+Gang of Four book are special cases of such universal abstractions. Framing
+programming abstractions in mathematical terms has some advantages, one of which
+is that we get objective laws that we can use to test our assumptions. You can,
+for example, use such laws to determine whether an abstraction is composable –
+even in object-oriented programming!
+#+end_quote
 
