@@ -5,12 +5,24 @@
    * Read Seven Sketches preface and section 1.1
 
    * Do Exercises 1.1 thru 1.4
-   
+
+  [[https://forum.azimuthproject.org/discussion/1807/lecture-1-introduction][Baez Lecture 1]] deals mostly with the mechanics of how that course was run.
+  You can safely skip it.
+  
+  [[https://forum.azimuthproject.org/discussion/1808/lecture-2-what-is-applied-category-theory#Head][Baez Lecture 2]] What is applied category theory?
+
+  [[https://forum.azimuthproject.org/discussion/1718/chapter-1/p1][Baez Discussions on Chapter 1]].  Try the Puzzles.
+
+  
 ** goals
 
 This week we want to outline what ACT is and why you might want to study it.
-   * You'll know where to find study materials
-   * You'll find a research paper on a topic that you'd like to learn about
+   * You'll know where to find study materials.
+   * You'll find a research paper on a topic that you'd like to learn about.
+     This will
+      * help the group understand what topics interest its members
+      * motivate your study -- it's good to have a goal in mind
+
 
 
 I'll echo [[https://forum.azimuthproject.org/discussion/1807/lecture-1-introduction][John Baez's intro to his ACT course]].
@@ -32,11 +44,6 @@ technologies, and save the planet.
 
 Please note that unlike John Baez, I'm still learning this material myself,
 so I'm relying heavily on more knowledgeable members to help.
-
-[[https://forum.azimuthproject.org/discussion/1807/lecture-1-introduction][Baez Lecture 1]] deals mostly with the mechanics of how that course was run.
-[[https://forum.azimuthproject.org/discussion/1808/lecture-2-what-is-applied-category-theory#Head][Baez Lecture 2]] What is applied category theory?
-
-[[https://forum.azimuthproject.org/discussion/1718/chapter-1/p1][Baez Discussions on Chapter 1]]
 
 [[https://forum.azimuthproject.org/discussion/1812/lecture-3-chapter-1-posets/p1][Baez Lecture 3]] Posets
 
