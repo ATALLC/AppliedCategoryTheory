@@ -145,6 +145,8 @@ Foundations for a Compositional Distributional Model of Meaning]].
 
 [[Https://air.unimi.it/retrieve/handle/2434/155499/138859/phd_unimi_R07647.pdf][Hierarchical-Granularity Holonic Modelling]]
 
+[[https://courses.engr.illinois.edu/cs522/sp2016/InstitutionsAbstractModelTheory.pdf][Institutions: Abstract Model Theory]]
+
 [[https://cseweb.ucsd.edu/~goguen/pps/ifi04.pdf][Information Integration in Institutions]]
 
 ** Category Theory
