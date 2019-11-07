@@ -161,3 +161,5 @@ for example, use such laws to determine whether an abstraction is composable –
 even in object-oriented programming!
 #+end_quote
 
+[[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]] is a fun illustration of how this
+math can be applied, using Legos and Minecraft!

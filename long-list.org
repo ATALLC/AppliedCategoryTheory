@@ -16,10 +16,22 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory lectures]] from MIT uses Seven Sketches textbook.
 
+   * [[https://www.youtube.com/watch?v=Ssx2_JKpB3U][A Categorical View of Computational Effects]] Emily Riehl @ LambdaWorld 2019
+
+   * [[https://www.youtube.com/user/TheCatsters][The Catsters]] short lectures
+
 * Meetup groups
 
    * [[https://www.meetup.com/Category-Theory/][SF Category Theory meetup]]
 
+     
+* Suggested Introductory Papers
+
+   * [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
+
+   * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
+
+     
 * Software engineering
   
    * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Versioned Filesystem]]: Developers are intimately familiar
@@ -38,15 +50,31 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * Data engineering
 
+[[https://categoricaldata.net/][categoricaldata.net]] (leads to [[https://conexus.ai/][conexus.ai]], a company commercializing these ideas)
+
+[[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]]
+
+[[https://arxiv.org/abs/1909.04881][Algebraic Property Graphs]]: We propose algebraic property graphs as a simple but
+mathematically rigorous bridge between graph and non-graph data models,
+broadening the scope of graph computing by removing obstacles to the
+construction of virtual graphs.
+
+[[https://arxiv.org/abs/1503.03571][Algebraic Data Integration]]
+
+[[http://cql.conexus.ai/][CQL Categorical Query Language]] @ conexus
+
 [[http://math.mit.edu/~dspivak/informatics/talks/CTDBIntroductoryTalk][Categorical Databases]] presentation slides, spivak
 
 [[http://math.mit.edu/~dspivak/informatics/grants/NASA-Proposal.pdf][NASA Proposal, Spivak]]
 
-[[https://categoricaldata.net/][categoricaldata.net]] (leads to [[https://conexus.ai/][conexus.ai]], a company commercializing these ideas)
+[[https://arxiv.org/pdf/1202.2591.pdf][Database Queries and Constraints as Lifting Problems]] discusses deriving RDF
+triples from a database instance.
 
-[[http://cql.conexus.ai/][CQL Categorical Query Language]] @ conexus
+[[https://arxiv.org/pdf/1009.1166.pdf][Functorial Data Migration]]
 
-[[https://arxiv.org/abs/1910.07519][On foundational aspects of RDF and SPARQL]] We propose a new formal framework
+[[https://arxiv.org/abs/1212.5303][Relational Foundations for Functorial Data Migration]]
+
+[[https://arxiv.org/abs/1910.07519][On foundational aspects of RDF and SPARQL]]: We propose a new formal framework
 based on category theory which provides clear and concise formal definitions of
 the main basic features of RDF and SPARQL. We propose to define the notions of
 RDF graphs as well as SPARQL basic graph patterns as objects of some nested
@@ -55,12 +83,7 @@ Furthermore, we consider basic SPARQL CONSTRUCT and SELECT queries and formalize
 their operational semantics following a novel algebraic graph transformation
 approach called POIM.
 
-[[https://arxiv.org/pdf/1202.2591.pdf][Database Queries and Constraints as Lifting Problems]] discusses deriving RDF
-triples from a database instance.
-
-[[https://arxiv.org/pdf/1009.1166.pdf][Functorial Data Migration]]
-
-[[https://arxiv.org/abs/1212.5303][Relational Foundations for Functorial Data Migration]]
+[[https://arxiv.org/abs/1910.03118][The Query Translation Landscape: A Survey]]
 
 [[http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2539429][Using Category Theory to Facilitate Multiple Manufacturing Service Database
 Integration]] semantic integration
@@ -121,8 +144,6 @@ Foundations for a Compositional Distributional Model of Meaning]].
 
 [[Https://air.unimi.it/retrieve/handle/2434/155499/138859/phd_unimi_R07647.pdf][Hierarchical-Granularity Holonic Modelling]]
 
-[[https://arxiv.org/abs/1910.03118][The Query Translation Landscape: A Survey]]
-
 [[https://cseweb.ucsd.edu/~goguen/pps/ifi04.pdf][Information Integration in Institutions]]
 
 ** Category Theory
@@ -170,19 +191,25 @@ The other articles in that blog are well worth reading, too.
 
 ** Game Theory
 
-Communication is a game.
+  Communication is a game.
 
-[[http://www.gtcenter.org/Archive/2014/Conf/Jimenez1880.pdf][Game Theory from a Categoric Point of View]]
+   * [[http://www.gtcenter.org/Archive/2014/Conf/Jimenez1880.pdf][Game Theory from a Categoric Point of View]]
 
-[[https://arxiv.org/pdf/1603.04641.pdf][Compositional Game Theory]] Ghani, Hedges, Winschel, [[https://www.philipp-zahn.com/profile/][Zahn]]
+   * [[https://arxiv.org/pdf/1603.04641.pdf][Compositional Game Theory]] Ghani, Hedges, Winschel, [[https://www.philipp-zahn.com/profile/][Zahn]]
 
-[[https://bosker.files.wordpress.com/2010/12/joyal-games.pdf][Joyal: Two-Person Games]]
+   * ([[https://twitter.com/_julesh_/status/1177687657062764547?s=03][Tweet from Jules Hedges]])
+   * [[https://t.co/wUGJWH1D1S][The paper introducing open games]]
+   * [[https://t.co/KGbjAymxz1][Compositional game theory bibliography]]
+   * [[https://t.co/4aK5a1r8Ko][On compositionality]]
+   * [[https://t.co/GecVY6oyqV][Applying the rising sea]]
+   * [[https://t.co/APVoPKfoLK][Open games tool demo]]
 
-[[http://math.ucr.edu/home/baez/games/games_1.html][John Baez game theory course notes]]
-
-[[https://cacm.acm.org/magazines/2019/1/233530-deception-identity-and-security/fulltext][Deception, Identity, and Security: The Game Theory of Sybil Attacks]]
+   * [[https://bosker.files.wordpress.com/2010/12/joyal-games.pdf][Joyal: Two-Person Games]]
 
 
+   * [[http://math.ucr.edu/home/baez/games/games_1.html][John Baez game theory course notes]]
+
+   * [[https://cacm.acm.org/magazines/2019/1/233530-deception-identity-and-security/fulltext][Deception, Identity, and Security: The Game Theory of Sybil Attacks]]
 
 
 ** Application Areas
@@ -248,8 +275,6 @@ Semiotics is also about epistemology.
 
 [[http://www.cs.ox.ac.uk/ACT2019/preproceedings/John%2520Nolan,%2520Blake%2520Pollard,%2520Spencer%2520Breiner,%2520Dhananjay%2520Anand%2520and%2520Eswaran%2520Subrahmanian.pdf][Compositional models for power systems]] Nolan, Pollard, Breiner
 
-[[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]]
-
 [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
 
 [[https://arxiv.org/abs/1703.08314][Interacting Conceptual Spaces I : Grammatical Composition of Concepts]]
@@ -259,10 +284,6 @@ Semiotics is also about epistemology.
 [[Https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005683][Categorical Theory and Numerical Knowledge]]
 
 [[https://www.karger.com/Article/PDF/275811][Categorical treatment of how logical structures develop, Piaget]]
-
-[[https://arxiv.org/abs/1909.04881][Algebraic Property Graphs]]
-
-[[https://arxiv.org/abs/1503.03571][Algebraic Data Integration]]
  
 [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
 
@@ -293,13 +314,6 @@ Semiotics is also about epistemology.
    * [[https://medium.com/@reinman/its-reboot-time-for-operating-systems-6a516ad8e89c][It's Reboot Time for Operating Systems]]
 
    * [[https://db.in.tum.de/~grust/files/monad-comprehensions.pdf][Monad Comprehensions: a Versatile Representation for Queries]]
-
-   * ([[https://twitter.com/_julesh_/status/1177687657062764547?s=03][Tweet from Jules Hedges]])
-   * The paper introducing open games: https://t.co/wUGJWH1D1S
-   * Compositional game theory bibliography: https://t.co/KGbjAymxz1
-   * On compositionality: https://t.co/4aK5a1r8Ko
-   * Applying the rising sea: https://t.co/GecVY6oyqV
-   * Open games tool demo: https://t.co/APVoPKfoLK
 
    * [[https://www.cs.utah.edu/~mflatt/past-courses/cs7520/public_html/s06/notes.pdf][Programming Languages and Lambda Calculi]]
 
