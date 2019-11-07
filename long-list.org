@@ -50,54 +50,55 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * Data engineering
 
-[[https://categoricaldata.net/][categoricaldata.net]] (leads to [[https://conexus.ai/][conexus.ai]], a company commercializing these ideas)
+   * [[https://categoricaldata.net/][categoricaldata.net]] (leads to [[https://conexus.ai/][conexus.ai]], a company commercializing these
+     ideas)
+     
+   * [[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]] describes ETL processes.
 
-[[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]]
+   * [[https://arxiv.org/abs/1909.04881][Algebraic Property Graphs]]: We propose algebraic property graphs as a simple
+     but mathematically rigorous bridge between graph and non-graph data models,
+     broadening the scope of graph computing by removing obstacles to the
+     construction of virtual graphs.
 
-[[https://arxiv.org/abs/1909.04881][Algebraic Property Graphs]]: We propose algebraic property graphs as a simple but
-mathematically rigorous bridge between graph and non-graph data models,
-broadening the scope of graph computing by removing obstacles to the
-construction of virtual graphs.
+   * [[https://arxiv.org/abs/1503.03571][Algebraic Data Integration]]
 
-[[https://arxiv.org/abs/1503.03571][Algebraic Data Integration]]
+   * [[http://cql.conexus.ai/][CQL Categorical Query Language]] @ conexus
 
-[[http://cql.conexus.ai/][CQL Categorical Query Language]] @ conexus
+   * [[http://math.mit.edu/~dspivak/informatics/talks/CTDBIntroductoryTalk][Categorical Databases]] presentation slides, spivak
 
-[[http://math.mit.edu/~dspivak/informatics/talks/CTDBIntroductoryTalk][Categorical Databases]] presentation slides, spivak
+   * [[http://math.mit.edu/~dspivak/informatics/grants/NASA-Proposal.pdf][NASA Proposal, Spivak]] mentions agent interactions
 
-[[http://math.mit.edu/~dspivak/informatics/grants/NASA-Proposal.pdf][NASA Proposal, Spivak]]
+   * [[https://arxiv.org/pdf/1202.2591.pdf][Database Queries and Constraints as Lifting Problems]] discusses deriving RDF
+     triples from a database instance.
 
-[[https://arxiv.org/pdf/1202.2591.pdf][Database Queries and Constraints as Lifting Problems]] discusses deriving RDF
-triples from a database instance.
+   * [[https://arxiv.org/pdf/1009.1166.pdf][Functorial Data Migration]]
 
-[[https://arxiv.org/pdf/1009.1166.pdf][Functorial Data Migration]]
+   * [[https://arxiv.org/abs/1212.5303][Relational Foundations for Functorial Data Migration]]
 
-[[https://arxiv.org/abs/1212.5303][Relational Foundations for Functorial Data Migration]]
+   * [[https://arxiv.org/abs/1910.07519][On foundational aspects of RDF and SPARQL]]: We propose a new formal
+     framework based on category theory which provides clear and concise formal
+     definitions of the main basic features of RDF and SPARQL. We propose to
+     define the notions of RDF graphs as well as SPARQL basic graph patterns as
+     objects of some nested categories. This allows one to clarify, in
+     particular, the role of blank nodes. Furthermore, we consider basic SPARQL
+     CONSTRUCT and SELECT queries and formalize their operational semantics
+     following a novel algebraic graph transformation approach called POIM.
 
-[[https://arxiv.org/abs/1910.07519][On foundational aspects of RDF and SPARQL]]: We propose a new formal framework
-based on category theory which provides clear and concise formal definitions of
-the main basic features of RDF and SPARQL. We propose to define the notions of
-RDF graphs as well as SPARQL basic graph patterns as objects of some nested
-categories. This allows one to clarify, in particular, the role of blank nodes.
-Furthermore, we consider basic SPARQL CONSTRUCT and SELECT queries and formalize
-their operational semantics following a novel algebraic graph transformation
-approach called POIM.
-
-[[https://arxiv.org/abs/1910.03118][The Query Translation Landscape: A Survey]]
-
-[[http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2539429][Using Category Theory to Facilitate Multiple Manufacturing Service Database
-Integration]] semantic integration
-
-[[http://www.cs.cmu.edu/~natassa/courses/15-823/current/papers/CLIO-SIGMOD2005.pdf][Clio,  IBM Research  system  for  expressing  declarative  schemamappings]]
-
-[[https://arxiv.org/pdf/1209.1011.pdf][Kleisli Database Instances]]
-
-[[https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=7C32AA38CA2A65FABCC98A50D728C854?doi=10.1.1.42.4942&rep=rep1&type=pdf][The Kleisli System]]
-
-[[https://arxiv.org/pdf/0904.2012.pdf][Simplicial Databases]]
+   * [[https://arxiv.org/abs/1910.03118][The Query Translation Landscape: A Survey]]
 
    * [[https://arxiv.org/pdf/1910.09017.pdf][Demystifying Graph Databases: Analysis and Taxonomy of Data Organization,
      System Designs, and Graph Queries]]
+
+   * [[http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2539429][Using Category Theory to Facilitate Multiple Manufacturing Service Database
+     Integration]] semantic integration
+
+   * [[http://www.cs.cmu.edu/~natassa/courses/15-823/current/papers/CLIO-SIGMOD2005.pdf][Clio,  IBM Research  system  for  expressing  declarative  schemamappings]]
+
+   * [[https://arxiv.org/pdf/1209.1011.pdf][Kleisli Database Instances]]
+
+   * [[https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=7C32AA38CA2A65FABCC98A50D728C854?doi=10.1.1.42.4942&rep=rep1&type=pdf][The Kleisli System]]
+
+   * [[https://arxiv.org/pdf/0904.2012.pdf][Simplicial Databases]]
 
 
 * References
@@ -214,6 +215,8 @@ The other articles in that blog are well worth reading, too.
 
 ** Application Areas
 
+[[https://arxiv.org/abs/1401.4585][Arrow's theorem by arrow theory]], Abramsky
+
 [[https://arxiv.org/pdf/1311.4376.pdf][Understanding Visualization: A Formal Approach using Category Theory and
 Semiotics]]
 
@@ -299,8 +302,6 @@ Semiotics is also about epistemology.
      using examples in sets, groups, rings, fields, modules.
      The [[https://faculty.math.illinois.edu/~r-ash/Algebra.html][main site]] is good for abstract algebra, too.
 
-   * [[https://pimbook.org/][A Programmer's Introduction to Mathematics]], jeremy kun
-   
    * [[https://home.uchicago.edu/~jpadgett/papers/unpublished/Economic.Production.as.Chemistry.II.pdf][Economic Production as Chemistry]] resource theories!
    * [[http://tuvalu.santafe.edu/~wbarthur/complexityeconomics.htm][Brian Arthur: Complexity Economics]]
    * [[https://www.lesswrong.com/posts/T7aQqNm6m8pTXZYnd/bayesian-probability-theory-as-extended-logic-a-new-result][Bayesian Probability Theory as Extended Logic]]
@@ -349,6 +350,8 @@ Semiotics is also about epistemology.
 
    [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Awodey]]
    
+   [[https://pimbook.org/][A Programmer's Introduction to Mathematics]], Jeremy Kun
+   
 ** Not so introductory
 
    [[http://www.math.jhu.edu/~eriehl/context.pdf][Category Theory in Context]], Riehl
@@ -389,9 +392,4 @@ coherence theorem 100 times a day, by pretending it doesn't exist
 Jules Hedges, [02.10.19 07:36]
 Abramsky's "Arrow's theorem by arrow theory" for example
 https://arxiv.org/abs/1401.4585
-
-Johannes Drever, [02.10.19 08:01]
-[In reply to Jules Hedges]
-William Wilson published a paper where categorical compositionality is computed
-to a cognitive property called “systematicity”.
 
