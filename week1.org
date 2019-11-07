@@ -72,3 +72,4 @@ Listen to [[https://corecursive.com/035-bartosz-milewski-category-theory/][Barto
 
 Read [[https://arxiv.org/pdf/1809.05923.pdf][What is Applied Category Theory?]] and [[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]].
 
+If you're a programmer, where else have you encountered "transitive closure"?

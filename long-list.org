@@ -268,6 +268,7 @@ from a family of mathematical objects, all of which represent the same system.
 As an example, the reprsentation of the neural net and the finit automaton is
 constructed in terms of our general theory.
 
+[[https://static.aminer.org/pdf/PDF/000/392/201/category_theory_applied_to_neural_modeling_and_graphical_representations.pdf][Category theory applied to neural modeling and graphical representations]]
 
 [[https://arxiv.org/abs/1409.5531][A Theory of Resources]] Coecke
 
