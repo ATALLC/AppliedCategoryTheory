@@ -34,6 +34,13 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      
 * Software engineering
   
+  CT is useful for [per Easterbrook]:
+      * Modeling and reasoning about structure
+      * Provides precise notions of modularity and composition
+      * Specification morphisms relate vocabulary and properties of specifications
+      * Constructive approach lends itself to automation
+   
+
    * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Versioned Filesystem]]: Developers are intimately familiar
      with filesystems.  This paper shows how to model them mathematically
      and uses the model to introduce CT concepts.
