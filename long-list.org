@@ -335,6 +335,9 @@ Semiotics is also about epistemology.
      
    * [[https://arxiv.org/abs/1911.00818][A Practical Type System for Symmetric Monoidal Categories]]
 
+   * [[http://db.cis.upenn.edu/DL/07/pods07.pdf][Provenance Semirings]]
+
+   * [[https://zenodo.org/record/2565243#.XcWc-U9KhhF][Stream Ring Theory]]
 
 * Books
 
