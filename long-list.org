@@ -55,7 +55,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://arxiv.org/pdf/1311.3903.pdf][A Categorical Theory of Patches]] gives a mathematical basis for revision
      control, eg describes merges as pushouts
-
+     
+   * [[http://www.math.mcgill.ca/triples/Barr-Wells-ctcs.pdf][Category Theory for Computing Science]], Barr and Wells
 
 * Data engineering
 
@@ -148,6 +149,8 @@ hierarchies where each "layer" is composed of components in a lower layer.
 [[https://arxiv.org/pdf/1504.05625.pdf][A Compositional Framework for Passive Linear Networks]]
 
 [[https://arxiv.org/abs/1704.02051][A Compositional Framework for Reaction Networks]]
+
+[[https://arxiv.org/pdf/1904.12974.pdf][Computational Petri Nets: Adjunction considered harmful]]
 
 [[https://golem.ph.utexas.edu/category/2018/02/linguistics_using_category_the.html][Linguistics using Category Theory]] is a summary of the paper [[https://arxiv.org/abs/1003.4394][Mathematical
 Foundations for a Compositional Distributional Model of Meaning]].
@@ -350,6 +353,8 @@ Semiotics is also about epistemology.
    * [[https://zenodo.org/record/2565243#.XcWc-U9KhhF][Stream Ring Theory]]
 
    * [[https://www.slideshare.net/slidarko/mmadt-a-multimodel-abstract-data-type][mm-ADT]] Multi-model Abstract Data Types
+
+   * [[https://pure.tue.nl/ws/files/2154050/200402.pdf][A Brief History of Process Algebra]]
 
 * Books
 
