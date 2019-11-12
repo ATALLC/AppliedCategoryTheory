@@ -20,9 +20,13 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://www.youtube.com/user/TheCatsters][The Catsters]] short lectures
 
-* Meetup groups
+* Meetup groups and symposia
 
    * [[https://www.meetup.com/Category-Theory/][SF Category Theory meetup]]
+    
+   * [[http://www.appliedcategorytheory.org/][Applied Category Theory symposia]]
+   * [[https://summit.statebox.org/static.html][StateBox summit]]
+   * [[http://math.ucr.edu/home/baez/SYCO4/][Applied Category Theory talks at SYCO4]]
 
      
 * Suggested Introductory Papers
@@ -110,6 +114,62 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://arxiv.org/pdf/0904.2012.pdf][Simplicial Databases]]
 
+   * [[http://www.michael-noll.com/blog/2013/12/02/twitter-algebird-monoid-monad-for-large-scala-data-analytics/][Of Algebirds, Monoids, Monads, and other Bestiary for Large-Scale Data Analytics]]
+
+
+* Natural Language Processing
+
+   * [[https://arxiv.org/pdf/1901.10723.pdf][Compositionality for Recursive Neural Networks]]
+   * [[https://golem.ph.utexas.edu/category/2018/02/linguistics_using_category_the.html][Linguistics using Category Theory]] is a summary of the paper
+     [[https://arxiv.org/abs/1003.4394][Mathematical Foundations for a Compositional Distributional Model of Meaning]].
+     Certain CT methods were shown to out-perform other methods.
+
+   * [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
+
+   * [[https://arxiv.org/pdf/1904.03478.pdf][The Mathematics of Text Structure]] is a 2019 paper that doesn't assume
+     much knowledge of category theory.
+
+   * [[http://lecomte.al.free.fr/ressources/PARIS8_LSL/Lambek.pdf][The Mathematics of Sentence Structure]] is an early paper by Lambek ([[https://www.cs.cmu.edu/~fp/courses/15816-f16/misc/Lambek58.pdf][JSTOR]]).
+
+   * [[https://cseweb.ucsd.edu/~goguen/projs/semio.html][Algebraic Semiotics]]
+
+   * [[https://sites.google.com/view/capns2018/home?authuser=0][Conference: Compositional Approaches for Physics, NLP, and Social Sciences 2018]]
+
+   * [[https://arxiv.org/pdf/1811.11041.pdf][Translating and Evolving: Towards a Model of Language Change in DisCoCat]]
+     accounts for evolution within a language, and translation between languages.
+
+   * [[https://en.wikipedia.org/wiki/Categorial_grammar][Categorial Grammar]] is a term used for a family of formalisms in natural language
+     syntax motivated by the principle of compositionality and organized according to
+     the view that syntactic constituents should generally combine as functions or
+     according to a function-argument relationship.
+
+   * [[https://arxiv.org/search/cs?searchtype=author&query=Coecke%252C+B][Papers by Bob Coecke]] are mainly about NLP.
+
+   * [[https://arxiv.org/pdf/1908.04291.pdf][The far side of the cube]] Dan R. Ghica derives the most general game model in
+    which all other game models live.
+
+* Game Theory
+
+  Communication is a game.
+
+   * [[http://www.gtcenter.org/Archive/2014/Conf/Jimenez1880.pdf][Game Theory from a Categoric Point of View]]
+
+   * [[https://arxiv.org/pdf/1603.04641.pdf][Compositional Game Theory]] Ghani, Hedges, Winschel, [[https://www.philipp-zahn.com/profile/][Zahn]]
+
+   * ([[https://twitter.com/_julesh_/status/1177687657062764547?s=03][Tweet from Jules Hedges]])
+   * [[https://t.co/wUGJWH1D1S][The paper introducing open games]]
+   * [[https://t.co/KGbjAymxz1][Compositional game theory bibliography]]
+   * [[https://t.co/4aK5a1r8Ko][On compositionality]]
+   * [[https://t.co/GecVY6oyqV][Applying the rising sea]]
+   * [[https://t.co/APVoPKfoLK][Open games tool demo]]
+
+   * [[https://bosker.files.wordpress.com/2010/12/joyal-games.pdf][Joyal: Two-Person Games]]
+
+
+   * [[http://math.ucr.edu/home/baez/games/games_1.html][John Baez game theory course notes]]
+
+   * [[https://cacm.acm.org/magazines/2019/1/233530-deception-identity-and-security/fulltext][Deception, Identity, and Security: The Game Theory of Sybil Attacks]]
+
 
 * References
   
@@ -124,7 +184,6 @@ theory should have a wider audience in computer science.
 
 [[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]]
 
-[[https://arxiv.org/abs/0810.1279][Set Theory for Category Theory]]
 
 
 [[https://statebox.org/][statebox.org]] is commercializing verifiable systems
@@ -134,8 +193,6 @@ open project that aims to build a programming language based on
 universal mathematical principles.  The aim is to apply these
 principles to solving problems of coordination in large-scale
 distributed systems, even complex ones.
-
-[[https://summit.statebox.org/static.html][StateBox summit]]
 
 
 [[https://www.mit.edu/~eadam/eadam_PhDThesis.pdf][Systems, Generativity and Interactional Effects by Elie M. Adam]]
@@ -152,14 +209,18 @@ hierarchies where each "layer" is composed of components in a lower layer.
 
 [[https://arxiv.org/pdf/1904.12974.pdf][Computational Petri Nets: Adjunction considered harmful]]
 
-[[https://golem.ph.utexas.edu/category/2018/02/linguistics_using_category_the.html][Linguistics using Category Theory]] is a summary of the paper [[https://arxiv.org/abs/1003.4394][Mathematical
-Foundations for a Compositional Distributional Model of Meaning]].
-
 [[Https://air.unimi.it/retrieve/handle/2434/155499/138859/phd_unimi_R07647.pdf][Hierarchical-Granularity Holonic Modelling]]
 
 [[https://courses.engr.illinois.edu/cs522/sp2016/InstitutionsAbstractModelTheory.pdf][Institutions: Abstract Model Theory]]
 
 [[https://cseweb.ucsd.edu/~goguen/pps/ifi04.pdf][Information Integration in Institutions]]
+
+** Set Theory
+   
+   * [[https://arxiv.org/abs/0810.1279][Set Theory for Category Theory]]
+   * [[http://www.tac.mta.ca/tac/reprints/articles/11/tr11abs.html][Lawvere: on Category of Sets]]
+   * [[https://www.cambridge.org/core/books/sets-for-mathematics/E899F592AD8FBA9A550B1ED3E1E61EC3][Lawvere: Sets for Mathematics]]
+
 
 ** Category Theory
 
@@ -184,48 +245,19 @@ The other articles in that blog are well worth reading, too.
 
 [[https://github.com/jwiegley/category-theory][Category Theoretic constructions in Coq]]
 
-[[http://www.michael-noll.com/blog/2013/12/02/twitter-algebird-monoid-monad-for-large-scala-data-analytics/][Of Algebirds, Monoids, Monads, and other Bestiary for Large-Scale Data Analytics]]
-
 [[https://ncatlab.org/nlab/show/sheaf+semantics+of+concurrent+interacting+objects][Sheaf Semantics for Concurrent Interacting Objects]]
 
 [[https://blog.statebox.org/programming-is-just-an-example-6bc6bacb7b72][Programming Languages as Categories]]
-
-[[http://www.appliedcategorytheory.org/][Applied Category Theory symposia]]
 
 [[https://www.math3ma.com/blog/the-yoneda-perspective][The Yoneda Perspective]]: You are your relationships
 
 
 [[https://johncarlosbaez.wordpress.com/2019/03/24/complex-adaptive-system-design-part-9/][Complex Adaptive Systems Design part 9]]
 
-[[http://www.tac.mta.ca/tac/reprints/articles/11/tr11abs.html][Lawvere: on Category of Sets]]
-
-[[https://www.cambridge.org/core/books/sets-for-mathematics/E899F592AD8FBA9A550B1ED3E1E61EC3][Lawvere: Sets for Mathematics]]
-
 [[http://www.ams.org/journals/proc/1994-122-02/S0002-9939-1994-1216823-2/home.html][An adjoint characterization of the category of Sets]]
 
 [[https://seemannworkshop.netcorebcn.group/][Universal Design Patterns]] Mark Seemann
 
-** Game Theory
-
-  Communication is a game.
-
-   * [[http://www.gtcenter.org/Archive/2014/Conf/Jimenez1880.pdf][Game Theory from a Categoric Point of View]]
-
-   * [[https://arxiv.org/pdf/1603.04641.pdf][Compositional Game Theory]] Ghani, Hedges, Winschel, [[https://www.philipp-zahn.com/profile/][Zahn]]
-
-   * ([[https://twitter.com/_julesh_/status/1177687657062764547?s=03][Tweet from Jules Hedges]])
-   * [[https://t.co/wUGJWH1D1S][The paper introducing open games]]
-   * [[https://t.co/KGbjAymxz1][Compositional game theory bibliography]]
-   * [[https://t.co/4aK5a1r8Ko][On compositionality]]
-   * [[https://t.co/GecVY6oyqV][Applying the rising sea]]
-   * [[https://t.co/APVoPKfoLK][Open games tool demo]]
-
-   * [[https://bosker.files.wordpress.com/2010/12/joyal-games.pdf][Joyal: Two-Person Games]]
-
-
-   * [[http://math.ucr.edu/home/baez/games/games_1.html][John Baez game theory course notes]]
-
-   * [[https://cacm.acm.org/magazines/2019/1/233530-deception-identity-and-security/fulltext][Deception, Identity, and Security: The Game Theory of Sybil Attacks]]
 
 
 ** Application Areas
@@ -249,8 +281,6 @@ the Theory of Categories]] 1958
 [[https://apps.dtic.mil/dtic/tr/fulltext/u2/a297528.pdf][FORMAL FOUNDATIONS FOR THE SPECIFICATION OF SOFTWARE ARCHITECTURE
 DISSERTATION Mark James Gerken]]
 
-
-[[http://math.ucr.edu/home/baez/SYCO4/][Applied Category Theory talks at SYCO4]]
 
 [[https://arxiv.org/abs/1906.05443][Rewriting Structured Cospans: A Syntax For Open Systems]]
 
@@ -304,8 +334,6 @@ Semiotics is also about epistemology.
 
 [[https://www.karger.com/Article/PDF/275811][Categorical treatment of how logical structures develop, Piaget]]
  
-[[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
-
 ** Other math
 
    * [[http://math.ucr.edu/home/baez/books.html][How to learn math and physics]], John Baez's advice.
