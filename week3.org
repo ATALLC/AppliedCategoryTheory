@@ -1,0 +1,23 @@
+* ACT Study Group week 3
+  
+This is still under construction!
+** preparation
+
+   Assignment from [[file:week2.org][week 2]], summarized here:
+   * Read [[https://arxiv.org/abs/1803.05316%0A][Seven Sketches]] section 1.3: Meets and Joins.
+   * Do all Exercises: 1.75, 1.80, 1.85, 1.89
+   * Read as much as you can of Elie M. Adam's thesis
+     [[https://www.mit.edu/~eadam/eadam_PhDThesis.pdf][Systems, Generativity and Interactional Effects]]
+   * Try reading your chosen research paper.  Pick out the concepts
+     that you do understand.
+
+
+** week 3 assignment
+   * Read [[https://arxiv.org/abs/1803.05316%0A][Seven Sketches]] section 1.4: Galois Connections
+   * Do all Exercises: 
+   * Read as much as you can of
+     [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
+     You should be able to recognize some of the concepts now.
+     
+   * Try reading your chosen research paper again.  What
+     concepts do you understand better now?
