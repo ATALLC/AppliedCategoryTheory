@@ -116,6 +116,9 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://www.michael-noll.com/blog/2013/12/02/twitter-algebird-monoid-monad-for-large-scala-data-analytics/][Of Algebirds, Monoids, Monads, and other Bestiary for Large-Scale Data Analytics]]
 
+* Computer Science
+
+   * [[https://www.sciencedirect.com/science/article/pii/0167642387900207][Categorical Abstract Machine]]
 
 * Natural Language Processing
 
@@ -146,7 +149,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
    * [[https://arxiv.org/search/cs?searchtype=author&query=Coecke%252C+B][Papers by Bob Coecke]] are mainly about NLP.
 
    * [[https://arxiv.org/pdf/1908.04291.pdf][The far side of the cube]] Dan R. Ghica derives the most general game model in
-    which all other game models live.
+     which all other game models live.
 
 * Game Theory
 
@@ -334,6 +337,7 @@ Semiotics is also about epistemology.
 
 [[https://www.karger.com/Article/PDF/275811][Categorical treatment of how logical structures develop, Piaget]]
  
+
 ** Other math
 
    * [[http://math.ucr.edu/home/baez/books.html][How to learn math and physics]], John Baez's advice.
