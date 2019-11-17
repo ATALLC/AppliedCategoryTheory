@@ -22,6 +22,8 @@ The main text:
 
    * [[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]].
      This is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory lectures]] from MIT.
+     NOTE: The numbering of exercises and examples is different in the PDF!
+     We use the numbering in the printed textbook.
 
 You should also get at least one of these two supplemental texts:
 
