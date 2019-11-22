@@ -23,7 +23,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 * Meetup groups and symposia
 
    * [[https://www.meetup.com/Category-Theory/][SF Category Theory meetup]]
-    
+   * [[https://www.meetup.com/NYC-Category-Theory/][NYC Category Theory meetup]]    
+
    * [[http://www.appliedcategorytheory.org/][Applied Category Theory symposia]]
    * [[https://summit.statebox.org/static.html][StateBox summit]]
    * [[http://math.ucr.edu/home/baez/SYCO4/][Applied Category Theory talks at SYCO4]]
@@ -150,6 +151,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://arxiv.org/pdf/1908.04291.pdf][The far side of the cube]] Dan R. Ghica derives the most general game model in
      which all other game models live.
+     
+   * [[http://conal.net/papers/][Conal Elliot papers]]
 
 * Game Theory
 
@@ -389,6 +392,9 @@ Semiotics is also about epistemology.
    * [[https://www.slideshare.net/slidarko/mmadt-a-multimodel-abstract-data-type][mm-ADT]] Multi-model Abstract Data Types
 
    * [[https://pure.tue.nl/ws/files/2154050/200402.pdf][A Brief History of Process Algebra]]
+
+   * [[https://uniformal.github.io/][MMT Meta-Meta Tool]] enabling uniform representation of knowledge
+
 
 * Books
 
