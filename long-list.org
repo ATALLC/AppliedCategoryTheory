@@ -63,6 +63,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      
    * [[http://www.math.mcgill.ca/triples/Barr-Wells-ctcs.pdf][Category Theory for Computing Science]], Barr and Wells
 
+   * [[https://seemannworkshop.netcorebcn.group/][Universal Design Patterns]] Mark Seemann
+
 * Data engineering
 
    * [[https://categoricaldata.net/][categoricaldata.net]] (leads to [[https://conexus.ai/][conexus.ai]], a company commercializing these
@@ -119,7 +121,11 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * Computer Science
 
+   * [[https://ncatlab.org/nlab/show/A+Categorical+Manifesto][A Categorical Manifesto]] and [[http://www.j-paine.org/make_category_theory_intuitive.html][Make Category Theory Intuitive]] explain why
+     category theory should have a wider audience in computer science.
+
    * [[https://www.sciencedirect.com/science/article/pii/0167642387900207][Categorical Abstract Machine]]
+     
 
 * Natural Language Processing
 
@@ -179,17 +185,6 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * References
   
-[[https://ncatlab.org/nlab/show/A+Categorical+Manifesto][A Categorical Manifesto]] and [[http://www.j-paine.org/make_category_theory_intuitive.html][Make Category Theory Intuitive]] explain why category
-theory should have a wider audience in computer science.
-
-[[https://plato.stanford.edu/entries/category-theory/][Stanford Encyclopedia on Category Theory]]
-
-[[https://groupoids.org.uk/pdffiles/Analogy-and-Comparison.pdf][Category Theory: A Framework for Analogy and Comparison]]
-
-[[https://arxiv.org/pdf/1809.05923.pdf][What is Applied Category Theory?]]
-
-[[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]]
-
 
 
 [[https://statebox.org/][statebox.org]] is commercializing verifiable systems
@@ -238,6 +233,16 @@ audience of programming language aficionados, especially in functional
 language communities such as Haskell and type-theorists, and formal
 proof systems.
 
+[[https://plato.stanford.edu/entries/category-theory/][Stanford Encyclopedia on Category Theory]]
+
+[[https://groupoids.org.uk/pdffiles/Analogy-and-Comparison.pdf][Category Theory: A Framework for Analogy and Comparison]]
+
+[[https://arxiv.org/pdf/1809.05923.pdf][What is Applied Category Theory?]]
+
+[[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]]
+
+[[https://www.logicmatters.net/resources/pdfs/GentleIntro.pdf][A Gentle Introduction to Category Theory]] Peter Smith, LogicMatters
+
 
 [[http://abel.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is one thing equal to another?]] Barry Mazur, on equivalence
 
@@ -246,8 +251,6 @@ category theory to describe EVERYTHING.
 
 John Baez's [[http://math.ucr.edu/home/baez/week73.html#tale][description of n-Categories]] was the most illuminating I've found.
 The other articles in that blog are well worth reading, too.
-
-[[https://www.logicmatters.net/resources/pdfs/GentleIntro.pdf][A Gentle Introduction to Category Theory]] Peter Smith, LogicMatters
 
 [[https://github.com/jwiegley/category-theory][Category Theoretic constructions in Coq]]
 
@@ -262,7 +265,6 @@ The other articles in that blog are well worth reading, too.
 
 [[http://www.ams.org/journals/proc/1994-122-02/S0002-9939-1994-1216823-2/home.html][An adjoint characterization of the category of Sets]]
 
-[[https://seemannworkshop.netcorebcn.group/][Universal Design Patterns]] Mark Seemann
 
 
 
@@ -362,7 +364,10 @@ Semiotics is also about epistemology.
 
    * [[http://www.themathcitadel.com/wp-content/uploads/2019/03/counterexamples-prob-indep.pdf][Counterexamples in Probability]], Rachel Traylor
    * [[http://math.ucr.edu/home/baez/thesis_defense_pollard.pdf][Open Markov Networks]] Blake Pollard
+
    * [[http://www.cs.ox.ac.uk/ACT2019/preproceedings/John%2520Nolan,%2520Blake%2520Pollard,%2520Spencer%2520Breiner,%2520Dhananjay%2520Anand%2520and%2520Eswaran%2520Subrahmanian.pdf][Compositional Models for Power Systems]], article in Compositionality journal
+   * [[https://github.com/NREL/PowerSystems.jl][PowerSystems.jl]] National Renewable Energy Lab software for analysis
+     and modeling of power systems.
 
    * [[https://blog.usejournal.com/monoids-to-groupoids-492c35105113][Monoids to Groupoids]]
    * [[https://medium.com/@reinman/its-reboot-time-for-operating-systems-6a516ad8e89c][It's Reboot Time for Operating Systems]]
@@ -395,6 +400,7 @@ Semiotics is also about epistemology.
 
    * [[https://uniformal.github.io/][MMT Meta-Meta Tool]] enabling uniform representation of knowledge
 
+   * [[https://github.com/jozefg/learn-tt][Learn Type Theory]] collection of introductory resources
 
 * Books
 
@@ -411,7 +417,7 @@ Semiotics is also about epistemology.
    [[%5B%5Bhttp://pi.math.cornell.edu/~hatcher/AT/ATpage.html%5D%5BAlegraic%20Topology%5D%5D%0Ahttps://www.barnesandnoble.com/p/conceptual-mathematics-f-william-lawvere/1100948021/2694607767497?st=PLA&sid=BNB_ADL+Marketplace+Good+New+Textbooks+-+Desktop+Low&sourceId=PLAGoNA&dpid=tdtve346c&2sid=Google_c&gclid=EAIaIQobChMI_P-XgLH_4QIVRz0MCh1jPgqqEAQYASABEgK59vD_BwE][Conceptual Mathematics: A first introduction to categories]], Lawvere and Schanuel
    is the most approachable one I've found yet.
 
-   [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Awodey]]
+   [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Category Theory, Steve Awodey]]
    
    [[https://pimbook.org/][A Programmer's Introduction to Mathematics]], Jeremy Kun
    
