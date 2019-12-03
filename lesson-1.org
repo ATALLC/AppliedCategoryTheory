@@ -1,4 +1,4 @@
-* ACT Study Group week 1
+* ACT Study Group lesson 1
    
 ** preparation
    
@@ -16,7 +16,8 @@
   
 ** goals
 
-This week we want to outline what ACT is and why you might want to study it.
+In this lesson we want to outline what ACT is and why you might want to study
+it.
    * You'll know where to find study materials.
    * You'll find a research paper on a topic that you'd like to learn about.
      This will
@@ -48,7 +49,7 @@ so I'm relying heavily on more knowledgeable members to help.
 [[https://forum.azimuthproject.org/discussion/1812/lecture-3-chapter-1-posets/p1][Baez Lecture 3]] Posets
 
 
-** week 1 assignment (for week 2)
+** lesson 1 assignment (for lesson 2)
 
    * Read [[file:engaging.org][Engaging with Mathematics]], especially if you're a programmer.
 

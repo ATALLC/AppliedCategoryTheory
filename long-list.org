@@ -194,8 +194,6 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * References
   
-
-
 [[https://statebox.org/][statebox.org]] is commercializing verifiable systems
 
 [[https://johncarlosbaez.wordpress.com/2018/01/22/statebox-a-universal-language-of-distributed-systems/][Statebox: A Universal Language of Distributed Systems]] describes the
@@ -274,6 +272,8 @@ The other articles in that blog are well worth reading, too.
 
 [[http://www.ams.org/journals/proc/1994-122-02/S0002-9939-1994-1216823-2/home.html][An adjoint characterization of the category of Sets]]
 
+
+[[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]] Peter Selinger
 
 
 
