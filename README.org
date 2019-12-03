@@ -50,7 +50,7 @@ You should also get at least one of these two supplemental texts:
   | Jan 2020 | Chapter 3: Databases            |
   | Feb 2020 | Chapter 4: Collaborative Design |
 
-* Background
+* Background in Math
   
   It helps to have studied abstract algebra -- groups, monoids, homomorphisms,
   and the like. Here's some resources to help you get up to speed.
@@ -67,10 +67,13 @@ You should also get at least one of these two supplemental texts:
   See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]] and the [[file:long-list.org][long list]] of
   resources.
   
-  * [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
+  * [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]] uses Legos and Minecraft
+    to introduce ideas about modeling composable structures
 
   * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
   
+  * [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
+
   * [[https://www.mit.edu/~eadam/eadam_PhDThesis.pdf][Systems, Generativity and Interactional Effects by Elie M. Adam]] is
     the thesis mentioned in Chapter 1.
 

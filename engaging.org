@@ -17,6 +17,20 @@ the discipline you need.
 
 [[http://math.ucr.edu/home/baez/books.html][How to learn math and physics]] is John Baez's extremely well-informed advice.
 
+** Leslie Lamport: Coding is only a small part of programming
+
+   Abstracted by [[https://twitter.com/ultrasaurus/status/1201447302444924934?s=03][Sarah Allen]]:
+   
+[[https://www.zmescience.com/science/difference-programming-coding-15112019/amp/][The Difference Between Programming and Coding]]
+   * [[https://www.youtube.com/watch?v=de7Id8sKQzY][Lamport video 1]] (7:26)
+   * [[https://www.youtube.com/watch?v=36tsSOFRMjM][Lamport video 2]] (1:43)
+“You don’t understand something until you’ve written it down carefully —
+carefully enough to explain it to somebody else. And if you haven’t done that,
+you’re just thinking you understand it,” Lamport, ⁦@HLForum⁩ 2019
+
+“... Think of it this way: writing is a way of revealing how fuzzy your thinking
+is. In this context, coding is just a small part of programming where real
+thinking takes place.”
 
 ** Approachable Math Presentations
    

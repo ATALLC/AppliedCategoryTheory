@@ -126,6 +126,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://www.sciencedirect.com/science/article/pii/0167642387900207][Categorical Abstract Machine]]
      
+   * [[https://github.com/epatters/Catlab.jl][Catlab]] is an experimental library for computational category theory,
+     written in Julia.
 
 * Natural Language Processing
 
@@ -160,6 +162,10 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      
    * [[http://conal.net/papers/][Conal Elliot papers]]
 
+   * [[http://repmus.ircam.fr/_media/moreno/Andreatta_Creativity_MCM2013.pdf][Towards a Categorical Theory of Creativity for Music, Discourse, and Cognition]]
+
+   * [[http://conal.net/papers/compiling-to-categories/][Compiling to Categories]], Conal Elliot
+
 * Game Theory
 
   Communication is a game.
@@ -182,6 +188,9 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://cacm.acm.org/magazines/2019/1/233530-deception-identity-and-security/fulltext][Deception, Identity, and Security: The Game Theory of Sybil Attacks]]
 
+* Complex Systems
+  
+  [[https://julesh.com/2019/12/02/lax-functors-describe-emergent-effects/][Lax Functors Describe Emergent Effects]]
 
 * References
   
@@ -433,6 +442,9 @@ Semiotics is also about epistemology.
    * [[https://www.amazon.com/Software-Abstractions-Logic-Language-Analysis/dp/0262528908/][Software Abstractions]] introduction to formal methods
 
    * [[https://en.m.wikipedia.org/wiki/Laws_of_Form][Laws of Form]]
+
+   * [[http://abstract.ups.edu/aata/][Abstract Algebra]] Theory and Applications, Judson open-source textbook
+
 
 * Breakthroughs :)
 
