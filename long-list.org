@@ -36,6 +36,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
 
+   * [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
      
 * Software engineering
   
@@ -129,6 +130,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
    * [[https://github.com/epatters/Catlab.jl][Catlab]] is an experimental library for computational category theory,
      written in Julia.
 
+   * [[http://conal.net/papers/compiling-to-categories/][Compiling to Categories]], Conal Elliot
+
 * Natural Language Processing
 
    * [[https://arxiv.org/pdf/1901.10723.pdf][Compositionality for Recursive Neural Networks]]
@@ -164,8 +167,30 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://repmus.ircam.fr/_media/moreno/Andreatta_Creativity_MCM2013.pdf][Towards a Categorical Theory of Creativity for Music, Discourse, and Cognition]]
 
-   * [[http://conal.net/papers/compiling-to-categories/][Compiling to Categories]], Conal Elliot
 
+     
+* pregroup (as in Lambek pregroup grammar)
+
+   The [[https://ncatlab.org/nlab/show/categorical+compositional+distributional+semantics][DisCoCat]] framework (Categorical compositional distributional semantics)
+   "uses category theory to combine the benefits of two very different
+    approaches to linguistics: categorial grammar and distributional semantics."
+
+   Wikipedia doesn't have an entry for pregroup.  Searching for it redirects to
+   [[https://en.wikipedia.org/wiki/Pregroup_grammar][Pregroup grammar]], which starts with a definition of pregroup.
+   
+   [[https://ncatlab.org/nlab/show/pregroup+grammar][Pregroup Grammar on ncatlab]]
+   
+   [[http://www.math.mcgill.ca/barr/lambek/pdffiles/compute.pdf][A computational algebraic approach to English grammar]], Lambek 
+   gives proofs of pregroup properties
+
+   [[http://www.math.mcgill.ca/rags/JAC/124/Lambek-Pregroups-s.pdf][Pregroups and Natural Language Processing]], Lambek
+
+   [[https://pdfs.semanticscholar.org/345c/c79cb9cf3d643bca045750107286dd470772.pdf][Pregroup Grammars for Chords]], Richard G. Terrat
+   
+   [[http://www.math.mcgill.ca/barr/lambek/pdffiles/][Lambek's Last Papers]] including Capulet semantics!
+
+   We have music grammar, what about semantics?
+   
 * Game Theory
 
   Communication is a game.
@@ -410,6 +435,22 @@ Semiotics is also about epistemology.
    * [[https://uniformal.github.io/][MMT Meta-Meta Tool]] enabling uniform representation of knowledge
 
    * [[https://github.com/jozefg/learn-tt][Learn Type Theory]] collection of introductory resources
+
+   * [[https://arxiv.org/abs/1902.07404][The Provability of Consistency]]
+
+     Of this [[https://twitter.com/sclv/status/1128939715523174400][@sclv]] says: The standard story is that Godel's second
+     incompleteness theorem stopped Hilbert's program dead in its tracks,
+     because one could not prove the consistency of PA within itself. But a
+     lovely new paper from Artemov argues that this isn't what G2 proved at all!
+
+     In fact, what G2 proved was simply that no *single sentence* in PA could
+     prove the consistency of PA. Artemov shows that by means verifiable in PA,
+     we can prove, for any given sentence in PA that it is not inconsistent,
+     which suffices for Hilbert's goals!
+     
+     (I should add that this lovely result is very parallel to what we do in
+     computer science, where despite the existence of the halting problem, we
+     somehow manage to prove things about programs all the time!)
 
 * Books
 

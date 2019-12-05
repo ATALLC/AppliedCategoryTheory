@@ -70,3 +70,17 @@ consists of the element and itself (x,x).
 By reflexivity, every element is indeed related to itself.
 Therefore, each part is a subset containing exactly one element -- a
 singleton set.
+
+* Random
+
+
+[[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
+might be a good introductory paper.
+
+[[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]], Peter Selinger
+It is well-known that the simply typed lambda-calculus is modeled by any cartesian closed category (CCC). 
+
+[[https://github.com/epatters/Catlab.jl][Catlab]] is an experimental library for computational category theory,
+written in Julia.
+
+Overleaf

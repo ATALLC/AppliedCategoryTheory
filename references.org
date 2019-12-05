@@ -1,6 +1,6 @@
 #+TITLE: ACT References
 
-Some of these publications are in file:long-list.org.
+Some of these publications are in [[file:long-list.org][long-list]].
 This is supposed to be a more structured form, amenable to bibtex.
 
 [[https://www.amazon.com/Naive-Set-Theory-Paul-Halmos/dp/1614271313][Naive Set Theory]]
@@ -12,7 +12,7 @@ Paul R. Halmos
 George McCarty
 
 [[https://www.amazon.com/Principles-Program-Analysis-Flemming-Nielson/dp/3540654100][Principles of Program Analysis]]
-Nielson and Hankin
+Nielson^2 and Hankin
 
 [[https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Classical_Mechanics][Structure and Interpretation of Classical Mechanics]]
 Sussman and Wisdom
