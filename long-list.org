@@ -167,9 +167,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://repmus.ircam.fr/_media/moreno/Andreatta_Creativity_MCM2013.pdf][Towards a Categorical Theory of Creativity for Music, Discourse, and Cognition]]
 
-
-     
-* pregroup (as in Lambek pregroup grammar)
+** Lambek pregroup grammar
 
    The [[https://ncatlab.org/nlab/show/categorical+compositional+distributional+semantics][DisCoCat]] framework (Categorical compositional distributional semantics)
    "uses category theory to combine the benefits of two very different

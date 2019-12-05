@@ -73,6 +73,7 @@ singleton set.
 
 * Random
 
+[[http://conal.net/papers/compiling-to-categories/][Compiling to Categories]], Conal Elliot
 
 [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
 might be a good introductory paper.
