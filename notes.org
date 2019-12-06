@@ -71,6 +71,21 @@ By reflexivity, every element is indeed related to itself.
 Therefore, each part is a subset containing exactly one element -- a
 singleton set.
 
+* Posets and entity resolution
+
+Suppose you have a dynamic dataset, where you're receiving messages of the form
+p1 <= p2 -- in other words, you're getting realtime updates, maybe from sensors.
+You can represent them as a preorder, maybe as a digraph where you'd create
+nodes p1 and p2, and a link p1->p2. If you discover that you've just created a
+loop, then all the nodes in the loop are in fact equivalent.
+
+If your preorder is actually a poset (a skeletal preorder, where antisymmetry
+applies), you can collapse them all into one node.
+
+This might be a way to model entity resolution, where you have a bunch of
+observations about individuals, and finally you have enough to "connect the
+dots" and deduce that some of them are in fact about the same individual.
+
 * Random
 
 [[http://conal.net/papers/compiling-to-categories/][Compiling to Categories]], Conal Elliot

@@ -211,6 +211,9 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://cacm.acm.org/magazines/2019/1/233530-deception-identity-and-security/fulltext][Deception, Identity, and Security: The Game Theory of Sybil Attacks]]
 
+   * [[http://www.reluctantm.com/gcruttw/publications/CGC.pdf][Combinatorial Game Categories]]
+
+
 * Complex Systems
   
   [[https://julesh.com/2019/12/02/lax-functors-describe-emergent-effects/][Lax Functors Describe Emergent Effects]]
