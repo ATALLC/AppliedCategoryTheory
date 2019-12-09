@@ -38,6 +38,14 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
      
+   * [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
+
+* Curated lists
+  
+   * [[https://www.epatters.org/wiki/algebra/act-adjoint-school.html][ACT Adjoint School talks]]
+
+   * [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
+
 * Software engineering
   
   CT is useful for [per Easterbrook]:
@@ -172,14 +180,20 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
    The [[https://ncatlab.org/nlab/show/categorical+compositional+distributional+semantics][DisCoCat]] framework (Categorical compositional distributional semantics)
    "uses category theory to combine the benefits of two very different
     approaches to linguistics: categorial grammar and distributional semantics."
+    
+   Is there a mathematical treatment of grammar that would help frame
+   the question "Why do certain strings of words sound better, more poetic?"
+   Does poetry sound better than prose in a language you don't understand?
+   
 
    Wikipedia doesn't have an entry for pregroup.  Searching for it redirects to
    [[https://en.wikipedia.org/wiki/Pregroup_grammar][Pregroup grammar]], which starts with a definition of pregroup.
    
-   [[https://ncatlab.org/nlab/show/pregroup+grammar][Pregroup Grammar on ncatlab]]
+   [[https://ncatlab.org/nlab/show/pregroup+grammar][Pregroup Grammar on ncatlab]] is a more advanced treatment.
    
    [[http://www.math.mcgill.ca/barr/lambek/pdffiles/compute.pdf][A computational algebraic approach to English grammar]], Lambek 
-   gives proofs of pregroup properties
+   This is a good place to start.
+   It gives proofs of pregroup properties from the axioms.
 
    [[http://www.math.mcgill.ca/rags/JAC/124/Lambek-Pregroups-s.pdf][Pregroups and Natural Language Processing]], Lambek
 
@@ -216,7 +230,14 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * Complex Systems
   
-  [[https://julesh.com/2019/12/02/lax-functors-describe-emergent-effects/][Lax Functors Describe Emergent Effects]]
+   * [[https://julesh.com/2019/12/02/lax-functors-describe-emergent-effects/][Lax Functors Describe Emergent Effects]]
+  
+* Logic
+  
+   * [[https://www.karger.com/Article/PDF/275811][Categorical treatment of how logical structures develop, Piaget]]
+ 
+   * [[https://mikeshulman.github.io/catlog/catlog.pdf][Categorical Logic from a Categorical Point of View]], Mike Shulman
+
 
 * References
   
@@ -377,9 +398,6 @@ Semiotics is also about epistemology.
 
 [[Https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005683][Categorical Theory and Numerical Knowledge]]
 
-[[https://www.karger.com/Article/PDF/275811][Categorical treatment of how logical structures develop, Piaget]]
- 
-
 ** Other math
 
    * [[http://math.ucr.edu/home/baez/books.html][How to learn math and physics]], John Baez's advice.
@@ -452,6 +470,14 @@ Semiotics is also about epistemology.
      (I should add that this lovely result is very parallel to what we do in
      computer science, where despite the existence of the halting problem, we
      somehow manage to prove things about programs all the time!)
+
+   * [[https://www.cambridge.org/core/books/introduction-to-coalgebra/0D508876D20D95E17871320EADC185C6][Introduction to Coalgebra]], Bart Jacobs
+
+     Whenever I come back to Bart Jacobs' "Introduction to Coalgebras" (which
+     also covers algebras) I am surprised by how clear it is and how much I
+     learn from it. Definitely a book for developers working at the intersection
+     of OO and FP such as #Scala. -- [[https://twitter.com/bblfish/status/1203305108664127489?s=03][Henry Story]]
+
 
 * Books
 

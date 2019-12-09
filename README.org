@@ -112,6 +112,10 @@ You should also get at least one of these two supplemental texts:
   * [[https://www.mit.edu/~eadam/eadam_PhDThesis.pdf][Systems, Generativity and Interactional Effects by Elie M. Adam]] is
     the thesis mentioned in Chapter 1.
 
+  * [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]] is a good companion
+    to chapter 1 in Seven Sketches.
+
+
 * Comms and office hours
 
   We have a slack workspace where we work through problem sets and
