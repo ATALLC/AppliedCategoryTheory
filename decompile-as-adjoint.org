@@ -18,7 +18,8 @@ a correct decompiler.
 If you form the composite (compile; decompile) you'll get a function that will
 turn any source file into its "essential" source file.
 
-Many source files will compile into the same essential source file.
+Many source files will compile into the same executable,
+and hence decompile back into the same essential source file.
 Those source files differ only in comments, or trivial structural differences
 that don't affect code generation.
 
@@ -26,14 +27,28 @@ So the (compile; decompile) composite induces a partition on the set
 of all source files, where the equivalence classes consist of all
 source files that compile to the same essential source.
 
-You can think of the essential source as a limit, in that there is a mapping to
-it from many other source files.
+You can think of the essential source as a limit in its class, in that there is
+a mapping to it from many other source files.
 
 The essential source is a natural representative of the equivalence class.
 
 So decompilation is an adjoint of compilation -- not exactly
 an inverse, but it tells you something about the essence of the program.
 
+Pardon the bad ASCII art. 
+
+     S
+    ^
+   /  \
+d /    \ c
+ /      v
+B------>B
+   idB
+
+d is decompile.
+c is compile.
+S is the set of all source files. 
+B is the set of all binary files.
 
 Constructing a decompiler is equivalent to a solving a lifting problem from
 binary to source code. Decompile is a "left inverse" of compile -- what can I
