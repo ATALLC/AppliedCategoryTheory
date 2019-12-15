@@ -1,0 +1,45 @@
+#+TITLE: Does program compilation have adjoints?
+
+Compiling source code to executable is a model transformation.
+In some cases, you can derive source code from an executable,
+using a decompiler.
+
+The resulting decompiled source code may not have exactly the same structure as
+the original, and won't have syntactic niceties like comments.
+
+But if you compile the decompiled program, you'll get exactly
+the same executable.
+
+In other words, if you form the composite (decompile; compile) you'll get a
+function that will turn any executable into itself.
+It's just the identity function.  We can use this as the definition of
+a correct decompiler.
+
+If you form the composite (compile; decompile) you'll get a function that will
+turn any source file into its "essential" source file.
+
+Many source files will compile into the same essential source file.
+Those source files differ only in comments, or trivial structural differences
+that don't affect code generation.
+
+So the (compile; decompile) composite induces a partition on the set
+of all source files, where the equivalence classes consist of all
+source files that compile to the same essential source.
+
+You can think of the essential source as a limit, in that there is a mapping to
+it from many other source files.
+
+The essential source is a natural representative of the equivalence class.
+
+So decompilation is an adjoint of compilation -- not exactly
+an inverse, but it tells you something about the essence of the program.
+
+
+Constructing a decompiler is equivalent to a solving a lifting problem from
+binary to source code. Decompile is a "left inverse" of compile -- what can I
+first do, that compile will then undo?
+
+* Questions
+   * Is decompile the left adjoint of compile?
+   * Does (decompile;compile) correspond to the unit of the adjunction?
+   * Does (compile;decompile) correspond to the counit?
