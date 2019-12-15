@@ -37,7 +37,7 @@ an inverse, but it tells you something about the essence of the program.
 
 Pardon the bad ASCII art. 
 
-#+begin_export ascii
+#+begin_src 
      S
     ^
    /  \
@@ -45,7 +45,7 @@ d /    \ c
  /      v
 B------>B
    idB
-#+end_export
+#+end_src
 
 d is decompile.
 c is compile.
