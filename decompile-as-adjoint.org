@@ -44,7 +44,9 @@ those others can be transformed into it by the =(compile;decompile)= composite.
 So decompilation is an adjoint of compilation -- not exactly
 an inverse, but it tells you something about the essence of the program.
 
-Pardon the bad ASCII art. 
+Whenever you have to "pick out a representative" from an equivalence
+class, you're probably looking at a choice problem, also called
+a lifting problem.  Here's a picture (pardon the bad ASCII art):
 
 #+begin_src 
      S
