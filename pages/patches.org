@@ -3,6 +3,10 @@
 This page is an attempt to state things familiar to programmers
 using mathematical language.
 
+These are my thoughts in progress.
+See [[https://arxiv.org/pdf/1311.3903.pdf][A Categorical Theory of Patches]], Mimram and Giusto
+for a better treatment.
+
 Programs can be related using morphisms that correspond to
 patches that will transform one program into another.
 
