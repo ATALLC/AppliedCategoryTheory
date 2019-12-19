@@ -1,5 +1,8 @@
 #+TITLE: Does program compilation have adjoints?
 
+This page is an attempt to state things familiar to programmers
+using mathematical language.
+
 Compiling source code to executable is a model transformation.
 In some cases, you can derive source code from an executable,
 using a decompiler.
@@ -73,3 +76,4 @@ Decompile is a "left inverse" of compile.
    * Does =(compile;decompile)= correspond to the counit?
    * Is the set of essential source files isomorphic to the parts
      of the partition induced by compile?
+

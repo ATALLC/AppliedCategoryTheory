@@ -75,11 +75,30 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://seemannworkshop.netcorebcn.group/][Universal Design Patterns]] Mark Seemann
 
-* Data engineering
+* Data engineering; categorical data
 
    * [[https://categoricaldata.net/][categoricaldata.net]] (leads to [[https://conexus.ai/][conexus.ai]], a company commercializing these
      ideas)
      
+   * [[https://web-cats.gitlab.io/][Web cats]] linking web technologies (RDF, OWL, etc) with CT.
+     Documentation and resources for a to be proposed Web-Cats W3C Community
+     Group on linking Web technologies and Category Theory. The aim is to bring
+     these communities together, build up a wiki of existing research with
+     comprehensible abstracts, and a list of questions in the issue database
+     
+     RDF is a first order logic for the web built on the concept of Graphs.
+
+   * [[https://co-operating.systems/2019/04/01/PhD_second_year_report.pdf][Co-operating systems]], Henry Story.
+      Using insights from philosophy of language, epistemology, category theory
+      and game theory, the aim of this thesis is to provide a general theory of
+      the web that allows one to justify design decisions that were made, help
+      resolve some famous disputes, provide solid foundations for reasoning
+      about application security, and help locate problems and find answers
+      relating to trust and fake news that have turned the web into an
+      epistemological war machine.
+
+   * [[https://www.tweag.io/posts/2018-04-25-funflow.html][Funflow]] Typed, resumable workflows
+
    * [[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]] describes ETL processes.
 
    * [[https://arxiv.org/abs/1909.04881][Algebraic Property Graphs]]: We propose algebraic property graphs as a simple
@@ -480,6 +499,13 @@ Semiotics is also about epistemology.
      of OO and FP such as #Scala. -- [[https://twitter.com/bblfish/status/1203305108664127489?s=03][Henry Story]]
 
    * [[http://trace.tennessee.edu/cgi/viewcontent.cgi?article=1055&context=utk_harlan][Mathematical Foundations of Structured Programming]], Harlan Mills 1972
+     
+   * [[https://oeis.org/wiki/Logical_Graphs#Peirce.27s_law][Logical Graphs]]
+
+   * [[https://ncatlab.org/nlab/show/categorical+semantics][Categorical Semantics]]
+      One may interpret mathematical logic as being a
+      formal language for talking about the collection of monomorphisms into a
+      given object of a given category: the poset of subobjects of that object.
 
 * Books
 
