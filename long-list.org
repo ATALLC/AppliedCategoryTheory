@@ -307,6 +307,25 @@ audience of programming language aficionados, especially in functional
 language communities such as Haskell and type-theorists, and formal
 proof systems.
 
+[[https://arxiv.org/abs/1912.10642][Notes on category theory with examples from basic mathematics]]
+These notes were originally developed as lecture notes for a category theory
+course. They should be well-suited to anyone that wants to learn category theory
+from scratch and has a scientific mind. There is no need to know advanced
+mathematics, nor any of the disciplines where category theory is traditionally
+applied, such as algebraic geometry or theoretical computer science. The only
+knowledge that is assumed from the reader is linear algebra. All concepts are
+explained by giving concrete examples from different, non-specialized areas of
+mathematics (such as basic group theory, graph theory, and probability). Not
+every example is helpful for every reader, but hopefully every reader can find
+at least one helpful example per concept. The reader is encouraged to read all
+the examples, this way they may even learn something new about a different
+field. Particular emphasis is given to the Yoneda lemma and its significance,
+with both intuitive explanations, detailed proofs, and specific examples.
+Another common theme in these notes is the relationship between categories and
+directed multigraphs, which is treated in detail. From the applied point of
+view, this shows why categorical thinking can help whenever some process is
+taking place on a graph.
+
 [[https://plato.stanford.edu/entries/category-theory/][Stanford Encyclopedia on Category Theory]]
 
 [[https://groupoids.org.uk/pdffiles/Analogy-and-Comparison.pdf][Category Theory: A Framework for Analogy and Comparison]]
