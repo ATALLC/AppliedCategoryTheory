@@ -9,6 +9,9 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
    * [[https://corecursive.com/035-bartosz-milewski-category-theory/][Bartosz Milewski on Category Theory in Programming]]
      If you're a programmer, listen to this first!
 
+   * [[https://www.youtube.com/playlist?list=PLhgq-BqyZ7i7MTGhUROZy3BOICnVixETS][Programming with Categories]] Multipart series by David Spivak, Brendan Fong,
+     Bartosz Milewski
+
    * [[https://www.youtube.com/watch?v=P6DvIfTJhx8&feature=youtu.be][Category Theory: The Beginner's Introduction]] six-part series
      that uses music theory.
      
@@ -157,6 +160,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      
    * [[https://github.com/epatters/Catlab.jl][Catlab]] is an experimental library for computational category theory,
      written in Julia.
+     
+   * [[https://www.youtube.com/watch?v=7dmrDYQh4rc][Evan Patterson, String Diagrams in Catlab]]
 
    * [[http://conal.net/papers/compiling-to-categories/][Compiling to Categories]], Conal Elliot
 

@@ -1,0 +1,34 @@
+* ACT Study Group lesson 4
+  
+Seven Sketches 2.1 and 2.2
+
+
+** preparation
+
+   Assignment from [[file:lesson-3.org][lesson 3]], summarized here:
+   * Read [[https://arxiv.org/abs/1803.05316%0A][Seven Sketches]] section 1.4: Galois Connections
+   * Do all Exercises: 
+   * Read as much as you can of
+     [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
+     You should be able to recognize some of the concepts now.
+     
+** lesson 4 assignment
+   * Read [[https://arxiv.org/abs/1803.05316%0A][Seven Sketches]] section 2.1 and 2.2:
+     * Getting from a to b
+     * Symmetric Monoidal Preorders
+   * Do all Exercises:
+   * Read as much as you can of
+     [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]] Peter Selinger
+
+   * Try reading your chosen research paper again.  What
+     concepts do you understand better now?
+     
+** Relevant papers 
+
+   * [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]] Peter Selinger
+
+   * [[https://www.youtube.com/watch?v=7dmrDYQh4rc][Evan Patterson, String Diagrams]] video, string diagrams in catlab
+
+   * [[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]] describes ETL processes,
+     a favorite application of dataflow, which SMCs model well.
+ 
