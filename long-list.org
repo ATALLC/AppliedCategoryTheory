@@ -365,8 +365,10 @@ The other articles in that blog are well worth reading, too.
 
 
 [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]] Peter Selinger
+A good survey of the variants of monoidal categories.
+Look at the diagram at the end that classifies them.
 
-
+[[http://www.zanasi.com/fabio/files/paperCALCO19b.pdf][CARTOGRAPHER: A tool for string diagrammatic reasoning]]
 
 ** Application Areas
 
