@@ -538,6 +538,11 @@ Semiotics is also about epistemology.
       formal language for talking about the collection of monomorphisms into a
       given object of a given category: the poset of subobjects of that object.
 
+   * [[https://www.cs.kent.ac.uk/people/staff/dao7/publ/granule-icfp19.pdf][Quantitative Program Reasoning with Graded Modal Types]]
+
+   * [[https://github.com/OpenLogicProject/OpenLogic/wiki/Other-Logic-Textbooks][Free Logic Textbooks]] from Open Logic Project
+
+
 * Books
 
 ** Introductory
