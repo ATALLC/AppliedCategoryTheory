@@ -1,0 +1,20 @@
+* ACT Study Group lesson 5
+  
+Seven Sketches 2.3
+
+** lesson 5 assignment
+   * Read [[https://arxiv.org/abs/1803.05316%0A][Seven Sketches]] section 2.3
+   * Do all Exercises:
+
+   * Try reading your chosen research paper again.  What
+     concepts do you understand better now?
+     
+** Relevant papers 
+
+   * [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]] Peter Selinger
+
+   * [[https://www.youtube.com/watch?v=7dmrDYQh4rc][Evan Patterson, String Diagrams]] video, string diagrams in catlab
+
+   * [[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]] describes ETL processes,
+     a favorite application of dataflow, which SMCs model well.
+ 
