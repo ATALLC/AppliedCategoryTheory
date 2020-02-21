@@ -3,13 +3,15 @@
 Seven Sketches 2.3
 
 ** lesson 5 assignment
-   * Read [[https://arxiv.org/abs/1803.05316%0A][Seven Sketches]] section 2.3
-   * Do all Exercises:
+   * Read [[https://arxiv.org/abs/1803.05316%0A][Seven Sketches]] section 2.3 Enrichment
+   * Do all Exercises: 2.33 2.35 2.38 2.39 2.40 2.41 2.42 2.43
 
    * Try reading your chosen research paper again.  What
      concepts do you understand better now?
      
-** Relevant papers 
+** References papers 
+
+   * [[https://en.wikipedia.org/wiki/Enriched_category][Enriched Category]] Wikipedia
 
    * [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]] Peter Selinger
 
