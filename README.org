@@ -14,7 +14,7 @@ of their work commercializing verifiable systems.
 Why study ACT: "The basic idea of category theory ... is that if one
 pays careful attention to structures and coherence, the resulting
 systems will be extremely reliable and interoperable."
-If you need more motivation, see [[Why Study ACT?]]
+If you need more motivation, see [[#why-study-act][Why Study ACT?]]
 
 * Texts
   
