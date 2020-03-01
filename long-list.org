@@ -52,6 +52,11 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
+   * [[https://teachyourselfcs.com/][Teach Yourself CS]] isn't just about ACT, but theoretical CS topics that are
+     necessary to understand how to use the techniques to solve problems. It
+     recommends good books and courses on not just math, but also computer
+     architecture, programming, and distributed systems.
+
 * Software engineering
   
   CT is useful for [per Easterbrook]:

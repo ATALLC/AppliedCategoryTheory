@@ -17,6 +17,9 @@ the discipline you need.
 
 [[http://math.ucr.edu/home/baez/books.html][How to learn math and physics]] is John Baez's extremely well-informed advice.
 
+[[https://teachyourselfcs.com/][Teach Yourself CS]] recommends good books and courses on not just math,
+but also computer architecture, programming, and distributed systems.
+
 ** Leslie Lamport: Coding is only a small part of programming
 
    Abstracted by [[https://twitter.com/ultrasaurus/status/1201447302444924934?s=03][Sarah Allen]]:
