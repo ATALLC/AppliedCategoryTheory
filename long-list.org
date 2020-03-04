@@ -382,6 +382,13 @@ Look at the diagram at the end that classifies them.
 
 [[https://arxiv.org/abs/2002.02762][A Categorical Semantics for Guarded Petri Nets]]
 
+[[https://en.wikipedia.org/wiki/Energy_Systems_Language][Energy Systems Language]], [[https://en.wikipedia.org/wiki/Howard_T._Odum][Odum]]
+
+   Techniques for modeling systems based on energy flow.
+   But be careful of generative effects in the model,
+   such as the [[https://en.wikipedia.org/wiki/Two_capacitor_paradox][two-capacitor paradox]] that arises in simple
+   models that neglect radiation.
+   
 ** Application Areas
 
 [[https://vimeo.com/6590617][Commutative Monads, Diagrams and Knots]] video Dan Piponi for Haskell programmers

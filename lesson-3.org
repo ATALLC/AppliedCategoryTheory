@@ -21,3 +21,8 @@ This is still under construction!
      
    * Try reading your chosen research paper again.  What
      concepts do you understand better now?
+
+     
+** Further reading
+   * The [[https://en.wikipedia.org/wiki/Two_capacitor_paradox][two-capacitor paradox]], which arises in simple models that neglect
+      radiation, is an example of a generative effect.

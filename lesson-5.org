@@ -20,3 +20,12 @@ Seven Sketches 2.3
    * [[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]] describes ETL processes,
      a favorite application of dataflow, which SMCs model well.
  
+   * [[https://twitter.com/_julesh_/status/1234847566023610368][Jules' tweet about industrial process diagrams]]
+     describes Forrester's Industrial Dynamics.
+  
+   * [[https://en.wikipedia.org/wiki/Energy_Systems_Language][Energy Systems Language]], [[https://en.wikipedia.org/wiki/Howard_T._Odum][Odum]]
+
+      Techniques for modeling systems based on energy flow. But be careful of
+      generative effects in the model, such as the
+      [[https://en.wikipedia.org/wiki/Two_capacitor_paradox][two-capacitor paradox]] that arises in simple models that neglect
+      radiation.
