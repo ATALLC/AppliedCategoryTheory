@@ -382,6 +382,10 @@ Look at the diagram at the end that classifies them.
 
 [[https://arxiv.org/abs/2002.02762][A Categorical Semantics for Guarded Petri Nets]]
 
+
+[[https://twitter.com/_julesh_/status/1234847566023610368][Jules' tweet about industrial process diagrams]]
+describes Forrester's Industrial Dynamics.
+     
 [[https://en.wikipedia.org/wiki/Energy_Systems_Language][Energy Systems Language]], [[https://en.wikipedia.org/wiki/Howard_T._Odum][Odum]]
 
    Techniques for modeling systems based on energy flow.
