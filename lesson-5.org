@@ -17,6 +17,8 @@ Seven Sketches 2.3
 
    * [[https://en.wikipedia.org/wiki/Enriched_category][Enriched Category]] Wikipedia
 
+   * [[https://arxiv.org/abs/1409.5531][A Mathematical Theory of Resources]], Coecke, Fritz, Spekkens
+
    * [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]] Peter Selinger
 
    * [[https://www.youtube.com/watch?v=7dmrDYQh4rc][Evan Patterson, String Diagrams]] video, string diagrams in catlab
@@ -33,3 +35,4 @@ Seven Sketches 2.3
       generative effects in the model, such as the
       [[https://en.wikipedia.org/wiki/Two_capacitor_paradox][two-capacitor paradox]] that arises in simple models that neglect
       radiation.
+      
