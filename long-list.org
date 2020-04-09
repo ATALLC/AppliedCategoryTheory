@@ -10,7 +10,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      If you're a programmer, listen to this first!
 
    * [[https://www.youtube.com/playlist?list=PLhgq-BqyZ7i7MTGhUROZy3BOICnVixETS][Programming with Categories]] Multipart series by David Spivak, Brendan Fong,
-     Bartosz Milewski
+     Bartosz Milewski.  Text: [[http://brendanfong.com/programmingcats_files/cats4progs-DRAFT.pdf][Programming with Categories]]
 
    * [[https://www.youtube.com/watch?v=P6DvIfTJhx8&feature=youtu.be][Category Theory: The Beginner's Introduction]] six-part series
      that uses music theory.
@@ -570,6 +570,8 @@ Semiotics is also about epistemology.
    [[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]]
    is the textbook used in [[https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5][Applied Category Theory courseware]] from MIT.
 
+   [[http://brendanfong.com/programmingcats_files/cats4progs-DRAFT.pdf][Programming with Categories]] draft, Brendan Fong
+   
    [[https://www.amazon.com/Category-Theory-Sciences-MIT-Press/dp/0262028131][Category Theory for the Sciences]], David I. Spivak
    There is an [[http://math.mit.edu/~dspivak/CT4S.pdf][abridged free version]] of this, too.
    
