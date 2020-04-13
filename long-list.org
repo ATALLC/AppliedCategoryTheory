@@ -562,7 +562,10 @@ Semiotics is also about epistemology.
 
    * [[https://github.com/OpenLogicProject/OpenLogic/wiki/Other-Logic-Textbooks][Free Logic Textbooks]] from Open Logic Project
 
-
+   * [[http://math.ucr.edu/home/baez/torsors.html][Torsors Made Easy]], John Baez.  Torsors are a kind of group action,
+     and can be visualized by "bipartite" string diagrams as described
+     by Joe Moeller in a [[https://twitter.com/CreeepyJoe/status/1248736658612031488][Twitter thread]].
+     
 * Books
 
 ** Introductory
