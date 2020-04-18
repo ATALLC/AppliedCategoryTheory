@@ -109,7 +109,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://www.tweag.io/posts/2018-04-25-funflow.html][Funflow]] Typed, resumable workflows
 
-   * [[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]] describes ETL processes.
+   * [[https://arxiv.org/pdf/1906.05937.pdf][A complete language for faceted dataflow programs]], Antonin Delpeuch.
+     Describes ETL processes.
 
    * [[https://arxiv.org/abs/1909.04881][Algebraic Property Graphs]]: We propose algebraic property graphs as a simple
      but mathematically rigorous bridge between graph and non-graph data models,
@@ -172,11 +173,20 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://conal.net/papers/compiling-to-categories/][Compiling to Categories]], Conal Elliot
 
+   * [[https://arxiv.org/abs/1706.02630][A Categorical Model for a Quantum Circuit Description Language]],
+     Francisco Rios and Peter Selinger
+     
+     In fact, as a result of our abstract approach, Proto-Quipper-M is slightly
+     more general than Quipper, in the sense that it can describe families of
+     morphisms of an arbitrary monoidal category, rather than just quantum
+     circuits.
+
 * Natural Language Processing
 
    * [[https://arxiv.org/pdf/2004.05631.pdf][At the Interface of Algebra and Statistics]] ([[https://www.youtube.com/watch?v=wiadG3ywJIs&feature=youtu.be][video]]) Tae-Danae Bradley's thesis
      on recognizing concepts in NLP.  This is some of the best exposition you'll find.
 
+   * [[https://arxiv.org/abs/2004.07353][The nucleus: Mining concepts from adjunctions]]    
 
    * [[https://arxiv.org/pdf/1901.10723.pdf][Compositionality for Recursive Neural Networks]]
    * [[https://golem.ph.utexas.edu/category/2018/02/linguistics_using_category_the.html][Linguistics using Category Theory]] is a summary of the paper
