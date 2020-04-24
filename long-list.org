@@ -42,9 +42,21 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
 
+   * [[https://arxiv.org/pdf/2004.05631.pdf][At the Interface of Algebra and Statistics]] ([[https://www.youtube.com/watch?v=wiadG3ywJIs&feature=youtu.be][video]]) Tae-Danae Bradley's thesis
+     on recognizing concepts in NLP.  This is some of the best exposition you'll find.
+
+   * [[https://arxiv.org/abs/2004.10741][Categories of Semantic Concepts]]
+     
+     Modelling concept representation is a foundational problem in the study of
+     cognition and linguistics. This work builds on the confluence of conceptual
+     tools from Gardenfors semantic spaces, categorical compositional
+     linguistics, and applied category theory to present a domain-independent
+     and categorial formalism of ‘concept’.
+
    * [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
      
    * [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
+
 
 * Curated lists
   
@@ -185,6 +197,14 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://arxiv.org/pdf/2004.05631.pdf][At the Interface of Algebra and Statistics]] ([[https://www.youtube.com/watch?v=wiadG3ywJIs&feature=youtu.be][video]]) Tae-Danae Bradley's thesis
      on recognizing concepts in NLP.  This is some of the best exposition you'll find.
+
+   * [[https://arxiv.org/abs/2004.10741][Categories of Semantic Concepts]]
+     
+     Modelling concept representation is a foundational problem in the study of
+     cognition and linguistics. This work builds on the confluence of conceptual
+     tools from Gardenfors semantic spaces, categorical compositional
+     linguistics, and applied category theory to present a domain-independent
+     and categorial formalism of ‘concept’.
 
    * [[https://arxiv.org/abs/2004.07353][The nucleus: Mining concepts from adjunctions]]    
 
@@ -561,6 +581,8 @@ Semiotics is also about epistemology.
      learn from it. Definitely a book for developers working at the intersection
      of OO and FP such as #Scala. -- [[https://twitter.com/bblfish/status/1203305108664127489?s=03][Henry Story]]
 
+   * [[http://pages.cpsc.ucalgary.ca/~robin/class/617/projects-10/Masuka.pdf][Initial Algebra, Final Coalgebra, and Datatype]], Masuka Yeasin   
+ 
    * [[https://arxiv.org/abs/1506.07290][Scientific Modelling with Coalgebra-Algebra Homomorphisms]]
 
    * [[http://trace.tennessee.edu/cgi/viewcontent.cgi?article=1055&context=utk_harlan][Mathematical Foundations of Structured Programming]], Harlan Mills 1972
