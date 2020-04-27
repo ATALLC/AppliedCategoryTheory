@@ -1,0 +1,17 @@
+#+TITLE: Blood Relations
+   
+   Check out the diagrams about halfway through the
+   [[https://en.wikipedia.org/wiki/Blood_type][Wikipedia article on blood types]].
+
+   You can derive many mappings from this article.
+   There is a mapping from people to blood types.
+   The diagrams show donor/recipient type compatibility as a partial order.
+
+   Can a category be formed using blood types as objects? What would the arrows
+   be?
+
+   Is the mapping of people to blood types a monomorphism? epimorphism? iso?
+   Could it be an endomorphism?
+
+   How would you describe compatibility as an equivalence relation?
+   What equivalence classes are induced by it?
