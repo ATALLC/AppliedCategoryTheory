@@ -14,7 +14,15 @@ A: The one with the biggest head!
 In this exercise we'll look at a very simple dataset and show how
 to look at it using relations and functions.
 
-We'll see how using some domain knowledge can lead to a simpler
+We'll see
+   * relations between the elements within the same set: is this element
+     bigger than that other one?
+   * relations between elements of different sets: which head sizes
+     are related to which hat sizes?
+   * most interestingly: is this head size bigger than that hat size,
+     and viceversa?
+
+We'll also see how using some domain knowledge can lead to a simpler
 formulation that yields better insights. 
 
 * Hat Size Chart 
@@ -40,20 +48,31 @@ adapted from [[https://hannahats.com/pages/size-charts][Hanna Hats]], not to be 
 
 * Relations
    
-We can treat this as a relation between two sets C and S:
+We can treat this as a binary relation between two sets C and S:
 
 #+begin_src 
-C = {56 .. 65}
+C = {56, 57, 58, 59, 60, 61, 62, 63, 64, 65}
 S = { S, M, L, XL, XXL}
 #+end_src
 
-There are actually two relations here.
+Mathematically, binary relations are defined as a subset of the
+cartesian product of the two sets.
 
-The most obvious one is R \subset C x S 
+R \subseteq C x S 
 
-The other is the converse Rc \subset S x C.
+Is this relation a function?
 
-Is either of these relations a function?
+If so, is it monotone?  What concept must we introduce for this question to make sense?
+
+** Converse relation
+
+The table actually shows two relations, between those two different sets.
+
+The most obvious one is the one above: R \subseteq C x S 
+
+The other is its converse:  Rc \subseteq S x C.
+
+Is the converse relation Rc a function?
 
 If so, is it monotone?  What concept must we introduce for this question to make sense?
 
