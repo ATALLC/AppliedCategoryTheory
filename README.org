@@ -120,9 +120,9 @@ You should also get at least one of these two supplemental texts:
   We have a slack workspace where we work through problem sets and
   discuss papers.
   
-  Office hours: Thursdays at 4pm is our nominal time to meet in Slack, so you're
-  likely to find people present in realtime then. Otherwise feel free to post
-  any time -- you just might not get an immediate response.
+  Office hours: Wednesdays at 4pm EDT is our nominal time to meet in Slack, so
+  you're likely to find people present in realtime then. Otherwise feel free to
+  post any time -- you just might not get an immediate response.
 
   Note that although many people in this group happen to be ATA employees, not
   everyone is. If you'd like to join, email [[mailto:mgallaher@ata-llc.com][Mike Gallaher]].
