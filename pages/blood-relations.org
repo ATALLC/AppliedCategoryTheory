@@ -1,33 +1,35 @@
 #+TITLE: Blood Relations
    
    Check out the diagrams about halfway through the
-   [[https://en.wikipedia.org/wiki/Blood_type][Wikipedia article on blood types]].
+   [[https://en.wikipedia.org/wiki/Blood_type][Wikipedia article on blood types]]. 
+   I've (badly) reproduced the relevant ones here.
+   
 
-|              | Donor[1] |      |      |      |      |      |      |      |
-| Recipient[1] | O+       | A−   | A+   | B−   | B+   | AB−  | AB+  |      |
-|--------------+----------+------+------+------+------+------+------+------|
-| O−           | \top     | \bot | \bot | \bot | \bot | \bot | \bot | \bot |
-| O+           | \top     | \top | \bot | \bot | \bot | \bot | \bot | \bot |
-| A−           | \top     | \bot | \top | \bot | \bot | \bot | \bot | \bot |
-| A+           | \top     | \top | \top | \top | \bot | \bot | \bot | \bot |
-| B−           | \top     | \bot | \bot | \bot | \top | \bot | \bot | \bot |
-| B+           | \top     | \top | \bot | \bot | \top | \top | \bot | \bot |
-| AB−          | \top     | \bot | \top | \bot | \top | \bot | \top | \bot |
-| AB+          | \top     | \top | \top | \top | \top | \top | \top | \top |
+|           | Donor |    |    |    |    |    |     |     |
+| Recipient | O-    | O+ | A− | A+ | B− | B+ | AB− | AB+ |
+|-----------+-------+----+----+----+----+----+-----+-----|
+| O−        | Y     | _  | _  | _  | _  | _  | _   | _   |
+| O+        | Y     | Y  | _  | _  | _  | _  | _   | _   |
+| A−        | Y     | _  | Y  | _  | _  | _  | _   | _   |
+| A+        | Y     | Y  | Y  | Y  | _  | _  | _   | _   |
+| B−        | Y     | _  | _  | _  | Y  | _  | _   | _   |
+| B+        | Y     | Y  | _  | _  | Y  | Y  | _   | _   |
+| AB−       | Y     | _  | Y  | _  | Y  | _  | Y   | _   |
+| AB+       | Y     | Y  | Y  | Y  | Y  | Y  | Y   | Y   |
 
    [[https://en.wikipedia.org/wiki/Blood_type#/media/File:Blood_Compatibility.svg][Blood Compatibility]]
-   [[Blood_Compatibility.svg][Blood Compatibility]]
-   [[file:Blood_Compatibility.svg]]
+   [[file:Blood_Compatibility.png]]
    
    
    [[https://en.wikipedia.org/wiki/File:Plasma_donation_compatibility_path.svg][Plasma donation compatibility]]
-   [[file:Plasma_donation_compatibility_path.svg][Plasma donation compatibility]]
-   [[file:Plasma_donation_compatibility_path.svg]]
+   [[file:Plasma_donation_compatibility_path.png]]
    
 
    You can derive many mappings from this article.
    There is a mapping from people to blood types.
-   The diagrams show donor/recipient type compatibility as a partial order.
+   
+   The diagrams show donor/recipient type compatibility as an order relation.
+   How is this related to the mapping from people to blood types?
 
    Can a category be formed using blood types as objects? What would the arrows
    be?
@@ -35,11 +37,12 @@
    Is the mapping of people to blood types a monomorphism? epimorphism? iso?
    Could it be an endomorphism?
 
-   How would you describe compatibility as a relation?
+   How would you describe compatibility as a binary relation?
    Is it
-   * reflexive?  what does that mean?
-   * symmetric?  what does that mean?
-   * transitive? what does that mean?
+   * reflexive?  That would mean, everyone can receive their own blood type.
+   * symmetric?  What would that mean?
+   * antisymmetric?  What would that mean?
+   * transitive? What would that mean?
 
    If it's an equivalence relation, what equivalence classes are induced by it?
 
