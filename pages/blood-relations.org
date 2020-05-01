@@ -36,6 +36,9 @@
 
    Is the mapping of people to blood types a monomorphism? epimorphism? iso?
    Could it be an endomorphism?
+   
+   Does the mapping of people to blood types induce an equivalence relation
+   on the set of people?  What would be the equivalence classes?
 
    How would you describe compatibility as a binary relation?
    Is it
