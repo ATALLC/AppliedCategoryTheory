@@ -18,11 +18,11 @@
 | AB+       | Y     | Y  | Y  | Y  | Y  | Y  | Y   | Y   |
 
    [[https://en.wikipedia.org/wiki/Blood_type#/media/File:Blood_Compatibility.svg][Blood Compatibility]]
-   [[file:Blood_Compatibility.png]]
+   [[file:art/Blood_Compatibility.png]]
    
    
    [[https://en.wikipedia.org/wiki/File:Plasma_donation_compatibility_path.svg][Plasma donation compatibility]]
-   [[file:Plasma_donation_compatibility_path.png]]
+   [[file:art/Plasma_donation_compatibility_path.png]]
    
 
    You can derive many mappings from this article.
