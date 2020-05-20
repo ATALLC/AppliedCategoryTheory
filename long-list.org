@@ -638,6 +638,8 @@ Semiotics is also about epistemology.
 
    * [[http://abstract.ups.edu/aata/][Abstract Algebra]] Theory and Applications, Judson open-source textbook
 
+   * [[http://discrete.openmathbooks.org/dmoi3.html][Discrete Mathematics: An Open Introduction]]
+
 
 * Breakthroughs :)
 
