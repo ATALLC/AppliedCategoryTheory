@@ -272,6 +272,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 * Game Theory
 
   Communication is a game.
+   * [[https://www.youtube.com/watch?v=Kwflmrd2AfM][ACT@UCR Seminar: Open Games: the Long Road to Practical Applications - Jules Hedges]]
    * [[https://arxiv.org/abs/2006.01631][Bayesian Updates Compose Optically]]
 
    * [[http://www.gtcenter.org/Archive/2014/Conf/Jimenez1880.pdf][Game Theory from a Categoric Point of View]]
@@ -294,6 +295,14 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://www.reluctantm.com/gcruttw/publications/CGC.pdf][Combinatorial Game Categories]]
 
+
+* Music
+
+   * [[https://alpof.wordpress.com/][Andree Ehresmann blog]] on music theory and math
+
+   * [[https://twitter.com/search?q=%40johncarlosbaez%20music&src=typed_query][John Baez posts on math and music]]
+
+   * [[http://repmus.ircam.fr/_media/moreno/Andreatta_Creativity_MCM2013.pdf][Towards a Categorical Theory of Creativity for Music, Discourse, and Cognition]]
 
 * Complex Systems
   
