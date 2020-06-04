@@ -272,6 +272,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 * Game Theory
 
   Communication is a game.
+   * [[https://arxiv.org/abs/2006.01631][Bayesian Updates Compose Optically]]
 
    * [[http://www.gtcenter.org/Archive/2014/Conf/Jimenez1880.pdf][Game Theory from a Categoric Point of View]]
 
