@@ -109,6 +109,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      comprehensible abstracts, and a list of questions in the issue database
      
      RDF is a first order logic for the web built on the concept of Graphs.
+     
+   * [[https://arxiv.org/pdf/1706.00526.pdf][Knowledge Representations in Bicategories of Relations]]
 
    * [[https://co-operating.systems/2019/04/01/PhD_second_year_report.pdf][Co-operating systems]], Henry Story.
       Using insights from philosophy of language, epistemology, category theory
