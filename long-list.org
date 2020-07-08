@@ -97,6 +97,9 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://seemannworkshop.netcorebcn.group/][Universal Design Patterns]] Mark Seemann
 
+   * [[https://fluokitten.uncomplicate.org/][fluokitten]] Category Theory Constructs in Clojure
+
+
 * Data engineering; categorical data
 
    * [[https://categoricaldata.net/][categoricaldata.net]] (leads to [[https://conexus.ai/][conexus.ai]], a company commercializing these
