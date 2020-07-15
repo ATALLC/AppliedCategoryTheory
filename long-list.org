@@ -636,6 +636,8 @@ Semiotics is also about epistemology.
 
    [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Category Theory, Steve Awodey]]
    
+   [[https://drive.google.com/file/d/12v94N1leZaK6odfZZw-Rf-GS7McBMhat/view][Category Theory for Undergraduates]]  by an undergraduate, Luke Trujillo
+ 
    [[https://pimbook.org/][A Programmer's Introduction to Mathematics]], Jeremy Kun
    
 ** Not so introductory
