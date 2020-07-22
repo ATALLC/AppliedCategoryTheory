@@ -312,7 +312,15 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 * Complex Systems
   
    * [[https://julesh.com/2019/12/02/lax-functors-describe-emergent-effects/][Lax Functors Describe Emergent Effects]]
-  
+   * [[https://www.youtube.com/watch?v=bIFGXS-Gr1c][Gioele Zardini: A Compositional Sheaf-Theoretic Framework for Event-Based Systems]]
+     paper is https://arxiv.org/abs/2005.04715.
+     This paper talks about mapping continuous to discrete and back
+     (sampling and reconstruction) using sheaf-theoretic tools.
+     It gives a formalism for modeling time intervals that can nest
+     and compose end-to-end.
+     The conversions are done by blocks called "machines" which are
+     spans, and which compose by forming pullbacks.
+     
 * Logic
   
    * [[https://www.karger.com/Article/PDF/275811][Categorical treatment of how logical structures develop, Piaget]]
@@ -626,7 +634,7 @@ Semiotics is also about epistemology.
 
    [[http://brendanfong.com/programmingcats_files/cats4progs-DRAFT.pdf][Programming with Categories]] draft, Brendan Fong
    
-   [[https://www.amazon.com/Category-Theory-Sciences-MIT-Press/dp/0262028131][Category Theory for the Sciences]], David I. Spivak
+   [[https://www.amazon.com/Category-Theory-Sciences-MIT-Press/dp/0262028131][Category Theory for the Sciences]], David I. Spivak.
    There is an [[http://math.mit.edu/~dspivak/CT4S.pdf][abridged free version]] of this, too.
    
    [[https://github.com/hmemcpy/milewski-ctfp-pdf][Category Theory for Programmers]] Bartosz Milewski
