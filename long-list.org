@@ -176,6 +176,10 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://www.michael-noll.com/blog/2013/12/02/twitter-algebird-monoid-monad-for-large-scala-data-analytics/][Of Algebirds, Monoids, Monads, and other Bestiary for Large-Scale Data Analytics]]
 
+   * [[https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates][Scientists rename human genes to stop Microsoft Excel from misreading them as dates]]
+     Not about category theory per se, but illustrates the sort of problem that we
+     might apply it to solve -- how to attach metadata (type, provenance) to data.
+     
 * Computer Science
 
    * [[https://ncatlab.org/nlab/show/A+Categorical+Manifesto][A Categorical Manifesto]] and [[http://www.j-paine.org/make_category_theory_intuitive.html][Make Category Theory Intuitive]] explain why
@@ -188,6 +192,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      
    * [[https://www.youtube.com/watch?v=7dmrDYQh4rc][Evan Patterson, String Diagrams in Catlab]]
 
+   * [[https://www.youtube.com/watch?v=jxC6LF_H2zY][James Fairbanks: Categorical Modeling Languages: Bringing ACT to Scientific Computing]]
+  
    * [[http://conal.net/papers/compiling-to-categories/][Compiling to Categories]], Conal Elliot
 
    * [[https://arxiv.org/abs/1706.02630][A Categorical Model for a Quantum Circuit Description Language]],
@@ -198,6 +204,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      morphisms of an arbitrary monoidal category, rather than just quantum
      circuits.
 
+     
 * Natural Language Processing
 
    * [[https://arxiv.org/pdf/2004.05631.pdf][At the Interface of Algebra and Statistics]] ([[https://www.youtube.com/watch?v=wiadG3ywJIs&feature=youtu.be][video]]) Tae-Danae Bradley's thesis
@@ -415,6 +422,8 @@ category theory to describe EVERYTHING.
 John Baez's [[http://math.ucr.edu/home/baez/week73.html#tale][description of n-Categories]] was the most illuminating I've found.
 The other articles in that blog are well worth reading, too.
 
+[[https://math.stackexchange.com/questions/2092872/do-opposite-categories-always-exist#:~:text=The%20opposite%20category%20of%20C,'t%20always%20have%20inverses][Do opposite categories always exist?]])
+
 [[https://github.com/jwiegley/category-theory][Category Theoretic constructions in Coq]]
 
 [[https://ncatlab.org/nlab/show/sheaf+semantics+of+concurrent+interacting+objects][Sheaf Semantics for Concurrent Interacting Objects]]
@@ -450,6 +459,8 @@ describes Forrester's Industrial Dynamics.
    such as the [[https://en.wikipedia.org/wiki/Two_capacitor_paradox][two-capacitor paradox]] that arises in simple
    models that neglect radiation.
    
+[[https://www.cs.cmu.edu/~fp/papers/esop13a.pdf][Higher-Order Processes, Functions, and Sessions: A Monadic Integration]]  
+
 ** Application Areas
 
 [[https://vimeo.com/6590617][Commutative Monads, Diagrams and Knots]] video Dan Piponi for Haskell programmers
@@ -461,9 +472,6 @@ Semiotics]]
 
 [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.73.9803&rep=rep1&type=pdf][An Introduction to Algebraic Semiotics, with Application to User Interface
 Design]]
-
-[[http://www.few.vu.nl/~rplanque/Onderwijs/MathBio/PapersForProject/Rosen.pdf][Robert Rosen: The Representation of Biological Systems from the Standpoint of
-the Theory of Categories]] 1958
 
 [[https://www.academia.edu/20729996/Category_Theory_as_a_Mathematics_for_Formalizing_Ontologies][Category Theory as a Mathematics for Formalizing Ontologies]]
 
@@ -624,6 +632,8 @@ Semiotics is also about epistemology.
    * [[http://math.ucr.edu/home/baez/torsors.html][Torsors Made Easy]], John Baez.  Torsors are a kind of group action,
      and can be visualized by "bipartite" string diagrams as described
      by Joe Moeller in a [[https://twitter.com/CreeepyJoe/status/1248736658612031488][Twitter thread]].
+     
+   * [[https://arxiv.org/pdf/1212.6543.pdf][Rethinking set theory]]
      
 * Books
 

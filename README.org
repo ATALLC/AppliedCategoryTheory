@@ -120,7 +120,7 @@ You should also get at least one of these two supplemental texts:
   We have a slack workspace where we work through problem sets and
   discuss papers.
   
-  Office hours: Wednesdays at 4pm EDT is our nominal time to meet in Slack, so
+  Office hours: Wednesdays at 8am EDT is our nominal time to meet in Slack, so
   you're likely to find people present in realtime then. Otherwise feel free to
   post any time -- you just might not get an immediate response.
 
