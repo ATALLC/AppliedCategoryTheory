@@ -1,0 +1,61 @@
+#+TITLE: Modeling Rendering of Fonts that have Ligatures
+
+Some fonts support ligatures.
+
+When you type -> in Emacs, some fonts will render it as a nice-looking
+long arrow.  It occupies two character spaces, but there is no blank space
+between them.  If there's two glyphs, they join seamlessly so they look like one glyph.
+
+When you type the first character, it renders as one glyph, but as soon as you
+type the second character that first glyph switches to the long arrow.
+
+The editor cursor stops on each of the character cells, and you can delete and replace
+the characters.
+
+What's going on here?
+
+How can we model the process of rendering a sequence of characters
+on the screen, accounting for ligatures?
+
+It might be useful to go even further back, to the mapping of byte sequences
+into characters by the character set.
+
+Maybe something like this:
+
+byte sequences -charset-> character sequences -font-> glyphs
+
+* To do
+
+We should read up on Unicode to get the right vocabulary, as I'm not certain
+that I'm even using the right words here.
+
+* Background
+
+Unicode characters are encoded by sequences (tuples) of bytes.
+
+Single-byte characters are encoded by one-tuples of bytes.
+That is, some one-tuples map to a character.
+
+Two-byte characters are encoded by two-tuples (pairs) of bytes.
+Some pairs map to a character.
+
+Not all byte-tuples map to a character.
+
+"Strings are the free monoid of characters."  That's a loose way
+of saying that the set of all possible strings is the underlying
+set of the free monoid of characters with concatenation as the monoidal product.
+
+A font is a mapping from character to glyph.
+
+A glyph is something that, when rendered, causes an image to appear at some place on the screen.
+
+A font is therefore not a total function.
+
+
+* scratchpad
+
+  The space of byte tuples can be written as the disjoint union of products of the set of bytes B.
+  
+#+begin_src latex
+B x B x B  \sqcup  B x B \sqcup B
+#+end_src
