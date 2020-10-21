@@ -26,7 +26,7 @@ byte sequences -charset-> character sequences -font-> glyphs
 
 * To do
 
-We should read up on Unicode to get the right vocabulary, as I'm not certain
+We should read up on [[https://en.wikipedia.org/wiki/Unicode][Unicode]] to get the right vocabulary, as I'm not certain
 that I'm even using the right words here.
 
 * Background
@@ -51,6 +51,27 @@ A glyph is something that, when rendered, causes an image to appear at some plac
 
 A font is therefore not a total function.
 
+[[https://en.wikipedia.org/wiki/Unicode#Architecture_and_terminology][Unicode Architecture and Terminology]]
+
+[[https://en.wikipedia.org/wiki/Grapheme][Grapheme]]
+a specific shape that represents any particular grapheme in a specific typeface is called a glyph.
+
+
+user-perceived character (loosely speaking, a grapheme), 
+a user-perceived character may be represented by a grapheme cluster (a sequence of multiple codepoints).
+
+[[https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries][Grapheme Cluster Boundaries]]
+#+begin_quote
+It is important to recognize that what the user thinks of as a “character”—a
+basic unit of a writing system for a language—may not be just a single Unicode
+code point. Instead, that basic unit may be made up of multiple Unicode code
+points. To avoid ambiguity with the computer use of the term character, this is
+called a user-perceived character. For example, “G” + grave-accent is a
+user-perceived character: users think of it as a single character, yet is
+actually represented by two Unicode code points. These user-perceived characters
+are approximated by what is called a grapheme cluster, which can be determined
+programmatically.
+#+end_quote
 
 * scratchpad
 
