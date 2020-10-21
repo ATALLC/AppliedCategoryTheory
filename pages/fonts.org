@@ -22,7 +22,7 @@ into characters by the character set.
 
 Maybe something like this:
 
-byte sequences -charset-> character sequences -font-> glyphs
+byte sequences -decode-> codepoints -charset-> codepoint-sequences --> user-perceived characters -font-> glyphs
 
 * To do
 
