@@ -24,10 +24,15 @@ Maybe something like this:
 
 byte sequences -decode-> codepoints -charset-> codepoint-sequences --> user-perceived characters -font-> glyphs
 
-* To do
+What's the difference between user-perceived character and a grapheme?
 
-We should read up on [[https://en.wikipedia.org/wiki/Unicode][Unicode]] to get the right vocabulary, as I'm not certain
+
+* References
+  
+Read up on [[https://en.wikipedia.org/wiki/Unicode][Unicode]] to get the right vocabulary, as I'm not certain
 that I'm even using the right words here.
+
+[[https://www.overleaf.com/learn/latex/Articles/Unicode,_UTF-8_and_multilingual_text:_An_introduction][Unicode, UTF-8, and multilingual text, Overleaf]]
 
 * Background
 
