@@ -34,6 +34,10 @@ that I'm even using the right words here.
 
 [[https://www.overleaf.com/learn/latex/Articles/Unicode,_UTF-8_and_multilingual_text:_An_introduction][Unicode, UTF-8, and multilingual text, Overleaf]]
 
+[[https://ctan.math.illinois.edu/macros/latex/base/encguide.pdf][TeX font encodings]] discusses the font encoding—i.e., the mapping of
+character codes to glyphs in the fonts that are used to typeset TEX’s
+output.
+
 * Background
 
 Unicode characters are encoded by sequences (tuples) of bytes.
