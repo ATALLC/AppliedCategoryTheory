@@ -38,6 +38,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * Suggested Introductory Papers
 
+   * [[https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/1-CleanSlate.pdf][The Dao of Functional Programming]]
+
    * [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
 
    * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
@@ -99,6 +101,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[https://fluokitten.uncomplicate.org/][fluokitten]] Category Theory Constructs in Clojure
 
+   * [[https://arxiv.org/pdf/1406.2063.pdf][Foundations of Total Functional Data-Flow Programming]]
 
 * Data engineering; categorical data
 
