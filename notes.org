@@ -146,3 +146,10 @@ that always terminate, but nothing forbids you to map transitions in your net to
 infinite loops in your semantics (if it allows it). So you can even do
 Turing-complete computation in this way. Clearly in this case it is not true
 anymore that nice properties of nets are transported to your semantics.
+
+* random 2
+
+  Natural transformation between Functors
+  
+  Composing the functors composes their "effects"
+  compose the elements

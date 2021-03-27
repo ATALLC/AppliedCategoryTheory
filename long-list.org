@@ -235,6 +235,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://lecomte.al.free.fr/ressources/PARIS8_LSL/Lambek.pdf][The Mathematics of Sentence Structure]] is an early paper by Lambek ([[https://www.cs.cmu.edu/~fp/courses/15816-f16/misc/Lambek58.pdf][JSTOR]]).
 
+   * [[https://www.math.mcgill.ca/barr/lambek/pdffiles/2008lambek.pdf][From Word to Sentence]], Lambek. Explains pregroup grammars.
+
    * [[https://cseweb.ucsd.edu/~goguen/projs/semio.html][Algebraic Semiotics]]
 
    * [[https://sites.google.com/view/capns2018/home?authuser=0][Conference: Compositional Approaches for Physics, NLP, and Social Sciences 2018]]
