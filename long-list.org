@@ -235,8 +235,6 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://lecomte.al.free.fr/ressources/PARIS8_LSL/Lambek.pdf][The Mathematics of Sentence Structure]] is an early paper by Lambek ([[https://www.cs.cmu.edu/~fp/courses/15816-f16/misc/Lambek58.pdf][JSTOR]]).
 
-   * [[https://www.math.mcgill.ca/barr/lambek/pdffiles/2008lambek.pdf][From Word to Sentence]], Lambek. Explains pregroup grammars.
-
    * [[https://cseweb.ucsd.edu/~goguen/projs/semio.html][Algebraic Semiotics]]
 
    * [[https://sites.google.com/view/capns2018/home?authuser=0][Conference: Compositional Approaches for Physics, NLP, and Social Sciences 2018]]
@@ -258,6 +256,7 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://repmus.ircam.fr/_media/moreno/Andreatta_Creativity_MCM2013.pdf][Towards a Categorical Theory of Creativity for Music, Discourse, and Cognition]]
 
+
 ** Lambek pregroup grammar
 
    The [[https://ncatlab.org/nlab/show/categorical+compositional+distributional+semantics][DisCoCat]] framework (Categorical compositional distributional semantics)
@@ -277,6 +276,8 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
    [[http://www.math.mcgill.ca/barr/lambek/pdffiles/compute.pdf][A computational algebraic approach to English grammar]], Lambek 
    This is a good place to start.
    It gives proofs of pregroup properties from the axioms.
+
+   [[https://www.math.mcgill.ca/barr/lambek/pdffiles/2008lambek.pdf][From Word to Sentence]], Lambek. Explains pregroup grammars.
 
    [[http://www.math.mcgill.ca/rags/JAC/124/Lambek-Pregroups-s.pdf][Pregroups and Natural Language Processing]], Lambek
 
@@ -321,6 +322,14 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
    * [[http://repmus.ircam.fr/_media/moreno/Andreatta_Creativity_MCM2013.pdf][Towards a Categorical Theory of Creativity for Music, Discourse, and Cognition]]
 
+   * [[https://alpof.wordpress.com/2021/04/02/opycleid-updates-quantale-valued-relations-in-transformational-music-analysis/][OPYCLEID updates: quantale-valued relations in transformational music analysis]]
+     explains some applications of quantales, particularly quantale-valued
+     relations.  This generalizes boolean relations.  In a boolean-valued
+     relation, either the two things are related or they're not.
+     In a quantale-valued relation, the relation between a given
+     pair takes on a value from some ordered set, perhaps a real number.
+
+     
 * Complex Systems
   
    * [[https://julesh.com/2019/12/02/lax-functors-describe-emergent-effects/][Lax Functors Describe Emergent Effects]]
@@ -332,6 +341,10 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      and compose end-to-end.
      The conversions are done by blocks called "machines" which are
      spans, and which compose by forming pullbacks.
+     
+   * [[https://arxiv.org/abs/1106.1791][A Characterization of Entropy in Terms of Information Loss]]
+     
+   * [[https://arxiv.org/abs/2012.02113][Entropy and Diversity: The Axiomatic Approach]]
      
 * Logic
   
