@@ -353,6 +353,14 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
    * [[https://mikeshulman.github.io/catlog/catlog.pdf][Categorical Logic from a Categorical Point of View]], Mike Shulman
 
 
+* Agent-Based Modeling
+
+  * [[https://www2.econ.iastate.edu/tesfatsi/CategoryApproachToABMAndSim.KALloyd2010.Paper.pdf][A Categorical Approach to Agent-based Modeling and Simulation]] Lloyd
+
+  * [[https://apps.dtic.mil/docs/citations/AD1060774][Categorical Approach to Agent Interactions]] proposal by Spivak.
+    [[https://apps.dtic.mil/dtic/tr/fulltext/u2/1060774.pdf][Categorical Approach to Agent Interactions final report]]
+
+
 * References
   
 [[https://statebox.org/][statebox.org]] is commercializing verifiable systems
@@ -368,9 +376,6 @@ distributed systems, even complex ones.
 
 [[https://arxiv.org/pdf/1305.0297.pdf][The Operad of Wiring Diagrams]] explains operads, which are a way of studying
 hierarchies where each "layer" is composed of components in a lower layer.
-
-[[https://apps.dtic.mil/docs/citations/AD1060774][Categorical Approach to Agent Interactions]] proposal by Spivak.
-[[https://apps.dtic.mil/dtic/tr/fulltext/u2/1060774.pdf][Categorical Approach to Agent Interactions final report]]
 
 [[https://arxiv.org/pdf/1504.05625.pdf][A Compositional Framework for Passive Linear Networks]]
 
