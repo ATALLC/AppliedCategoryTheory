@@ -71,6 +71,10 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
      recommends good books and courses on not just math, but also computer
      architecture, programming, and distributed systems.
 
+* System engineering
+
+  * [[https://www.nasa.gov/consortium/CategoryTheory][NASA research on category theory in system engineering]]
+  * 
 * Software engineering
   
   CT is useful for [per Easterbrook]:
