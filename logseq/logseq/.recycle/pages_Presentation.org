@@ -1,0 +1,67 @@
+* Category theory gives us a way to think about how some things are like other things
+Isomorphism
+There's a rule to pick out a B given an A, and viceversa
+renaming
+"up to isomorphism"
+foundations: alternative to set theory
+duality: opposite categories
+categories derived from another category
+category of parts
+product categories
+compositionality
+function to convert string to URL, URL to document
+category definition: composition (also objects, morphisms, identity)
+category of sets and functions is the most intuitive and familiar, where most people start
+category of sets and relations is more interesting
+there are categories where objects are not sets, 
+eg PROPs have integers as objects
+Matr is a PROP where morphisms are matrices
+that's linear algebra!
+monoid of strings
+block diagrams are morphisms in a symmetric monoidal category
+composition of blocks to form a third block
+if you allow a second operation between objects and morphisms, you get a monoidal category
+venn diagram of categories, monoidal categories are subset of those, SMCs of those
+modeling relation
+Robert Rosen in biology: Life Itself
+Real world, environment, complex system, entailments not always easy to discern
+impossible to reason about
+so we form simpler models that have a useful "congruence of entailment"
+furniture moving vs room planner software, or paper rectangles
+functor from furniture to rectangles
+picturing quantum processes
+equations vs diagrams
+similarity to NLP
+tensor equations, Penrose diagrams
+Julia
+Look at the list of talks from a recent Julia conference.  See if there's anything from your field.
+Julia is maturing into a viable choice for scientific computing
+generalized algebraic theories
+Electronic circuits
+modeling connections as cospans
+data schema migrations
+software engineering
+analysis model: the environment
+design model: the artifact
+software development process: inputs, outputs, documents produced and transferred
+computational complexity: show that problems are equivalent in the complexity of their solution
+Suggested Introductory Papers
+The Dao of Functional Programming
+* String Diagrams for Assembly Planning
+* This paper proposes CompositionalPlanning, a string diagram based
+framework for assembly planning.
+* A Categorical Model for a Versioning File System
+* At the Interface of Algebra and Statistics (video) Tae-Danae Bradley's thesis
+on recognizing concepts in NLP.  This is some of the best exposition you'll find.
+* Categories of Semantic Concepts
+* Modelling concept representation is a foundational problem in the study of
+cognition and linguistics. This work builds on the confluence of conceptual
+tools from Gardenfors semantic spaces, categorical compositional
+linguistics, and applied category theory to present a domain-independent
+and categorial formalism of ‘concept’.
+* The Galois Connection between Syntax and Semantics
+* When is One Thing Equal to Another?
+* Linguistics using category theory
+Categorical Models in Software Engineering
+real world, modeling relation
+0 Unlinked Reference

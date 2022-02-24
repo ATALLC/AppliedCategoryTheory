@@ -1,0 +1,333 @@
+#+TITLE: Monoidal Radios
+
+Model SDR flowgraphs with monoidal categories.
+
+This is just my notes and some experimental code.
+It's probably not of much use to anyone else, just now.
+
+Many software-defined-radio ([[https://www.rtl-sdr.com/][SDR]]) systems use a flowgraph to specify how
+the signals are to be processed. Here's a visualization from the
+[[https://luaradio.io/][LuaRadio]] documentation.
+
+[[https://luaradio.io/docs/figures/flowgraph_rtlsdr_ax25.png]]
+
+Some of them (gnuradio, pothos) provide a visual flowgraph editor,
+as well as a text format (XML, YAML) for storing models.  Here's
+an example from a [[https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction][gnuradio tutorial]]:
+
+[[https://wiki.gnuradio.org/index.php/File:Twoblocks_arrow.png]]
+
+All of these systems end up generating code at some point.
+Some examples of such code:
+   * [[https://luaradio.io/examples/rtlsdr-ax25.html][example ax25 decoder]] from the [[https://luaradio.io/][LuaRadio]] documentation.
+   * [[https://wiki.gnuradio.org/index.php/Guided_Tutorial_GNU_Radio_in_Python][example of Python generated from gnuradio flowgraph]]
+   
+
+* Goals
+
+This project is investigating how to use CT techniques to
+
+   * understand the connection problem (many devices to many programs)
+   * explore notations to express flowgraphs
+   * use a flowgraph to reason about signal properties
+   * transform flowgraphs to equivalent but more efficient flowgraphs
+   * transform flowgraphs to different target runtimes
+   * attach configuration data, provenance to flowgraph blocks.
+
+
+* Technical Goals
+
+   * build open-source diagram management tools
+     * interactive editors
+     * databases
+     * flowgraph read/write ([[https://github.com/statebox/monmor-spec][monmor]], gnuradio GRC, ptolemy)
+     * flowgraph verify
+     * convert, say, a gnuradio flowgraph to a luaradio program
+
+   * Read and write serialized graphs in these formats:
+     * monmor
+     * gnuradio (xml)
+     * ptolemy (xml)
+     * homotopy.io
+     * luaradio (lua)
+     * pothos (?)
+
+   * Transform signal flowgraphs between these topologies:
+     * gnuradio (python)
+     * luaradio (lua)
+     * ptolemy (xml)
+     * DSP/SampledSignals/Catlab julia
+       
+   * Verify properties of flowgraphs
+
+
+* Current State
+  
+  There's a collection of documentation and sample flowgraph files.
+  There is one codec for reading gnuradio GRC files.
+  
+  The [[file:jl][jl]] subdirectory has some experiments using Julia.
+  Julia is suitable for both fast low-level signal processing
+  (what you'd use C for) as well as high-level scripting
+  plumbing such as constructing flowgraphs (what you'd use Python for).
+
+  The [[file:strung][strung]] subdirectory has a companion project to build a diagram
+  editor.
+  
+  Directories:
+  
+** strung
+
+   Experiments in UIs for editing and understanding flowgraphs.
+
+** codec
+   
+   There is one codec for reading gnuradio GRC files.
+   
+** docs
+   
+   Documentation about devices, summaries of SDR software,
+   instructions for building the software.
+
+** gr
+
+   [[https://www.gnuradio.org/][gnuradio]] "GRC" flowgraph files.  These are for testing the
+   flowgraph codecs, but some are interesting in their own right.
+
+** luaradio
+
+   Flowgraphs written as lua programs.
+   luaradio can run these directly, so it's an interesting
+   runtime target as well as a flowgraph file format.
+   
+
+* gnuradio flowgraph -> LuaRadio program
+  
+  We'll build a function that transforms, say, a gnuradio flowgraph
+  model to equivalent LuaRadio code.
+  
+  As far as I know, there is no model storage format for LuaRadio. Its
+  models are constructed programatically by Lua code.
+  
+* SDR, Simulation Systems
+  
+  All these systems use some form of flowgraph to represent
+  the processing of signals.  We'd like to be able to
+  read these formats, and transform them into one another.
+
+** [[https://www.gnuradio.org/][gnuradio]] 
+   
+   GnuRadio still uses Python 2.7, so it can't 
+   interop with Clojure.
+
+** [[https://luaradio.io/][luaradio]]
+
+   A nice lightweight alternative to gnuradio.
+   LuaRadio is intended for embedded devices.
+
+   Its flowgraphs are constructed programatically via Lua code.
+   A tool could generate the Lua for a flowgraph,
+   and then use LuaJIT to run it.
+
+
+** pothos
+** ptolemy
+   
+   Ptolemy is a simulation system, not a specialized signal-processing
+   workbench. Its models are much richer in structure than typical SDR
+   flowgraphs.
+   
+   Ptolemy stores its flowgraphs in an XML format known as MoML.
+   
+   If you get an error like "Invalid DTD" when you parse a MoML file,
+   you may have to change the DTD directive at the top of the MoML file
+   to have the correct URL -- it must be =https:= not =http:=.
+
+
+* Codecs, and flowgraph interchange format
+
+  A codec is something that converts flowgraphs from GnuRadio and Ptolemy into a
+  common format, from whence may be produced other representations such as
+  [[https://github.com/statebox/monmor-spec][monmor]].
+  
+  I prefer to use EDN because (ht [[https://twitter.com/RobStuttaford/status/1237316915732905984?s=03][Rob Stuttaford]])
+    * Formats like Lisp, because it is Lisp
+    * Comments are fine
+    * Extensible reader support. Spec, if you're in #Clojure
+    * All the same IDE support a Lisp enjoys (paredit/parinfer)
+
+  EDN reader/writers are available in Haskell (hedn).
+  
+  The common format is an in-memory representation of the graph
+  as a tree of maps.  We'll call them nodes.  Each node
+  has at least =:name= key.
+  It may have a =:content= key, whose value is a vector of
+  nodes (maps).
+  
+
+| =:name=    | "UDPSource"                           | all     |
+| =:class=   | =ptolemy.kernel.util.StringAttribute= | ptolemy |
+| =:value=   | "text"                                | ptolemy |
+| =:content= | [{...}]                               | ptolemy |
+
+  A node may have a value.  What types does that have in ptolemy models?
+
+  A node may have =:content= whether or not it has a =:value=.
+  Content is an array of nodes.
+  
+  In ptolemy, some elements such as =StringAttribute=, can have
+  properties, such as =_style=, as content.
+
+** GnuRadio GRC XML
+
+   Pre-3.8 versions of GnuRadio stored its flowgraphs in
+   XML files.  The =gr-xml= codec decodes these.
+   We don't bother trying to write them.
+   Use =gr-yaml= instead.
+   
+** GnuRadio GRC YAML
+   
+   GnuRadio 3.8 and above stores its flowgraphs in
+   YAML files.  The =gr-yaml= codec reads and writes
+   these from and to the in-memory format.
+
+* Math Questions
+
+There are large numbers of devices, and
+lots of SDR programs that use them, so managing the ways of hooking them
+up poses a combinatorial challenge.
+
+How to attach configuration data to the blocks?
+This is equivalent to a map of parameters such as
+sampling rate, center frequency, bandwidth, antenna selection,
+and such.
+
+How can we preserve provenance of the model parts?
+This could include which flowgraph they originally came from,
+which original runtime system it targeted.
+That could help interpret the parameter values.
+
+What mathematical structures correspond to the different
+concurrency models in Ptolemy?
+
+* SDR questions 
+   
+What is QSpectrum Analyzer?
+
+What are Stream Rings, and are they useful here?
+
+What GnuRadio blocks can contain other blocks?
+
+* References
+  
+[[http://www.abclinuxu.cz/blog/jenda/2019/11/gnu-radio-first-steps-a-fm-receiver][FM Receiver in GnuRadio, step by step]]
+
+[[file:/usr/share/gnuradio/examples/uhd/usrp_wfm_rcv_sca.py][FM broadcast subcarrier decoder]] example decodes SCA signals
+present on some FM broadcast signals.  They carry specialized
+programming, such as books for the blind.
+Most receivers don't offer a way to decode these signals.
+
+
+[[https://osmocom.org/projects/sdr/wiki/fosphor][GnuRadio Fosphor spectrum display]]
+
+[[https://github.com/gnuradio/SigMF/blob/master/sigmf-spec.md][SigMF: gnuradio Signal Metadata Format]]
+
+[[https://arxiv.org/pdf/1406.2063.pdf][Foundations of Total Functional Dataflow Programming]]
+
+[[https://www.youtube.com/watch?v=QpWaSaYSyXw&t=62s][Structured Cospans and Double Categories]], John Baez
+
+[[https://www.cs.cornell.edu/~avh/diospyros-lctes-2020.pdf][Diospyros, compiler optimizing data layout in DSPs]]
+
+[[https://wiki.gnuradio.org/index.php/Guided_Tutorial_PSK_Demodulation][GNUradio Guided Tutorial: PSK Demodulation]]
+
+[[https://en.wikipedia.org/wiki/Bit_error_rate][Bit Error Rate]]
+
+[[https://www.gnuradio.org/blog/2016-11-02-bit-error-rate-testing/][BER Testing in GR]]
+
+[[https://en.wikipedia.org/wiki/Signal-flow_graph][Signal Flow Graph]]
+
+[[https://arxiv.org/pdf/2003.06214.pdf][Comb Diagrams for Discrete-time Feedback]]
+
+* SDR models using ACT
+
+  synthesizer patch bay is a monoidal category
+  
+  Is a synthesizer patch a realization of a bunch of operads?
+
+** How to represent the signal plan in an SDR model?
+   
+   The signal-processing paths in the SDR flow graph 
+   can be modeled as a graph where nodes are sample
+   types and arrows are functions that transform one
+   type to another.
+   
+   "type" here means an ADT, which could be an atomic
+   type like int, or a structured type like array of int.
+   Often the type will be "stream of int" or "stream of cfloat".
+   
+   The flowgraphs can be seen as morphisms in a monoidal 
+   category.
+
+   Traditionally, these have been treated according to theory,
+   formulated by Shannon, under the name [[https://en.wikipedia.org/wiki/Signal-flow_graph][signal-flow graph]]. These
+   structures have an algebra of operations that transform graphs into
+   others that have the same overall effect.
+   
+   These transformations can help when realizing digital filters. For
+   instance, a flowgraph describing digital filter can be constructed
+   from a difference equation in a straightforward way. However, a
+   direct implementation of that flowgraph may be inefficient, or it may
+   be numerically unstable due to finite computer word lengths.
+   
+   By applying flowgraph transformations (algebraic operations), it is
+   often possible to produce an equivalent realization of the equation
+   that is feasible and stable. [Antoniou; Oppenheim & Shafer]
+   
+   Transforming from the "pure math" domain of infinite-precision
+   real numbers to the "practical hardware" domain of finite word-length
+   numbers seems to be related to some adjunctions (galois connections)
+   between integers and reals.  The functors are
+   the inclusion of the integers into the reals, which has left
+   adjoint (ceiling) and right adjoint (floor).
+   
+   It seems that signal-flow graph transformations are akin to the
+   wiring diagram algebras of ACT. See
+   [[https://www.youtube.com/watch?v=dEDtaJhgQOY][ACT@UCR Seminar: Systems as Wiring Diagram Algebras - Christina Vasilakopoulou]]
+
+** How to represent control plane in an SDR model?
+   
+   The control plane allows a system to dynamically control its
+   components at runtime. "Control" here means a way to change
+   parameters, stop and start operations, and inspect the state
+   of the component.
+
+   There is a pub-sub event mechanism that allows components
+   to react to events sent by controllers, or by anything else.
+   One interesting kind of event is sent by certain components
+   that process streams of signal samples, when they encounter
+   a specially-marked sample placed there by an earlier stage
+   in the flow graph.
+   
+   [[https://www.vita.com/resources/Documents/Articles/IEEE%20CAS%20Mag%202012.pdf][VITA-49]] is a standard that specifies how SDR hardware interfaces with
+   the DSP software. The hardware produces and consumes one or more
+   streams of samples (the data plane), along with blocks of status and
+   configuration data (the control plane).
+     
+* Todos
+
+** TODO Parse GRC YAML format, new in GR 3.8
+
+* Examples
+
+Signal Domains are data types.
+Most of them are streams.
+
+You can subscribe to a stream.
+
+   * IQ Samples
+   * Baseband audio samples
+   * Decoded baudot RTTY characters
+   * Decoded morse code characters
+   * ADS-B message stream
+
+Example: IQ-Samples -> ADS-B messages

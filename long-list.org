@@ -38,9 +38,11 @@ See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]].
 
 * Suggested Introductory Papers
 
-   * [[https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/1-CleanSlate.pdf][The Dao of Functional Programming]]
+   * [[https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/DaoFP.pdf][The Dao of Functional Programming]]
 
    * [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
+     * This paper proposes CompositionalPlanning, a string diagram based
+       framework for assembly planning.
 
    * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
 

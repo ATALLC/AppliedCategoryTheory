@@ -1,0 +1,225 @@
+* blurb
+** Mike Gallaher, Senior Software Engineer, ATA LLC
+** Category Theory: Tools for Thought
+** Bio
+*** Mike is a lapsed electrical engineer who does software engineering to pay the bills.
+*** After decades of programming in lots of languages, he is looking into theory behind what makes them all tick.
+** Abstract
+*** Category theory is kind of a universal programming language.  What do signal flow graphs, quantum processes, natural-language sentences, and electronic circuits, have in common?  All these can be described using patterns found in category theory.
+*** Those patterns are abstract, so you need a programming language to realize solutions that use them.
+*** My favorite language for getting stuff done is Clojure.  It is a programming language that lies at the sweet spot of understandability and expressiveness.
+*** I'll also show some examples that use another language, Julia, which is the happening language for applied category theory.
+** [[../assets/mg-head-2017_1645212049371_0.jpg]]
+*
+* Synopsis
+** First I'll introduce category theory terms from mathematics
+** show how the concepts can be applied
+** by way of examples from different fields
+** Programming languages
+*** category theory is itself a kind of programming language
+*** curry-howard-lambek
+**** propositions as types
+****
+***
+* Sources
+** [[https://topos.institute/][Topos Institute]]
+*** David Spivak
+*** Brendan Fong
+** [[https://msp.cis.strath.ac.uk/index.html][Glasgow Mathematically-Structured Programming]]
+** [[https://www.amazon.com/Invitation-Applied-Category-Theory-Compositionality/dp/1108711820][Seven Sketches in Compositionality]]
+** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]]
+** LATER talk by NIST engineer
+** [[https://www.youtube.com/watch?v=gbP5ww3U10g&list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze&index=1][Angeline Aguinaldo: Diary of a software engineer using categories]]
+* Category theory gives us a way to think about how some things are like other things.
+** Like any branch of mathematics, it's hard to describe in a few sentences.
+** It is the science of analogy.
+** It is the algebra of composition.
+** It offers precise language for describing how systems are assembled from parts, and specifying the transformations between forms.
+** Isomorphism
+*** There's a rule to pick out a B given an A, and viceversa
+*** renaming
+*** "up to isomorphism"
+*** example: all edible oranges are isomorphic, to me
+*** (a,b) \tilde= [a,b]
+* Modeling Language, Universal Design Patterns
+** Applied Category Theory makes heavy use of graphical languages
+** Radio Signal Flow
+*** [[https://luaradio.io/docs/figures/flowgraph_rtlsdr_ax25.png]]
+** Tensor equations, Penrose diagrams
+*** [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]]  Peter Selinger
+*** graphical language is a formal syntax, equivalent to algebraic expressions
+*** Tensor equation using summations
+**** [[../assets/tensor-summations.png]]
+*** Tensor equation using Einstein convention
+**** [[../assets/tensor-einstein.png]]
+*** Tensor equation using functional algebra
+**** [[../assets/tensor-functional.png]]
+****
+*** Tensor equation diagram using indices
+**** [[../assets/tensor-diagram-indices.png]]
+*** Tensor equation diagram using types
+**** [[../assets/tensor-diagram-types.png]]
+** [[https://www.amazon.com/Picturing-Quantum-Processes-Diagrammatic-Reasoning/dp/110710422X][Picturing Quantum Processes: Diagrammatic Reasoning]]
+*** equations vs diagrams
+*** similarity to NLP
+*** picture
+**** [[../assets/high-level-low-level.png]]
+** example: Blender composite
+*** [[../assets/blender-composition.png]]
+** example: assembly planning
+*** [[../assets/lego-minecraft-planning.png]]
+***
+** system dynamics
+*** stocks and flows
+** resource flows
+** Electronic circuits
+*** modeling connections as cospans
+** continuous and discrete Fourier and Laplace transforms
+*** [[../assets/antoniou-p155_1645206260582_0.png]]
+***
+* Modeling relation
+** Robert Rosen in biology: Life Itself
+*** [[https://www.amazon.com/Life-Itself-Comprehensive-Fabrication-Complexity/dp/0231075650][Life Itself: A Comprehensive Inquiry Into the Nature, Origin, and Fabrication of Life (Complexity in Ecological Systems) by Robert Rosen]]
+** Real world, environment, complex system, entailments not always easy to discern
+** impossible to reason about
+** so we form simpler models that have a useful "congruence of entailment"
+*** furniture moving vs room planner software, or paper rectangles
+*** functor from furniture to rectangles
+** Models are games that we invent and set the rules for
+*** therefore we can reason about them
+** Problem: We can't reason about the real world, because it is not a formal mathematical system
+*** yet we still must map our model constructs into the real world and back
+** Mechanism does not provide a rich enough set of entailments to be a useful model for predicting things that happen in the real world.
+* Provably correct data schema migrations
+** database schema is a category
+*** objects are tables
+*** arrows are foreign key relations
+** database instance is a functor from schema to Set
+* Example: Category of Types and Functions
+** appears in some form in programming languages
+** It is a category because
+*** objects are types
+**** types are integers, reals, strings, etc.
+**** think of a type as the set of all possible values
+*** morphisms are functions
+**** functions from one type to another, eg =reverse= or =length=
+***** length: String -> Int
+***** reverse: String -> String
+*** for each type there is an identity function
+*** functions compose, as long as types match
+**** length(s) = length(reverse (s)) for all s $\in$ S
+**** length(s) = (length $\circ$ reverse)(s) for all s $\in$ S
+**** length = length $\circ$ reverse
+* Category = compositionality
+** Categories always have a way to combine things
+** picture of composition
+*** [[../assets/adapter-chain.jpg]]
+***
+** example: where compositionality fails
+*** complex system: emergence over scale
+*** chain of outlet strips
+* Functors: Transforms between different categories
+** functors preserve composition and identity
+*** linearity is a kind of functoriality
+** category theory is the language of analogy
+** example: furniture floor plan
+*** room category
+**** objects furniture, walls
+**** arrows adjacency
+*** floorplan category
+**** objects rectangles
+**** arrows adjacency
+*** functor from room to floorplan associates each piece of furniture with a rectangle,
+with analogous adjacency arrow
+* Block diagrams are morphisms in a symmetric monoidal category
+** to see this, imagine one big box drawn around the whole wiring diagram
+*** [[../assets/tensor-diagram-types.png]]
+** objects are wires, representing data objects (integers, strings, etc)
+** morphisms are blocks, representing processes (functions)
+** series composition of blocks to form a third block
+*** all categories allow this construction, by definition -- it's just composition of arrows
+** parallel (tensor) composition of wires
+*** if you allow a second operation between blocks, and between wires, you get a monoidal category
+** example: pharma process with multiple inputs
+*** when one input is a catalyst it emerges unchanged as an output
+** venn diagram of categories, monoidal categories are subset of those, SMCs of those
+* Julia
+** Look at the list of talks from a recent Julia conference.  See if there's anything from your field.
+** Julia is maturing into a viable choice for scientific computing
+** generalized algebraic theories
+* software engineering
+** we build models and refine them to produce other models:
+*** analysis model: the environment, the problem to solve
+*** design model: the plan of the artifact that solves the problem
+*** implementation model: the code
+*** diagram
+**** [[../assets/software-eng-models.png]]
+** software development process: inputs, outputs, documents produced and transferred
+** computational complexity: show that problems are equivalent in the complexity of their solution
+* Suggested Introductory Papers
+** [[https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/DaoFP.pdf][The Dao of Functional Programming]]
+** [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
+*** This paper proposes CompositionalPlanning, a string diagram based
+  framework for assembly planning.
+** [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
+** [[https://arxiv.org/pdf/2004.05631.pdf][At the Interface of Algebra and Statistics]] ([[https://www.youtube.com/watch?v=wiadG3ywJIs&feature=youtu.be][video]]) Tae-Danae Bradley's thesis on recognizing concepts in NLP.  This is some of the best exposition you'll find.
+** [[https://arxiv.org/abs/2004.10741][Categories of Semantic Concepts]]
+     Modelling concept representation is a foundational problem in the study of
+     cognition and linguistics. This work builds on the confluence of conceptual
+     tools from Gardenfors semantic spaces, categorical compositional
+     linguistics, and applied category theory to present a domain-independent
+     and categorial formalism of ‘concept’.
+** [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
+** [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
+* Other Papers
+** [[https://golem.ph.utexas.edu/category/2018/02/linguistics_using_category_the.html][Linguistics using category theory]]
+** [[https://gsd.uwaterloo.ca/sites/default/files/Accat12-paper7.pdf][Category Theory and Model-Driven Engineering: From Formal Semantics to Design Patterns and Beyond]]
+***
+*** real world, modeling relation
+** [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]]
+** [[https://arxiv.org/pdf/1906.05937.pdf][A Complete Language for Faceted Dataflow Programs]]
+** [[https://www.amazon.com/Picturing-Quantum-Processes-Diagrammatic-Reasoning/dp/110710422X][Picturing Quantum Processes: Diagrammatic Reasoning]]
+** [[https://www.amazon.com/Life-Itself-Comprehensive-Fabrication-Complexity/dp/0231075650][Life Itself: A Comprehensive Inquiry Into the Nature, Origin, and Fabrication of Life (Complexity in Ecological Systems) by Robert Rosen]]
+* https://github.com/pragsmike/catio
+** block diagram
+* Misc
+** duality: opposite categories
+** categories derived from another category
+*** category of parts
+*** product categories
+** (f⋅g)⊗(h⋅k)=(f⊗h)⋅(g⊗k)
+** foundations: alternative to set theory
+*** CT is the science of analogy
+*** relation between set theory and category theory
+*** category theory could be defined as a discipline for studying mathematical structures: how to specify, relate and manipulate them, and how to reason about them.
+**** logic itself can be formulated with CT
+** there are categories where objects are not sets
+*** eg PROPs have integers as objects
+*** Matr is a PROP where morphisms are matrices
+**** from integer p to integer q are all the q x p matrices
+**** these take a q-dimensional vector to a p-dimensional vector
+**** composition is matrix multiplication
+*** that's linear algebra!
+** category of sets and functions is the most intuitive and familiar, where most people start
+** category of sets and relations is more interesting
+*
+*
+*
+* I'm Mike Gallaher, here to talk about category theory and programming languages (mostly Clojure).
+** First, let me correct a mistake in the announcement:
+*** I don't have a PhD.  I'm not sure who thought I did, or why they thought that.
+*** Apparently that's the default for speakers here?  I'm honored!
+** I did go to electrical engineering school for four years, but then I went into software engineering.
+*** over forty years, I did a bit of everything in the IT industry
+*** it involved a lot of programming and systems thinking
+** Lately I've become interested in the theory behind computation and complex systems
+** I've always been an engineer, not a mathematician.  Much of what I discuss here will include examples from programming and software engineering, because that's what I know best.
+* Examples
+** Tensor Equations
+** Electric Circuits
+**
+* Programming language power spectrum
+** Lisp occupies the sweet spot of expressiveness vs readability
+** APL: say a little to do a lot
+** Assembler: say a lot to do a little
+**
