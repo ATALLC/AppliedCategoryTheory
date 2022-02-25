@@ -11,25 +11,26 @@
 *** I'll also show some examples that use another language, Julia, which is the happening language for applied category theory.
 *
 * Synopsis
-** Many researchers have begun using category theory as a unifying language, facilitating communication between different scientific disciplines
+** Many researchers have begun using category theory as a unifying language, facilitating communication between different scientific disciplines.
 ** Introduce key ideas: compositionality, diagrammatic reasoning
 ** Examples of applied CT from different fields
 ** Practical programming languages
 *** category theory is itself a kind of programming language, but very abstract
 * Sources
-** [[https://topos.institute/][Topos Institute]]
+** General: [[https://topos.institute/][Topos Institute]]
 *** Founders
 **** David Spivak
 **** Brendan Fong
 **** John Baez
 *** have a look at the lists of seminar topics on their website
 **** eg [[https://www.youtube.com/playlist?list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze][Berkeley Seminar 2021 playlist]]
-** [[https://msp.cis.strath.ac.uk/index.html][Mathematically-Structured Programming group]] at University of Strathclyde
+** ML, Cybernetics: [[https://msp.cis.strath.ac.uk/index.html][Mathematically-Structured Programming group]] at University of Strathclyde
 *** [[https://arxiv.org/abs/2106.07032][ACT in Machine Learning]]
 *** [[https://www.brunogavranovic.com/papers.html][Papers on Categorical Cybernetics]]
 *** [[https://matteocapucci.wordpress.com/2021/05/26/open-cybernetics-systems-i-feedback-systems-as-optics/][Open Cybernetic Systems]]
-** [[https://www.nasa.gov/consortium/CategoryTheory][NASA Consortium]]
+** System Engineering: [[https://www.nasa.gov/consortium/CategoryTheory][NASA Consortium]]
 *** [[../assets/NASA-ct.png]]
+**
 ** [[https://www.amazon.com/Invitation-Applied-Category-Theory-Compositionality/dp/1108711820][Seven Sketches in Compositionality]]: An Invitation to Applied Category Theory
 *** Generative effects
 *** Resource theories
@@ -43,6 +44,7 @@
 *** Signal Flow Graphs
 *** Electric Circuits
 *** Logic of Behavior
+**
 ** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]] github repo
 *** [[https://github.com/ATALLC/AppliedCategoryTheory/long-list.org][long list]]
 ** [[https://www.youtube.com/watch?v=gbP5ww3U10g&list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze&index=1][Angeline Aguinaldo: Diary of a software engineer using categories]]
@@ -65,6 +67,11 @@
 ** CT supplies a matched set of design patterns that arise from mathematical reasoning
 ** Category theory is a kind of universal programming language
 ** We won't cover much of the math, but we don't need to because it's built into the diagrams.
+* Definition of Category
+** objects
+** morphisms
+** identity
+** composition
 * Applied Category Theory makes heavy use of graphical languages
 ** Let's look at some wiring diagrams
 ** Radio Signal Flow
@@ -156,7 +163,7 @@ with analogous adjacency arrow
 *** design model: the plan of the artifact that solves the problem
 *** implementation model: the code
 *** diagram
-**** [[../assets/software-eng-models.png]]
+**** [[../assets/software-eng-models.png]]{:height 438, :width 544}
 ** software development process: inputs, outputs, documents produced and transferred
 * Block diagrams are morphisms in a symmetric monoidal category
 ** I've been saying that there's mathematical theory built into the diagrams,
@@ -189,6 +196,8 @@ with analogous adjacency arrow
 **** length(s) = length(reverse (s)) for all s $\in$ S
 **** length(s) = (length $\circ$ reverse)(s) for all s $\in$ S
 **** length = length $\circ$ reverse
+*** picture
+**** [[../assets/hask.jpg]]
 * Category Theory helps me design
 ** when you design software, you're devising an algebra
 *** a set of data types
@@ -252,37 +261,6 @@ with analogous adjacency arrow
 ** [[https://arxiv.org/pdf/1906.05937.pdf][A Complete Language for Faceted Dataflow Programs]]
 ** [[https://www.amazon.com/Picturing-Quantum-Processes-Diagrammatic-Reasoning/dp/110710422X][Picturing Quantum Processes: Diagrammatic Reasoning]]
 ** [[https://www.amazon.com/Life-Itself-Comprehensive-Fabrication-Complexity/dp/0231075650][Life Itself: A Comprehensive Inquiry Into the Nature, Origin, and Fabrication of Life (Complexity in Ecological Systems) by Robert Rosen]]
-* https://github.com/pragsmike/catio
-** block diagram
-* Misc
-** duality: opposite categories
-** categories derived from another category
-*** category of parts
-*** product categories
-** (f⋅g)⊗(h⋅k)=(f⊗h)⋅(g⊗k)
-** curry-howard-lambek
-*** propositions as types
-***
-** foundations: alternative to set theory
-*** CT is the science of analogy
-*** relation between set theory and category theory
-*** category theory could be defined as a discipline for studying mathematical structures: how to specify, relate and manipulate them, and how to reason about them.
-**** logic itself can be formulated with CT
-** there are categories where objects are not sets
-*** eg PROPs have integers as objects
-*** Matr is a PROP where morphisms are matrices
-**** from integer p to integer q are all the q x p matrices
-**** these take a q-dimensional vector to a p-dimensional vector
-**** composition is matrix multiplication
-*** that's linear algebra!
-** category of sets and functions is the most intuitive and familiar, where most people start
-** category of sets and relations is more interesting
-** Provably correct data schema migrations
-*** CQL: Categorical Query Language
-*** database schema is a category
-**** objects are tables
-**** arrows are foreign key relations
-*** database instance is a functor from schema to Set
 *
 *
 *
@@ -295,7 +273,3 @@ with analogous adjacency arrow
 *** it involved a lot of programming and systems thinking
 ** Lately I've become interested in the theory behind computation and complex systems
 ** I've always been an engineer, not a mathematician.  Much of what I discuss here will include examples from programming and software engineering, because that's what I know best.
-* Examples
-** Tensor Equations
-** Electric Circuits
-**
