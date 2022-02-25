@@ -12,37 +12,44 @@
 ** [[../assets/mg-head-2017_1645212049371_0.jpg]]
 *
 * Synopsis
-** First I'll introduce category theory terms from mathematics
-** show how the concepts can be applied
-** by way of examples from different fields
-** Programming languages
-*** category theory is itself a kind of programming language
-*** curry-howard-lambek
-**** propositions as types
-****
-***
+** Introduce key idea: compositionality
+** Show examples of applied CT from different fields
+** Practical programming languages
+*** category theory is itself a kind of programming language, but very abstract
+** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]]
 * Sources
 ** [[https://topos.institute/][Topos Institute]]
-*** David Spivak
-*** Brendan Fong
-** [[https://msp.cis.strath.ac.uk/index.html][Glasgow Mathematically-Structured Programming]]
+*** Founders
+**** David Spivak
+**** Brendan Fong
+**** John Baez
+*** [[https://www.youtube.com/playlist?list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze][Berkeley Seminar 2021 playlist]]
+***
+** [[https://msp.cis.strath.ac.uk/index.html][Mathematically-Structured Programming group]] at University of Strathclyde
+*** ACT in Machine Learning
+*** Open Composable Games
+*** economics
+** [[https://www.nasa.gov/consortium/CategoryTheory][NASA Consortium]]
+*** [[../assets/NASA-ct.png]]
 ** [[https://www.amazon.com/Invitation-Applied-Category-Theory-Compositionality/dp/1108711820][Seven Sketches in Compositionality]]
-** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]]
-** LATER talk by NIST engineer
 ** [[https://www.youtube.com/watch?v=gbP5ww3U10g&list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze&index=1][Angeline Aguinaldo: Diary of a software engineer using categories]]
+* -----
 * Category theory gives us a way to think about how some things are like other things.
 ** Like any branch of mathematics, it's hard to describe in a few sentences.
 ** It is the science of analogy.
 ** It is the algebra of composition.
 ** It offers precise language for describing how systems are assembled from parts, and specifying the transformations between forms.
 ** Isomorphism
-*** There's a rule to pick out a B given an A, and viceversa
-*** renaming
 *** "up to isomorphism"
 *** example: all edible oranges are isomorphic, to me
-*** (a,b) \tilde= [a,b]
+*** There's a rule to pick out a B given an A, and viceversa
+*** one-to-one correspondence
+*** renaming
 * Modeling Language, Universal Design Patterns
-** Applied Category Theory makes heavy use of graphical languages
+** Category theory is a kind of universal programming language
+** We won't cover much of the math, but we don't need to because it's built into the diagrams.
+* Applied Category Theory makes heavy use of graphical languages
+** Let's look at some wiring diagrams
 ** Radio Signal Flow
 *** [[https://luaradio.io/docs/figures/flowgraph_rtlsdr_ax25.png]]
 ** Tensor equations, Penrose diagrams
@@ -54,6 +61,7 @@
 **** [[../assets/tensor-einstein.png]]
 *** Tensor equation using functional algebra
 **** [[../assets/tensor-functional.png]]
+**** The order makes sense if you think of     (P $\circ$ N) (v) = (P (N(v)))
 ****
 *** Tensor equation diagram using indices
 **** [[../assets/tensor-diagram-indices.png]]
@@ -73,7 +81,6 @@
 *** stocks and flows
 ** resource flows
 ** Electronic circuits
-*** modeling connections as cospans
 ** continuous and discrete Fourier and Laplace transforms
 *** [[../assets/antoniou-p155_1645206260582_0.png]]
 ***
@@ -90,28 +97,10 @@
 ** Problem: We can't reason about the real world, because it is not a formal mathematical system
 *** yet we still must map our model constructs into the real world and back
 ** Mechanism does not provide a rich enough set of entailments to be a useful model for predicting things that happen in the real world.
-* Provably correct data schema migrations
-** database schema is a category
-*** objects are tables
-*** arrows are foreign key relations
-** database instance is a functor from schema to Set
-* Example: Category of Types and Functions
-** appears in some form in programming languages
-** It is a category because
-*** objects are types
-**** types are integers, reals, strings, etc.
-**** think of a type as the set of all possible values
-*** morphisms are functions
-**** functions from one type to another, eg =reverse= or =length=
-***** length: String -> Int
-***** reverse: String -> String
-*** for each type there is an identity function
-*** functions compose, as long as types match
-**** length(s) = length(reverse (s)) for all s $\in$ S
-**** length(s) = (length $\circ$ reverse)(s) for all s $\in$ S
-**** length = length $\circ$ reverse
 * Category = compositionality
-** Categories always have a way to combine things
+** categories have objects, with arrows between some of them
+** Categories always have a way to combine arrows
+*** arrows compose
 ** picture of composition
 *** [[../assets/adapter-chain.jpg]]
 ***
@@ -131,6 +120,15 @@
 **** arrows adjacency
 *** functor from room to floorplan associates each piece of furniture with a rectangle,
 with analogous adjacency arrow
+* Software Engineering
+** we build models and refine them to produce other models:
+*** analysis model: the environment, the problem to solve
+*** design model: the plan of the artifact that solves the problem
+*** implementation model: the code
+*** diagram
+**** [[../assets/software-eng-models.png]]
+** software development process: inputs, outputs, documents produced and transferred
+** computational complexity: show that problems are equivalent in the complexity of their solution
 * Block diagrams are morphisms in a symmetric monoidal category
 ** to see this, imagine one big box drawn around the whole wiring diagram
 *** [[../assets/tensor-diagram-types.png]]
@@ -143,19 +141,34 @@ with analogous adjacency arrow
 ** example: pharma process with multiple inputs
 *** when one input is a catalyst it emerges unchanged as an output
 ** venn diagram of categories, monoidal categories are subset of those, SMCs of those
+* -----
+* Example: Category of Types and Functions
+** appears in some form in programming languages
+** It is a category because
+*** objects are types
+**** types are integers, reals, strings, etc.
+**** think of a type as the set of all possible values
+*** morphisms are functions
+**** functions from one type to another, eg =reverse= or =length=
+***** length: String -> Int
+***** reverse: String -> String
+*** for each type there is an identity function
+*** functions compose, as long as types match
+**** length(s) = length(reverse (s)) for all s $\in$ S
+**** length(s) = (length $\circ$ reverse)(s) for all s $\in$ S
+**** length = length $\circ$ reverse
+* Programming language power spectrum
+** Multiplying numbers
+** APL: say a little to do a lot
+** Assembler: say a lot to do a little
+** Lisp occupies the sweet spot of expressiveness vs readability
+** [[http://www.paulgraham.com/avg.html][Paul Graham: Beating the Averages]]
+** [[http://www.winestockwebdesign.com/Essays/Lisp_Curse.html][The Lisp Curse]]
+*** Lisp is so powerful that problems which are technical issues in other programming languages are social issues in Lisp.
 * Julia
 ** Look at the list of talks from a recent Julia conference.  See if there's anything from your field.
 ** Julia is maturing into a viable choice for scientific computing
 ** generalized algebraic theories
-* software engineering
-** we build models and refine them to produce other models:
-*** analysis model: the environment, the problem to solve
-*** design model: the plan of the artifact that solves the problem
-*** implementation model: the code
-*** diagram
-**** [[../assets/software-eng-models.png]]
-** software development process: inputs, outputs, documents produced and transferred
-** computational complexity: show that problems are equivalent in the complexity of their solution
 * Suggested Introductory Papers
 ** [[https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/DaoFP.pdf][The Dao of Functional Programming]]
 ** [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
@@ -188,6 +201,9 @@ with analogous adjacency arrow
 *** category of parts
 *** product categories
 ** (f⋅g)⊗(h⋅k)=(f⊗h)⋅(g⊗k)
+** curry-howard-lambek
+*** propositions as types
+***
 ** foundations: alternative to set theory
 *** CT is the science of analogy
 *** relation between set theory and category theory
@@ -202,6 +218,12 @@ with analogous adjacency arrow
 *** that's linear algebra!
 ** category of sets and functions is the most intuitive and familiar, where most people start
 ** category of sets and relations is more interesting
+** Provably correct data schema migrations
+*** CQL: Categorical Query Language
+*** database schema is a category
+**** objects are tables
+**** arrows are foreign key relations
+*** database instance is a functor from schema to Set
 *
 *
 *
@@ -217,9 +239,4 @@ with analogous adjacency arrow
 * Examples
 ** Tensor Equations
 ** Electric Circuits
-**
-* Programming language power spectrum
-** Lisp occupies the sweet spot of expressiveness vs readability
-** APL: say a little to do a lot
-** Assembler: say a lot to do a little
 **
