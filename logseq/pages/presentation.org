@@ -11,6 +11,7 @@
 *** I'll also show some examples that use another language, Julia, which is the happening language for applied category theory.
 *
 * Synopsis
+** Many researchers have begun using category theory as a unifying language, facilitating communication between different scientific disciplines
 ** Introduce key ideas: compositionality, diagrammatic reasoning
 ** Examples of applied CT from different fields
 ** Practical programming languages
@@ -24,9 +25,9 @@
 *** have a look at the lists of seminar topics on their website
 **** eg [[https://www.youtube.com/playlist?list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze][Berkeley Seminar 2021 playlist]]
 ** [[https://msp.cis.strath.ac.uk/index.html][Mathematically-Structured Programming group]] at University of Strathclyde
-*** ACT in Machine Learning
-*** Open Games
-*** economics
+*** [[https://arxiv.org/abs/2106.07032][ACT in Machine Learning]]
+*** [[https://www.brunogavranovic.com/papers.html][Papers on Categorical Cybernetics]]
+*** [[https://matteocapucci.wordpress.com/2021/05/26/open-cybernetics-systems-i-feedback-systems-as-optics/][Open Cybernetic Systems]]
 ** [[https://www.nasa.gov/consortium/CategoryTheory][NASA Consortium]]
 *** [[../assets/NASA-ct.png]]
 ** [[https://www.amazon.com/Invitation-Applied-Category-Theory-Compositionality/dp/1108711820][Seven Sketches in Compositionality]]: An Invitation to Applied Category Theory
@@ -220,9 +221,13 @@ with analogous adjacency arrow
 ** Browser
 *** javascript
 * Julia
-** Look at the list of talks from a recent Julia conference.  See if there's anything from your field.
+** [[https://proceedings.juliacon.org/papers/published][Juliacon Published Papers]]
+*** Look at the list of talks from a recent Julia conference.  See if there's anything from your field.
+** [[https://www.youtube.com/playlist?list=PLP8iPy9hna6Tl2UHTrm4jnIYrLkIcAROR][JuliaCon Youtube Channel]]
 ** Julia is maturing into a viable choice for scientific computing
 ** generalized algebraic theories
+** Catlab
+*** [[https://algebraicjulia.github.io/Catlab.jl/latest/generated/wiring_diagrams/diagrams_and_expressions/#Expressions-to-diagrams][Expressions to Diagrams]]
 * Suggested Introductory Papers
 ** [[https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/DaoFP.pdf][The Dao of Functional Programming]]
 ** [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
