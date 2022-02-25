@@ -17,17 +17,18 @@
 ** Practical programming languages
 *** category theory is itself a kind of programming language, but very abstract
 ** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]]
+*** [[https://github.com/ATALLC/AppliedCategoryTheory/long-list.org][long list]]
 * Sources
 ** [[https://topos.institute/][Topos Institute]]
 *** Founders
 **** David Spivak
 **** Brendan Fong
 **** John Baez
-*** [[https://www.youtube.com/playlist?list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze][Berkeley Seminar 2021 playlist]]
-***
+*** have a look at the lists of seminar topics on their website
+**** eg [[https://www.youtube.com/playlist?list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze][Berkeley Seminar 2021 playlist]]
 ** [[https://msp.cis.strath.ac.uk/index.html][Mathematically-Structured Programming group]] at University of Strathclyde
 *** ACT in Machine Learning
-*** Open Composable Games
+*** Open Games
 *** economics
 ** [[https://www.nasa.gov/consortium/CategoryTheory][NASA Consortium]]
 *** [[../assets/NASA-ct.png]]
@@ -101,6 +102,7 @@
 ** categories have objects, with arrows between some of them
 ** Categories always have a way to combine arrows
 *** arrows compose
+*** [[../assets/Commutative_diagram_for_morphism.svg]]
 ** picture of composition
 *** [[../assets/adapter-chain.jpg]]
 ***
