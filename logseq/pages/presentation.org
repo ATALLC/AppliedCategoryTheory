@@ -11,8 +11,8 @@
 *** I'll also show some examples that use another language, Julia, which is the happening language for applied category theory.
 *
 * Synopsis
-** Introduce key idea: compositionality
-** Show examples of applied CT from different fields
+** Introduce key ideas: compositionality, diagrammatic reasoning
+** Examples of applied CT from different fields
 ** Practical programming languages
 *** category theory is itself a kind of programming language, but very abstract
 * Sources
@@ -29,9 +29,20 @@
 *** economics
 ** [[https://www.nasa.gov/consortium/CategoryTheory][NASA Consortium]]
 *** [[../assets/NASA-ct.png]]
-** [[https://www.amazon.com/Invitation-Applied-Category-Theory-Compositionality/dp/1108711820][Seven Sketches in Compositionality]]
-*** generative effects
-** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]]
+** [[https://www.amazon.com/Invitation-Applied-Category-Theory-Compositionality/dp/1108711820][Seven Sketches in Compositionality]]: An Invitation to Applied Category Theory
+*** Generative effects
+*** Resource theories
+**** bake pie
+***** [[../assets/pie-bake.png]]
+**** prepare
+***** [[../assets/pie-prepare.png]]
+****
+*** Databases
+*** Collaborative Design
+*** Signal Flow Graphs
+*** Electric Circuits
+*** Logic of Behavior
+** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]] github repo
 *** [[https://github.com/ATALLC/AppliedCategoryTheory/long-list.org][long list]]
 ** [[https://www.youtube.com/watch?v=gbP5ww3U10g&list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze&index=1][Angeline Aguinaldo: Diary of a software engineer using categories]]
 * -----
@@ -39,6 +50,8 @@
 ** Like any branch of mathematics, it's hard to describe in a few sentences.
 ** It is the science of analogy.
 ** It is the algebra of composition.
+*** example: function composition
+**** [[../assets/Commutative_diagram_for_morphism.svg]]
 ** It offers precise language for describing how systems are assembled from parts, and specifying the transformations between forms.
 ** Isomorphism
 *** "up to isomorphism"
@@ -47,6 +60,8 @@
 *** one-to-one correspondence
 *** renaming
 * Modeling Language, Universal Design Patterns
+** programmers love design patterns: communication tool
+** CT supplies a matched set of design patterns that arise from mathematical reasoning
 ** Category theory is a kind of universal programming language
 ** We won't cover much of the math, but we don't need to because it's built into the diagrams.
 * Applied Category Theory makes heavy use of graphical languages
@@ -54,8 +69,9 @@
 ** Radio Signal Flow
 *** [[https://luaradio.io/docs/figures/flowgraph_rtlsdr_ax25.png]]
 ** Tensor equations, Penrose diagrams
-*** [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]]  Peter Selinger
+*** ACT finds that diagrams can be used as proofs, complementary to algebraic expressions
 *** graphical language is a formal syntax, equivalent to algebraic expressions
+*** [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]]  Peter Selinger
 *** Tensor equation using summations
 **** [[../assets/tensor-summations.png]]
 *** Tensor equation using Einstein convention
@@ -78,13 +94,16 @@
 ** example: assembly planning
 *** [[../assets/lego-minecraft-planning.png]]
 ***
-** system dynamics
-*** stocks and flows
-** resource flows
-** Electronic circuits
-** continuous and discrete Fourier and Laplace transforms
-*** [[../assets/antoniou-p155_1645206260582_0.png]]
-***
+** example: Signal-Flow Graphs
+*** [[../assets/sfg-generators.png]]
+** Others
+*** system dynamics
+**** stocks and flows
+*** resource flows
+*** Electronic circuits
+*** continuous and discrete Fourier and Laplace transforms
+**** [[../assets/antoniou-p155_1645206260582_0.png]]
+****
 * Modeling relation
 ** Robert Rosen in biology: Life Itself
 *** [[https://www.amazon.com/Life-Itself-Comprehensive-Fabrication-Complexity/dp/0231075650][Life Itself: A Comprehensive Inquiry Into the Nature, Origin, and Fabrication of Life (Complexity in Ecological Systems) by Robert Rosen]]
@@ -110,9 +129,17 @@
 *** complex system: emergence over scale
 *** chain of outlet strips
 * Functors: Transforms between different categories
-** functors preserve composition and identity
+** Method:
+*** Transform the problem into a domain where it's easier to solve
+*** Solve it there
+*** Transform it back into the original domain
+** functors preserve relationships
+*** preserve composition and identity
 *** linearity is a kind of functoriality
 ** category theory is the language of analogy
+** example: multiply by adding logs
+** example: Laplace transform
+** example: algebraic topology
 ** example: furniture floor plan
 *** room category
 **** objects furniture, walls
@@ -132,8 +159,7 @@ with analogous adjacency arrow
 ** software development process: inputs, outputs, documents produced and transferred
 * Block diagrams are morphisms in a symmetric monoidal category
 ** I've been saying that there's mathematical theory built into the diagrams,
-** and that theory puts diagrams on an equal footing with algebraic equations for reasoning
-** Here it is.
+** and that theory puts diagrams on an equal footing with algebraic equations for reasoning.
 ** Every block diagram can be seen as a morphism in a symmetric monoidal category.
 ** To see this, imagine one big box drawn around the whole wiring diagram
 *** [[../assets/tensor-diagram-types.png]]
@@ -162,14 +188,37 @@ with analogous adjacency arrow
 **** length(s) = length(reverse (s)) for all s $\in$ S
 **** length(s) = (length $\circ$ reverse)(s) for all s $\in$ S
 **** length = length $\circ$ reverse
+* Category Theory helps me design
+** when you design software, you're devising an algebra
+*** a set of data types
+*** a set of functions on those types
+** type-driven programming is powerful
+*** kinda like dimensional analysis
+** clojure is a data-centric language
+** clojure lets you use code as a design tool
+*** REPL-driven design
 * Programming language power spectrum
 ** Multiplying numbers
 ** APL: say a little to do a lot
 ** Assembler: say a lot to do a little
 ** Lisp occupies the sweet spot of expressiveness vs readability
+** The smartest programmers tend to gravitate toward Lisp
+*** [[https://itrevolution.com/love-letter-to-clojure-part-1/][Gene Kim Love Letter to Clojure]]
+*** [[http://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html][Why Clojure?]] Bob Martin
+**** Over the last 5 decades, I’ve used a LOT of different languages.
+**** And I’ve come to a conclusion.
+**** My favorite language of all, the language that I think will outlast all the others, the language that I believe will eventually become the standard language that all programmers use…
+**** …is Lisp.
 ** [[http://www.paulgraham.com/avg.html][Paul Graham: Beating the Averages]]
 ** [[http://www.winestockwebdesign.com/Essays/Lisp_Curse.html][The Lisp Curse]]
 *** Lisp is so powerful that problems which are technical issues in other programming languages are social issues in Lisp.
+*** Clojure community does not suffer from the Lisp Curse :)
+* Clojure has reach
+** Server
+*** nodejs javascript
+*** Java Virtual Machine
+** Browser
+*** javascript
 * Julia
 ** Look at the list of talks from a recent Julia conference.  See if there's anything from your field.
 ** Julia is maturing into a viable choice for scientific computing
