@@ -9,15 +9,12 @@
 *** Those patterns are abstract, so you need a programming language to realize solutions that use them.
 *** My favorite language for getting stuff done is Clojure.  It is a programming language that lies at the sweet spot of understandability and expressiveness.
 *** I'll also show some examples that use another language, Julia, which is the happening language for applied category theory.
-** [[../assets/mg-head-2017_1645212049371_0.jpg]]
 *
 * Synopsis
 ** Introduce key idea: compositionality
 ** Show examples of applied CT from different fields
 ** Practical programming languages
 *** category theory is itself a kind of programming language, but very abstract
-** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]]
-*** [[https://github.com/ATALLC/AppliedCategoryTheory/long-list.org][long list]]
 * Sources
 ** [[https://topos.institute/][Topos Institute]]
 *** Founders
@@ -33,6 +30,9 @@
 ** [[https://www.nasa.gov/consortium/CategoryTheory][NASA Consortium]]
 *** [[../assets/NASA-ct.png]]
 ** [[https://www.amazon.com/Invitation-Applied-Category-Theory-Compositionality/dp/1108711820][Seven Sketches in Compositionality]]
+*** generative effects
+** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]]
+*** [[https://github.com/ATALLC/AppliedCategoryTheory/long-list.org][long list]]
 ** [[https://www.youtube.com/watch?v=gbP5ww3U10g&list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze&index=1][Angeline Aguinaldo: Diary of a software engineer using categories]]
 * -----
 * Category theory gives us a way to think about how some things are like other things.
@@ -130,9 +130,12 @@ with analogous adjacency arrow
 *** diagram
 **** [[../assets/software-eng-models.png]]
 ** software development process: inputs, outputs, documents produced and transferred
-** computational complexity: show that problems are equivalent in the complexity of their solution
 * Block diagrams are morphisms in a symmetric monoidal category
-** to see this, imagine one big box drawn around the whole wiring diagram
+** I've been saying that there's mathematical theory built into the diagrams,
+** and that theory puts diagrams on an equal footing with algebraic equations for reasoning
+** Here it is.
+** Every block diagram can be seen as a morphism in a symmetric monoidal category.
+** To see this, imagine one big box drawn around the whole wiring diagram
 *** [[../assets/tensor-diagram-types.png]]
 ** objects are wires, representing data objects (integers, strings, etc)
 ** morphisms are blocks, representing processes (functions)
