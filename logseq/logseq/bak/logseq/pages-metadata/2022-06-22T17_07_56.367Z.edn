@@ -94,9 +94,6 @@
  {:block/name "2022-04-26",
   :block/created-at 1650931200000,
   :block/updated-at 1650931200000}
- {:block/name "2022-06-22",
-  :block/created-at 1655911392466,
-  :block/updated-at 1655911392466}
  {:block/name "a",
   :block/created-at 1651516367580,
   :block/updated-at 1651516367580}
@@ -112,9 +109,6 @@
  {:block/name "card",
   :block/created-at 1651516367581,
   :block/updated-at 1651516367581}
- {:block/name "clojure",
-  :block/created-at 1655911392306,
-  :block/updated-at 1655911392306}
  {:block/name "contents",
   :block/created-at 1651516367584,
   :block/updated-at 1651516367584}
@@ -127,21 +121,12 @@
  {:block/name "favorites",
   :block/created-at 1651516367580,
   :block/updated-at 1651516367580}
- {:block/name "fm broadcast subcarrier decoder",
-  :block/created-at 1655911392307,
-  :block/updated-at 1655911392307}
  {:block/name "in-progress",
   :block/created-at 1651516367584,
   :block/updated-at 1651516367584}
- {:block/name "jl",
-  :block/created-at 1655911392304,
-  :block/updated-at 1655911392304}
  {:block/name "later",
   :block/created-at 1651516367583,
   :block/updated-at 1651516367583}
- {:block/name "monoidal radios",
-  :block/created-at 1655911392310,
-  :block/updated-at 1655911392310}
  {:block/name "nlp",
   :block/created-at 1651516367584,
   :block/updated-at 1651516367584}
@@ -151,9 +136,6 @@
  {:block/name "presentation",
   :block/created-at 1651516367584,
   :block/updated-at 1651516367584}
- {:block/name "strung",
-  :block/created-at 1655911392303,
-  :block/updated-at 1655911392303}
  {:block/name "todo",
   :block/created-at 1651516367583,
   :block/updated-at 1651516367583}

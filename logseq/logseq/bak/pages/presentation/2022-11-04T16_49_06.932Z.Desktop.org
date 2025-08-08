@@ -21,9 +21,6 @@
 ** Introduce key ideas: compositionality, diagrammatic reasoning
 ** Examples of applied CT from different fields
 ** Practical programming languages
-:PROPERTIES:
-:collapsed: true
-:END:
 *** category theory is itself a kind of programming language, but very abstract
 * Sources
 :PROPERTIES:
@@ -41,9 +38,6 @@
 *** [[https://www.brunogavranovic.com/papers.html][Papers on Categorical Cybernetics]]
 *** [[https://matteocapucci.wordpress.com/2021/05/26/open-cybernetics-systems-i-feedback-systems-as-optics/][Open Cybernetic Systems]]
 ** System Engineering: [[https://www.nasa.gov/consortium/CategoryTheory][NASA Consortium]]
-:PROPERTIES:
-:collapsed: true
-:END:
 *** [[../assets/NASA-ct.png]]
 **
 ** [[https://www.amazon.com/Invitation-Applied-Category-Theory-Compositionality/dp/1108711820][Seven Sketches in Compositionality]]: An Invitation to Applied Category Theory
@@ -71,9 +65,6 @@
 ** It is the science of analogy.
 ** It is the algebra of composition.
 *** example: function composition
-:PROPERTIES:
-:collapsed: true
-:END:
 **** [[../assets/Commutative_diagram_for_morphism.svg]]
 ** It offers precise language for describing how systems are assembled from parts, and specifying the transformations between forms.
 ** Isomorphism
@@ -101,8 +92,14 @@
 * Applied Category Theory makes heavy use of graphical languages
 ** Let's look at some wiring diagrams
 ** Radio Signal Flow
+:PROPERTIES:
+:collapsed: true
+:END:
 *** [[https://luaradio.io/docs/figures/flowgraph_rtlsdr_ax25.png]]
 ** Tensor equations, Penrose diagrams
+:PROPERTIES:
+:collapsed: true
+:END:
 *** ACT finds that diagrams can be used as proofs, complementary to algebraic expressions
 *** graphical language is a formal syntax, equivalent to algebraic expressions
 *** [[https://arxiv.org/pdf/0908.3347.pdf][A survey of graphical languages for monoidal categories]]  Peter Selinger
@@ -235,9 +232,6 @@ with analogous adjacency arrow
 ** venn diagram of categories, monoidal categories are subset of those, SMCs of those
 * -----
 * Example: Category of Types and Functions
-:PROPERTIES:
-:collapsed: true
-:END:
 ** appears in some form in programming languages
 ** It is a category because
 *** objects are types
@@ -255,9 +249,6 @@ with analogous adjacency arrow
 *** picture
 **** [[../assets/hask.jpg]]
 * Category Theory helps me design
-:PROPERTIES:
-:collapsed: true
-:END:
 ** when you design software, you're devising an algebra
 *** a set of data types
 *** a set of functions on those types
@@ -267,9 +258,6 @@ with analogous adjacency arrow
 ** clojure lets you use code as a design tool
 *** REPL-driven design
 * Programming language power spectrum
-:PROPERTIES:
-:collapsed: true
-:END:
 ** Multiplying numbers
 ** APL: say a little to do a lot
 ** Assembler: say a lot to do a little
@@ -286,18 +274,12 @@ with analogous adjacency arrow
 *** Lisp is so powerful that problems which are technical issues in other programming languages are social issues in Lisp.
 *** Clojure community does not suffer from the Lisp Curse :)
 * Clojure has reach
-:PROPERTIES:
-:collapsed: true
-:END:
 ** Server
 *** nodejs javascript
 *** Java Virtual Machine
 ** Browser
 *** javascript
 * Julia
-:PROPERTIES:
-:collapsed: true
-:END:
 ** [[https://proceedings.juliacon.org/papers/published][Juliacon Published Papers]]
 *** Look at the list of talks from a recent Julia conference.  See if there's anything from your field.
 ** [[https://www.youtube.com/playlist?list=PLP8iPy9hna6Tl2UHTrm4jnIYrLkIcAROR][JuliaCon Youtube Channel]]
@@ -306,9 +288,6 @@ with analogous adjacency arrow
 ** Catlab
 *** [[https://algebraicjulia.github.io/Catlab.jl/latest/generated/wiring_diagrams/diagrams_and_expressions/#Expressions-to-diagrams][Expressions to Diagrams]]
 * Suggested Introductory Papers
-:PROPERTIES:
-:collapsed: true
-:END:
 ** [[https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/DaoFP.pdf][The Dao of Functional Programming]]
 ** [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]]
 *** This paper proposes CompositionalPlanning, a string diagram based
@@ -324,9 +303,6 @@ with analogous adjacency arrow
 ** [[https://www.logicmatters.net/resources/pdfs/Galois.pdf][The Galois Connection between Syntax and Semantics]]
 ** [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
 * Other Papers
-:PROPERTIES:
-:collapsed: true
-:END:
 ** [[https://golem.ph.utexas.edu/category/2018/02/linguistics_using_category_the.html][Linguistics using category theory]]
 ** [[https://gsd.uwaterloo.ca/sites/default/files/Accat12-paper7.pdf][Category Theory and Model-Driven Engineering: From Formal Semantics to Design Patterns and Beyond]]
 ***
@@ -339,9 +315,6 @@ with analogous adjacency arrow
 *
 *
 * I'm Mike Gallaher, here to talk about category theory and programming languages (mostly Clojure).
-:PROPERTIES:
-:collapsed: true
-:END:
 ** First, let me correct a mistake in the announcement:
 *** I don't have a PhD.  I'm not sure who thought I did, or why they thought that.
 *** Apparently that's the default for speakers here?  I'm honored!
