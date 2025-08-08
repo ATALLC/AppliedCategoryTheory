@@ -4,7 +4,7 @@
 
 Welcome!  This repository is the **hands‑on playground** for engineers learning Applied Category Theory (ACT) through the **LevelUp** program.  Everything here aims to turn abstract diagrams and proofs into code, infrastructure, and AI workflows you can run today.
 
-👉 **New to LevelUp?** See the companion page **[Applied Category Theory in LevelUp](https://github.com/ATALLC/LevelUp/pages/applied-category-theory-in-levelup.md)** for the bigger picture, quick wins, and how ACT threads through our projects.
+👉 **New to LevelUp?** See the companion page **[Applied Category Theory in LevelUp](https://github.com/ATALLC/LevelUp/blob/master/pages/applied-category-theory-in-levelup.md)** for the bigger picture, quick wins, and how ACT threads through our projects.
 
 ---
 
@@ -34,7 +34,7 @@ If you’ve ever chained functions, built a Kubernetes DAG, or massaged JSON int
 
 | ⏱️ Time     | Activity                                                                                                                           | Outcome                                                              |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **15 min**  | Read *Engaging with Mathematics* (in `/resources/books.md`), then run the `CoffeeShopMonoid` kata (Python).                        | See how category‑style thinking collapses boilerplate tests.         |
+| **15 min**  | Read *Engaging with Mathematics* (in `./engaging.org`), then run the `CoffeeShopMonoid` kata (Python).                        | See how category‑style thinking collapses boilerplate tests.         |
 | **1 hour**  | Watch a recorded ACT study‑group session (link in `/resources/videos.md`) and replicate the **Wiring‑Diagram ⇒ Airflow DAG** demo. | Map a string diagram directly into a running pipeline.               |
 | **½ day**   | Pair‑program on a **PromptCritical** prompt redesign using categorical lenses.                                                     | Measurable uplift in LLM performance.                                |
 | **Ongoing** | Join live sessions & Discord/Slack discussions.                                                                                    | Build intuition via proofs, peer critique, and real project tie‑ins. |
@@ -49,7 +49,7 @@ If you’ve ever chained functions, built a Kubernetes DAG, or massaged JSON int
 | **Wednesday 12 pm** | Code translation & tooling hour                          | `#levelup-act` & Zoom         |
 | **Friday 12 pm**    | **Dedicated ACT deep dive** (research topic of the week) | `#levelup-act` & Zoom         |
 
-> Full calendar & Zoom links live in the LevelUp shared calendar.
+> Full calendar & Teams links live in the LevelUp shared calendar.
 
 ---
 
@@ -90,7 +90,7 @@ Reading is good; **experimenting, questioning, and teaching back are better**.  
 
 1. Fork the repo and hack on a kata or demo.
 2. Run `make pack` to bundle new docs/code for ChatGPT uploads.
-3. Open a PR **or** share your branch in `#levelup-act` for early feedback.
+3. Open a PR **or** share your branch in `#level-up` for early feedback.
 
 We welcome issues, examples, and errata—especially from real production pain points.
 
