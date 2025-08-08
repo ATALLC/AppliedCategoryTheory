@@ -1,5 +1,5 @@
 * Engaging with Math
-   
+
 Studying mathematics requires a certain discipline and habits.
 It's not hard to develop these, but if you don't, you won't learn as much
 and you'll probably get lost.  Here's what has helped me:
@@ -22,8 +22,8 @@ but also computer architecture, programming, and distributed systems.
 
 ** Leslie Lamport: Coding is only a small part of programming
 
-   Abstracted by [[https://twitter.com/ultrasaurus/status/1201447302444924934?s=03][Sarah Allen]]:
-   
+   Abstracted by [[https://github.com/ultrasaurus][Sarah Allen]]:
+
 [[https://www.zmescience.com/science/difference-programming-coding-15112019/amp/][The Difference Between Programming and Coding]]
    * [[https://www.youtube.com/watch?v=de7Id8sKQzY][Lamport video 1]] (7:26)
    * [[https://www.youtube.com/watch?v=36tsSOFRMjM][Lamport video 2]] (1:43)
@@ -36,8 +36,8 @@ is. In this context, coding is just a small part of programming where real
 thinking takes place.”
 
 ** Approachable Math Presentations
-   
+
    Here are some phenomenal explainers of math topics at introductory levels.
-   
+
   * [[https://www.math3ma.com/][Tai-Danae Bradley]] ([[https://twitter.com/math3ma?s=03][twitter]])
   * [[https://jeremykun.com/][Jeremy Kun]]

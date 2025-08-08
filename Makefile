@@ -3,6 +3,8 @@ pack:
 			Makefile \
 			pages/*.org \
 			resources/*.md \
+			demos/*.md \
+			katas/*/*.md \
 			*.org \
 			*.md \
 			logseq/pages/*.org \

@@ -34,7 +34,7 @@ If you’ve ever chained functions, built a Kubernetes DAG, or massaged JSON int
 
 | ⏱️ Time     | Activity                                                                                                                           | Outcome                                                              |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **15 min**  | Read [*Engaging with Mathematics*](./engaging.org), then run the `CoffeeShopMonoid` kata (Python).                        | See how category‑style thinking collapses boilerplate tests.         |
+| **15 min**  | Read [*Engaging with Mathematics*](./resources/engaging-with-mathematics.org), then run the `CoffeeShopMonoid` kata (Python).                        | See how category‑style thinking collapses boilerplate tests.         |
 | **1 hour**  | Watch an ACT [video](./resources/videos.md) and replicate the **Wiring‑Diagram ⇒ Airflow DAG** demo. | Map a string diagram directly into a running pipeline.               |
 | **½ day**   | Pair‑program on a **PromptCritical** prompt redesign using categorical lenses.                                                     | Measurable uplift in LLM performance.                                |
 | **Ongoing** | Join live sessions & Discord/Slack discussions.                                                                                    | Build intuition via proofs, peer critique, and real project tie‑ins. |
