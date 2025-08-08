@@ -1,19 +1,19 @@
 * ACT Study Group lesson 1
-   
+
 ** preparation
-   
+
    * Read Seven Sketches preface and section 1.1
 
    * Do Exercises 1.1 thru 1.4
 
   [[https://forum.azimuthproject.org/discussion/1807/lecture-1-introduction][Baez Lecture 1]] deals mostly with the mechanics of how that course was run.
   You can safely skip it.
-  
+
   [[https://forum.azimuthproject.org/discussion/1808/lecture-2-what-is-applied-category-theory#Head][Baez Lecture 2]] What is applied category theory?
 
   [[https://forum.azimuthproject.org/discussion/1718/chapter-1/p1][Baez Discussions on Chapter 1]].  Try the Puzzles.
 
-  
+
 ** goals
 
 In this lesson we want to outline what ACT is and why you might want to study
@@ -51,14 +51,14 @@ so I'm relying heavily on more knowledgeable members to help.
 
 ** lesson 1 assignment (for lesson 2)
 
-   * Read [[file:engaging.org][Engaging with Mathematics]], especially if you're a programmer.
+   * Read [[file:resources/engaging-with-mathematics.org][Engaging with Mathematics]], especially if you're a programmer.
 
    * Read Seven Sketches section 1.2. Do exercises 1.6 thru 1.74 (there aren't
      68 exercises! The numbering includes definitions and examples).
 
    * Find a research paper on a topic that interests you.
      The long list has a bunch, but search the internet if you like.
-     
+
      It's ok if you can't understand the paper yet, but try to find
      one that you can "almost understand".
      As we progress through the book, you will understand more and more of it.

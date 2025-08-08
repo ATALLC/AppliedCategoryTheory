@@ -1,6 +1,6 @@
 #+TITLE: ACT References
 
-Some of these publications are in [[file:long-list.org][long-list]].
+Some of these publications are in [[file:archive/long-list.org][long-list]].
 This is supposed to be a more structured form, amenable to bibtex.
 
 [[https://www.amazon.com/Naive-Set-Theory-Paul-Halmos/dp/1614271313][Naive Set Theory]]
