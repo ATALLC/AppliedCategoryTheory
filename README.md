@@ -34,8 +34,8 @@ If you’ve ever chained functions, built a Kubernetes DAG, or massaged JSON int
 
 | ⏱️ Time     | Activity                                                                                                                           | Outcome                                                              |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **15 min**  | Read *Engaging with Mathematics* (in `./engaging.org`), then run the `CoffeeShopMonoid` kata (Python).                        | See how category‑style thinking collapses boilerplate tests.         |
-| **1 hour**  | Watch a recorded ACT study‑group session (link in `/resources/videos.md`) and replicate the **Wiring‑Diagram ⇒ Airflow DAG** demo. | Map a string diagram directly into a running pipeline.               |
+| **15 min**  | Read [*Engaging with Mathematics*](./engaging.org), then run the `CoffeeShopMonoid` kata (Python).                        | See how category‑style thinking collapses boilerplate tests.         |
+| **1 hour**  | Watch an ACT [video](./resources/videos.md) and replicate the **Wiring‑Diagram ⇒ Airflow DAG** demo. | Map a string diagram directly into a running pipeline.               |
 | **½ day**   | Pair‑program on a **PromptCritical** prompt redesign using categorical lenses.                                                     | Measurable uplift in LLM performance.                                |
 | **Ongoing** | Join live sessions & Discord/Slack discussions.                                                                                    | Build intuition via proofs, peer critique, and real project tie‑ins. |
 
@@ -45,9 +45,9 @@ If you’ve ever chained functions, built a Kubernetes DAG, or massaged JSON int
 
 | When (ET)           | Focus                                                    | Channel                       |
 | ------------------- | -------------------------------------------------------- | ----------------------------- |
-| **Monday 2 pm**     | Diagram chases, proof workshops                          | `#levelup-act` (Slack) & Zoom |
-| **Wednesday 12 pm** | Code translation & tooling hour                          | `#levelup-act` & Zoom         |
-| **Friday 12 pm**    | **Dedicated ACT deep dive** (research topic of the week) | `#levelup-act` & Zoom         |
+| **Monday 2 pm**     | Diagram chases, proof workshops                          | `#level-up` (Slack) & Teams |
+| **Wednesday 12 pm** | Code translation & tooling hour                          | `#level-up` & Teams         |
+| **Friday 12 pm**    | **Dedicated ACT deep dive** (research topic of the week) | `#level-up` & Teams         |
 
 > Full calendar & Teams links live in the LevelUp shared calendar.
 
@@ -69,7 +69,7 @@ If you’ve ever chained functions, built a Kubernetes DAG, or massaged JSON int
 └── …
 ```
 
-> Massive link lists have been **moved into `/resources`** to keep this README scannable.
+> Massive link lists have been **moved into [resources](./resources)** to keep this README scannable.
 
 ---
 
@@ -98,4 +98,4 @@ We welcome issues, examples, and errata—especially from real production pain p
 
 ## License & Attribution
 
-Code is MIT‑licensed unless noted.  Slides and papers retain their original licenses; see headers in `/resources` for details and attribution guidelines.
+Code is MIT‑licensed unless noted.  Slides and papers retain their original licenses; see headers in [resources](resources) for details and attribution guidelines.
