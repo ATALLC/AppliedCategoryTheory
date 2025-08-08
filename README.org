@@ -63,7 +63,7 @@ If you're a programmer:
    won't understand much of it at first, but that's why we're here!
 
    It could be about anything that involves the concepts from ACT.
-   There's a list of papers in the [[file:long-list.org][long list]] of references,
+   There's a list of papers in the [[file:archive/long-list.org][long list]] of references,
    including a section of suggested entry-level papers.
 
    You should keep coming back to your paper each week to see if you
