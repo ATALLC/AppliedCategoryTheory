@@ -4,7 +4,7 @@
 
 Welcome!  This repository is the **hands‑on playground** for engineers learning Applied Category Theory (ACT) through the **LevelUp** program.  Everything here aims to turn abstract diagrams and proofs into code, infrastructure, and AI workflows you can run today.
 
-👉 **New to LevelUp?** See the companion page **[Applied Category Theory in LevelUp](../pages/applied-category-theory-in-levelup.md)** for the bigger picture, quick wins, and how ACT threads through our projects.
+👉 **New to LevelUp?** See the companion page **[Applied Category Theory in LevelUp](https://github.com/ATALLC/LevelUp/pages/applied-category-theory-in-levelup.md)** for the bigger picture, quick wins, and how ACT threads through our projects.
 
 ---
 
