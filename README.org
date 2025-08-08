@@ -16,7 +16,7 @@ systems will be extremely reliable and interoperable."
 If you need more motivation, see [[#why-study-act][Why Study ACT?]]
 
 * Texts
-  
+
 The main text:
 
    * [[https://arxiv.org/pdf/1803.05316.pdf][Seven Sketches in Compositionality: Invitation to Applied Category Theory]].
@@ -42,14 +42,14 @@ If you're a programmer:
   of Seven Sketches, and has excellent [[https://www.azimuthproject.org/azimuth/show/Applied+Category+Theory+Course#Course][ACT Lectures]] by John Baez. We
   supplement that material with papers and exercises that apply what
   we've learned to the problems we encounter in data science.
-  
+
   We'll do all the exercises.  Answers are in the book, and also in the
   [[https://forum.azimuthproject.org/categories/applied-category-theory-exercises][forums for John Baez's study group]].
-  
+
   Schedule: Because we all have day jobs, the pace is not very fast,
   and everyone is progressing at their own pace.  There's no single
   "current lesson", and you might spend more than a week on one lesson.
-  
+
   In chat you'll find people at various places, so ask for help
   if you need it, or just ask if someone wants to work through
   an exercise or two with you.  Offer help to others, too!
@@ -57,21 +57,21 @@ If you're a programmer:
 
 
 * Reading and Reviewing a Paper
-   
+
    We ask everyone to choose a research paper that interests them,
    as a goal for their learning.  The idea is that you probably
    won't understand much of it at first, but that's why we're here!
-   
+
    It could be about anything that involves the concepts from ACT.
    There's a list of papers in the [[file:long-list.org][long list]] of references,
    including a section of suggested entry-level papers.
-   
+
    You should keep coming back to your paper each week to see if you
    understand any more of it.
 
    After a while you might decide that the paper you chose is too
    advanced. Then just pick another one that isn't.
-   
+
    A good way to focus your study is by writing "real-time reading
    review" as you read a paper. This is a great way to discipline
    your thoughts and check your understanding. It also helps others
@@ -80,30 +80,30 @@ If you're a programmer:
    through the paper I've chosen, as I want to really understand the
    concepts and I need to fill in gaps in my math background as I
    go.
-   
+
    Where to publish your review? Anywhere you like, but it's most
    helpful if you make it freely accessible by anyone who has the
    URL. I might use Overleaf (online LaTeX editor) to keep a running
    review of my paper, and I'll update it as I progress.
-   
+
    Whereever you put your review, link it in slack so we can all
    learn from it.
 
 ** Where to Find Papers
-   
+
    On the Internet, of course!  Just choose some topic you're interested
    in, append the words "category theory" and google that phrase.
-  
+
    See also [[https://t.co/oxZF8h0ApS][Statebox's Curated List of ACT Resources]] and the [[file:long-list.org][long list]] of
    resources.
-   
+
    Here's some entry-level suggestions:
-  
+
   * [[https://arxiv.org/pdf/1909.10475.pdf][String Diagrams for Assembly Planning]] uses Legos and Minecraft
     to introduce ideas about modeling composable structures
 
   * [[http://www.inf.ufrgs.br/~eslgastal/files/cmvfs.pdf][A Categorical Model for a Versioning File System]]
-  
+
   * [[http://www.math.harvard.edu/~mazur/preprints/when_is_one.pdf][When is One Thing Equal to Another?]]
 
   * [[https://www.mit.edu/~eadam/eadam_PhDThesis.pdf][Systems, Generativity and Interactional Effects by Elie M. Adam]] is
@@ -117,7 +117,7 @@ If you're a programmer:
 
   We have a slack workspace where we work through problem sets and
   discuss papers.
-  
+
   Office hours: Wednesdays at 8am EDT is our nominal time to meet in Slack, so
   you're likely to find people present in realtime then. Otherwise feel free to
   post any time -- you just might not get an immediate response.
@@ -126,7 +126,7 @@ If you're a programmer:
   everyone is. If you'd like to join, email [[mailto:mgallaher@ata-llc.com][Mike Gallaher]].
 
 * Background in Math
-  
+
   It helps to have studied abstract algebra -- groups, monoids, homomorphisms,
   and the like. Here's some resources to help you get up to speed.
 
@@ -135,23 +135,23 @@ If you're a programmer:
   [[https://pimbook.org/][A Programmer's Introduction to Mathematics]], Jeremy Kun
 
   [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf][Awodey]] is a gentle introduction to category theory with "remedial" algebra
-  
+
 
 * Exercises
-  
-  These supplement the ones in the book and lectures. 
+
+  These supplement the ones in the book and lectures.
   They tie the ACT material to our own everyday experience
   and relate them to the kinds of problems we routinely deal with.
 
   "Exercises" mean those in Seven Sketches.  "Puzzles" means the problems posed
   in Baez's materials.
   So what should we call these?
-  
+
   Here's the [[https://forum.azimuthproject.org/categories/applied-category-theory-exercises][discussions on exercises]] from John Baez's course.
-  
+
 
 ** Baez puzzles 1
-   
+
 Puzzle 4. List some interesting and important examples of posets that haven't already been listed in other comments in this thread.
 
 ** [[file:pages/blood-relations.org][Blood Relations]]
@@ -168,7 +168,7 @@ Puzzle 4. List some interesting and important examples of posets that haven't al
 
    [[https://www.hillelwayne.com/post/formally-modeling-migrations/][Formally Modeling Migrations]]
 
-   
+
 * Other resources
 
   * [[https://github.com/hmemcpy/milewski-ctfp-pdf][Category Theory for Programmers]] Bartosz Milewski
@@ -178,7 +178,7 @@ Puzzle 4. List some interesting and important examples of posets that haven't al
   * [[https://cat.boffosocko.com/][UCLA Category Theory Study Group]]; [[https://www.youtube.com/watch?v=soGQ286EaCs][associated hangout video]]
 
   * [[https://arxiv.org/pdf/1809.05923.pdf][What is Applied Category Theory?]] and [[https://www.math3ma.com/blog/what-is-category-theory-anyway][What is Category Theory Anyway?]]
-  
+
 
 * Why Study ACT?
 
