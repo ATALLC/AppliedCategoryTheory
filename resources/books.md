@@ -54,7 +54,7 @@
 
 1. **Write small examples by hand** (Haskell, Python, Clojure) as you read.
 2. **Draw diagrams**—a quick sketch often beats chasing symbols.
-3. **Ask questions in `#levelup-act`**—no question is too basic.
+3. **Ask questions in `#levelup`**—no question is too basic.
 4. **Teach back**—present a 5‑minute lightning talk; teaching solidifies understanding.
 
 > *Remember: ACT is a contact sport—proofs run in your head, but insights grow when shared aloud.*

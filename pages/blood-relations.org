@@ -1,18 +1,18 @@
 #+TITLE: Blood Relations
-   
+
    Check out the diagrams about halfway through the
-   [[https://en.wikipedia.org/wiki/Blood_type][Wikipedia article on blood types]]. 
+   [[https://en.wikipedia.org/wiki/Blood_type][Wikipedia article on blood types]].
    I've (badly) reproduced the relevant ones here.
-   
+
 * Mapping people to blood types
 
    You can derive many mappings from this article.
    For example, there is a mapping from people to blood types:
    given a person, what is their blood type?
-   
+
    Is the mapping of people to blood types a monomorphism? epimorphism? iso?
    Could it be an endomorphism?
-   
+
    Does the mapping of people to blood types induce an equivalence relation
    on the set of people?  What would be the equivalence classes?
 
@@ -31,9 +31,9 @@
 | AB+       | Y     | Y  | Y  | Y  | Y  | Y  | Y   | Y   |
 
    [[file:art/Blood_Compatibility.png]]
-   
+
    [[https://en.wikipedia.org/wiki/Blood_type#/media/File:Blood_Compatibility.svg][Blood Compatibility]]
-  
+
    The first diagram shows donor/recipient type compatibility as an order relation.
    How is this related to the mapping from people to blood types?
 
@@ -53,11 +53,11 @@
    in the next diagram.
 
    [[file:art/Plasma_donation_compatibility_path.png]]
- 
+
    [[https://en.wikipedia.org/wiki/File:Plasma_donation_compatibility_path.svg][Plasma donation compatibility]]
 
    How would you describe this as a binary relation?
    Answer the same questions as for the previous diagram.
-   
+
    How does this relation compare to the one for blood compatibility?
-   
+

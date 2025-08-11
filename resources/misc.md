@@ -8,10 +8,10 @@
 
 | Title                                 | Author           | Link                                          | Why It Matters                                                    |
 | ------------------------------------- | ---------------- | --------------------------------------------- | ----------------------------------------------------------------- |
-| "Monoids: The Power of Abstraction"   | Hillel Wayne     | hillelwayne.com/post/monoids/                 | Walk‑through from everyday JavaScript reducers to formal monoids. |
-| "Functors for People in a Hurry"      | Denys Shabalin   | dshablins.com/functors‑fast                   | TL;DR cheat‑sheet ideal before interviews or code‑reviews.        |
-| "String Diagrams as a Debugging Tool" | Jane Street Blog | blog.janestreet.com/string-diagrams-debugging | Real‑life bug hunt solved via diagrammatic reasoning.             |
-| "Category Theory vs. Design Patterns" | Noel Welsh       | underscore.io/blog                            | Shows CT subsuming common OO patterns—eye‑opener for OO devs.     |
+| "Monoids: The Power of Abstraction"   | Hillel Wayne     | [Monoids](https://hillelwayne.com/post/monoids/) | Walk‑through from everyday JavaScript reducers to formal monoids. |
+| "Functors for People in a Hurry"      | Denys Shabalin   | [Functors (fast)](https://dshablins.com/functors‑fast)                   | TL;DR cheat‑sheet ideal before interviews or code‑reviews.        |
+| "String Diagrams as a Debugging Tool" | Jane Street Blog | [Debugging with String Diagrams](https://blog.janestreet.com/string-diagrams-debugging) | Real‑life bug hunt solved via diagrammatic reasoning.             |
+| "Category Theory vs. Design Patterns" | Noel Welsh       | [Category Theory vs Design Patterns](https://underscore.io/blog)| Shows CT subsuming common OO patterns—eye‑opener for OO devs.     |
 
 ---
 
@@ -19,10 +19,10 @@
 
 | Name          | Lang   | Link                                | Use Case                                                                   |
 | ------------- | ------ | ----------------------------------- | -------------------------------------------------------------------------- |
-| **Catlab.jl** | Julia  | github.com/AlgebraicJulia/Catlab.jl | Typed compositional model‑building; basis for many demos.                  |
-| **PyCats**    | Python | github.com/pycats/pycats            | Lightweight FP primitives (monads, functors) for Python quick experiments. |
-| **Prop**      | Rust   | github.com/oxarbitr/proptest        | Property‑testing harness inspired by categorical laws.                     |
-| **WireViz**   | CLI    | github.com/formatc1702/WireViz      | Generates wiring diagrams—great companion to string‑diagram intuition.     |
+| **Catlab.jl** | Julia  | https://github.com/AlgebraicJulia/Catlab.jl | Typed compositional model‑building; basis for many demos.                  |
+| **PyCats**    | Python | https://github.com/pycats/pycats            | Lightweight FP primitives (monads, functors) for Python quick experiments. |
+| **Prop**      | Rust   | https://github.com/oxarbitr/proptest        | Property‑testing harness inspired by categorical laws.                     |
+| **WireViz**   | CLI    | https://github.com/formatc1702/WireViz      | Generates wiring diagrams—great companion to string‑diagram intuition.     |
 
 ---
 
@@ -34,7 +34,7 @@
 | "Why Functor Laws Matter" mini‑series       | @math\_rachel | Illustrated with emoji diagrams; good shareable teaching aid.        |
 | "Backprop as Functor" code snippets         | @functorialAI | Live‑coded derivations aligning with Fong/Spivak paper.              |
 
-> *Note: Twitter handles change—link rot happens. Ping `#levelup-act` if you spot a dead link.*
+> *Note: Twitter handles change—link rot happens. Ping `#levelup` if you spot a dead link.*
 
 ---
 
