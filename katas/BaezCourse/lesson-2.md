@@ -4,7 +4,7 @@
 
 Assignment from [lesson 1](lesson-1.md), summarized here:
 
-- Read [Engaging with Mathematics](engaging.md), especially if you're a programmer.
+- Read [Engaging with Mathematics](../../resources/engaging-with-mathematics.md), especially if you're a programmer.
 - Read [Seven Sketches](https://arxiv.org/abs/1803.05316%0A) section 1.2. Do exercises 1.6 thru 1.74.
 - Find a research paper involving ACT that interests you.
 
