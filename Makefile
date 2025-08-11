@@ -5,6 +5,7 @@ pack:
 			resources/*.md \
 			demos/*.md \
 			katas/*/*.md \
+			archive/*/*.org \
 			*.org \
 			*.md \
 			logseq/pages/*.org \

@@ -12,11 +12,12 @@ Welcome!  This repository is the **hands‑on playground** for engineers learnin
 
 1. [Why ACT?](#why-act)
 2. [Quick Start / Show Me It’s Useful](#quick-start--show-me-its-useful)
-3. [Study‑Group Logistics](#study-group-logistics)
-4. [Repository Map](#repository-map)
-5. [Where We Use This Today](#where-we-use-this-today)
-6. [Contributing](#contributing)
-7. [License & Attribution](#license--attribution)
+3. [Texts](#texts)
+4. [Study‑Group Logistics](#study-group-logistics)
+5. [Repository Map](#repository-map)
+6. [Where We Use This Today](#where-we-use-this-today)
+7. [Contributing](#contributing)
+8. [License & Attribution](#license--attribution)
 
 ---
 
@@ -41,12 +42,34 @@ If you’ve ever chained functions, built a Kubernetes DAG, or massaged JSON int
 
 ---
 
+## Texts
+
+The main text:
+
+   * [Seven Sketches in Compositionality: Invitation to Applied Category Theory](https://arxiv.org/pdf/1803.05316.pdf).
+     This is the textbook used in [Applied Category Theory lectures](https://www.youtube.com/watch?v=UusLtx9fIjs&t=525s&index=2&list=PLhgq-BqyZ7i5lOqOqqRiS0U5SwTmPpHQ5) from MIT.
+     NOTE: The numbering of exercises and examples is different in the PDF!
+     We use the numbering in the printed textbook.
+
+You should also get at least one of these two supplemental texts:
+
+  * [Conceptual Mathematics: A first introduction to categories](https://www.amazon.com/Conceptual-Mathematics-First-Introduction-Categories/dp/052171916X), Lawvere and
+    Schanuel; this is the most approachable one I've found yet.
+
+  * [Category Theory in Context](http://www.math.jhu.edu/~eriehl/context.pdf), Emily Riehl; for the mathematically inclined.
+
+
+If you're a programmer:
+   * [The Dao of Functional Programming](https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/DaoFP.pdf)
+
+---
+
 ## Study‑Group Logistics
 
 | When (ET)           | Focus                                                    | Channel                       |
 | ------------------- | -------------------------------------------------------- | ----------------------------- |
-| **Monday 2 pm**     | Diagram chases, proof workshops                          | `#level-up` (Slack) & Teams |
-| **Wednesday 12 pm** | Code translation & tooling hour                          | `#level-up` & Teams         |
+| **Monday 2 pm**     | Practical tech sessions, workshops                          | `#level-up` (Slack) & Teams |
+| **Wednesday 12 pm** | Practical tech sessions, workshops                          | `#level-up` & Teams         |
 | **Friday 12 pm**    | **Dedicated ACT deep dive** (research topic of the week) | `#level-up` & Teams         |
 
 > Full calendar & Teams links live in the LevelUp shared calendar.
@@ -64,8 +87,9 @@ If you’ve ever chained functions, built a Kubernetes DAG, or massaged JSON int
 │   ├── videos.md           # curated talk & lecture playlist  📺
 │   ├── papers.md           # seminal & practical research papers  📄
 │   └── books.md            # recommended books & chapters  📚
+├── pages/                  # study materials, notes
 ├── slides/                 # reveal.js presentations (HTML)
-├── makefile                # `make pack` to bundle uploads for ChatGPT
+├── Makefile                # `make pack` to bundle uploads for ChatGPT
 └── …
 ```
 
