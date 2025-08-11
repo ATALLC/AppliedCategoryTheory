@@ -65,6 +65,6 @@
 
 ## 📁 Archive & Further Reading
 
-*The full, uncurated dump from `long-list.org` lives at **`archive/long-list.org`**. Feel free to mine it for niche topics.*
+*The full, uncurated dump from lives at [long-list](../archive/long-list.md). Feel free to mine it for niche topics.*
 
 > *Tip: For Friday deep‑dive sessions we usually annotate one or two of these papers with questions—watch `#levelup` for weekly picks.*

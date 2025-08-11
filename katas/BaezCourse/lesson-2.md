@@ -1,0 +1,56 @@
+# ACT Study Group lesson 2
+
+## preparation
+
+Assignment from [lesson 1](lesson-1.md), summarized here:
+
+- Read [Engaging with Mathematics](engaging.md), especially if you're a programmer.
+- Read [Seven Sketches](https://arxiv.org/abs/1803.05316%0A) section 1.2. Do exercises 1.6 thru 1.74.
+- Find a research paper involving ACT that interests you.
+
+Here are the relevant pages from [John Baez's ACT course](https://www.azimuthproject.org/azimuth/show/Applied+Category+Theory+Course):
+
+- [Baez Lecture 3](https://forum.azimuthproject.org/discussion/1812/lecture-3-chapter-1-posets/p1)
+- [Baez Chapter 1 Exercises and Puzzles](https://forum.azimuthproject.org/discussion/2038/exercises-and-puzzles-1-chapter-1)
+- [Baez Chapter 1 All Exercises](https://www.azimuthproject.org/azimuth/show/Applied+Category+Theory+-+Chapter+1+-+Exercises)
+- [Baez Discussions on Chapter 1](https://forum.azimuthproject.org/discussion/1718/chapter-1/p1)
+
+## goals
+
+- Sets, relations, functions, partitions, preorders
+- Assess how fast the group feels we can get through the material.
+- Discussion of chosen research papers will
+  - help the group understand what topics interest its members
+  - motivate your study – it's good to have a goal in mind
+
+## Discussion
+
+Preorders introduce concepts that apply when we start studying categories. (In fact, all preorders are automatically categories, though not all categories are preorders.)
+
+- help with problem set: in slack, say the numbers of problems you need help with
+
+  - disjoint union
+  - partitions involve a surjective function
+  - quotient is the set of parts
+  - pullback
+
+- chosen research papers
+
+- prepare for section 1.3: Meets and Joins. This is only four pages, but it's important to understand these concepts. If you don't, section 1.4 won't make any sense.
+
+  If you need motivation, know that this material is leading up to one of the most important concepts in category theory: adjunctions. Adjunctions are fundamental in the categorical treatment of data representations and transformations (and lots of other things).
+
+- no office hours next week (Clojure/conj!)
+
+## Notes
+
+Baez, in his course notes, takes issue with Fong&Spivak's use of the term "poset" when referring to "preorders". I wonder if he was using an earlier version of Seven Sketches. In my copy of Seven Sketches, on page 14, poset is defined as a partially-ordered set, in line with the conventional definition. Perhaps Seven Sketches was revised to clear this up.
+
+It does observe that a poset is a "skeletal preorder" – a special case of a preorder, where "equivalent" means "equal".
+
+## Lesson 2 assignment
+
+- Read [Seven Sketches](https://arxiv.org/abs/1803.05316%0A) section 1.3: Meets and Joins.
+- Do all Exercises: 1.75, 1.80, 1.85, 1.89
+- Read as much as you can of Elie M. Adam's thesis [Systems, Generativity and Interactional Effects](https://www.mit.edu/~eadam/eadam_PhDThesis.pdf) referenced in section 1.3.2. You should be able to recognize some of the concepts now. What name does he use to refer to what Seven Sketches calls a preorder?
+- Try reading your chosen research paper. Pick out the concepts that you do understand.

@@ -2,11 +2,11 @@ pack:
 	(for i in \
 			Makefile \
 			*.md \
-			pages/*.org \
+			pages/*.md \
 			resources/*.md \
 			demos/*.md \
 			katas/*/*.md \
-			archive/*.org \
+			archive/*.md \
 			logseq/pages/*.org \
 	 ; do echo $$i; cat $$i; echo ---- ; done ;\
 	) > ~/act-pack.txt

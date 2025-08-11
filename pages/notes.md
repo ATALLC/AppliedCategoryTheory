@@ -1,0 +1,79 @@
+Here are some notes generated during discussions, and interesting snippets from other fora.
+
+# ACT 1.1: Ordering of Partitions
+
+I agree that to avoid confusion, we should first stick with the terminology in the book: a system is a particular way of connecting points. The text is careful to avoid using words like "set" when talking about those systems in the first subsection.
+
+It is the systems that are ordered with respect to one another. The connections or points aren't ordered (at least not here).
+
+Exercise 1.3 reveals that systems can be thought of as involving a set of points. In fact, a system is a partition as defined in Def. 1.10, which brings in the notion of partitioning a set A into parts, which are specially crafted subsets of A that don't overlap and collectively don't leave out any elements of A.
+
+Each part is indeed a set – a subset of A – and the partition is a set of sets.
+
+One thing that might be confusing about the definition is that it introduces yet another set P of part labels. As the name suggests, you can think of a label as a sticker that you can attach to a part. Each part gets exactly one sticker, with no stickers left over.
+
+This gives us a way to talk about the parts without worrying about the fact that parts are actually (sub)sets.
+
+A fancier way of expressing this "exhaustive" one-to-one correspondence between parts (subsets) and labels is to say that the set of parts is indexed by the set P of labels.
+
+To restate what we said above about the ordering of systems: It is the partitions that are ordered with respect to one another. We haven't defined an ordering of the parts, either within the same system or between parts of different systems. So it doesn't make sense to try to compare parts – you can only compare entire systems.
+
+(This is not to say that you couldn't define some ordering of parts, maybe based on how many elements they have, but that's not what this section is talking about.)
+
+# Partial Order induces the finest partition
+
+In Example 1.44 we've seen that a preorder induces a partition on its set. You get interesting parts that have multiple elements, because many elements can be equivalent and still be distinct. But what about a partially-ordered set (a poset) where that's not true?
+
+Proposition: A partial order induces the finest partition (all singletons) on its set.
+
+Because a partial order is also a preorder, it induces a partition on its set. Every element will belong to one part, by the definition of partition.
+
+We just have to show that each part is a singleton set.
+
+Each part is a subset whose elements are all equivalent to one another. However, in a partial order, antisymmetry guarantees that no two distinct elements in the poset can be equal.
+
+Any pair of elements that we find to be equivalent are in fact equal (identical). They're not distinct elements at all – the "pair" consists of the element and itself (x,x). By reflexivity, every element is indeed related to itself. Therefore, each part is a subset containing exactly one element – a singleton set.
+
+# Posets and entity resolution
+
+Suppose you have a dynamic dataset, where you're receiving messages of the form p1 \<= p2 – in other words, you're getting realtime updates, maybe from sensors. You can represent them as a preorder, maybe as a digraph where you'd create nodes p1 and p2, and a link p1-\>p2. If you discover that you've just created a loop, then all the nodes in the loop are in fact equivalent.
+
+If your preorder is actually a poset (a skeletal preorder, where antisymmetry applies), you can collapse them all into one node.
+
+This might be a way to model entity resolution, where you have a bunch of observations about individuals, and finally you have enough to "connect the dots" and deduce that some of them are in fact about the same individual.
+
+# Random
+
+[Compiling to Categories](http://conal.net/papers/compiling-to-categories/), Conal Elliot
+
+[The Galois Connection between Syntax and Semantics](https://www.logicmatters.net/resources/pdfs/Galois.pdf) might be a good introductory paper.
+
+[A survey of graphical languages for monoidal categories](https://arxiv.org/pdf/0908.3347.pdf), Peter Selinger It is well-known that the simply typed lambda-calculus is modeled by any cartesian closed category (CCC).
+
+[Catlab](https://github.com/epatters/Catlab.jl) is an experimental library for computational category theory, written in Julia.
+
+Overleaf
+
+# From <span class="spurious-link" target="categorytheory.zulipchat.com">*ACT Zulip*</span> : Petri Nets do not scale
+
+practice: applied ct \>systems Fabrizio Genovese 11:38 AM
+
+It is true, Petri nets do not scale.
+
+I think this is fairly uncontroversial for anyone that tried to apply Petri nets to do real stuff. This is why you want to do Petri nets categorically. The power of Petri nets - in my view - is that they "present" (lots of details here but let's pretend they don't exist) free symmetric strict monoidal categories. Now:
+
+"Free" means "you can map these categories wherever you want"
+
+"Symmetric Strict Monoidal" means "These categories are the most general example of process theories, which is the bare minimum you need to do real world stuff, imho."
+
+So, the idea is that you use Petri nets as an abstracted model of whatever it is that you care about, and via functorial semantics you use that model to orchestrate what has to happen "for real". This is what Statebox does.
+
+So, for instance, you have a transition in your Petri net called "Login". This goes from place "Guest" to place "Logged in User". then from this place you can have other transitions like "shop", "update cart", "pay", "logout" etc. Now the important thing is that this "Login" transition is not a real login. It just represents the action of logging in. I don't want to represent the whole internal log in process in a Petri net cos that would be a useless nightmare. Using the functorial mapping I can map the generator corresponding to "login" in my free symmetric strict monoidal category to some haskell function (hence something living in the category of Haskell types and functions between them) that is an actual, real implementation of a login.
+
+So, as long as my functions are correctly implemented, I know that the nice proprieties I can prove on my Petri nets will translate to my code. For us, this is the only sensible way of using Petri nets in software. Call it "formally verified orchestration" if you want. Notice also that, depending on what your semantics does, this could be very powerful. E.g. Petri nets define languages that always terminate, but nothing forbids you to map transitions in your net to infinite loops in your semantics (if it allows it). So you can even do Turing-complete computation in this way. Clearly in this case it is not true anymore that nice properties of nets are transported to your semantics.
+
+# random 2
+
+Natural transformation between Functors
+
+Composing the functors composes their "effects" compose the elements

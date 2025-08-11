@@ -1,0 +1,53 @@
+# Blood Relations
+
+Check out the diagrams about halfway through the [Wikipedia article on blood types](https://en.wikipedia.org/wiki/Blood_type). I've (badly) reproduced the relevant ones here.
+
+# Mapping people to blood types
+
+You can derive many mappings from this article. For example, there is a mapping from people to blood types: given a person, what is their blood type?
+
+Is the mapping of people to blood types a monomorphism? epimorphism? iso? Could it be an endomorphism?
+
+Does the mapping of people to blood types induce an equivalence relation on the set of people? What would be the equivalence classes?
+
+# Blood compatibility as a relation
+
+|           |       |     |     |     |     |     |     |     |
+|-----------|-------|-----|-----|-----|-----|-----|-----|-----|
+|           | Donor |     |     |     |     |     |     |     |
+| Recipient | O-    | O+  | A−  | A+  | B−  | B+  | AB− | AB+ |
+| O−        | Y     | \_  | \_  | \_  | \_  | \_  | \_  | \_  |
+| O+        | Y     | Y   | \_  | \_  | \_  | \_  | \_  | \_  |
+| A−        | Y     | \_  | Y   | \_  | \_  | \_  | \_  | \_  |
+| A+        | Y     | Y   | Y   | Y   | \_  | \_  | \_  | \_  |
+| B−        | Y     | \_  | \_  | \_  | Y   | \_  | \_  | \_  |
+| B+        | Y     | Y   | \_  | \_  | Y   | Y   | \_  | \_  |
+| AB−       | Y     | \_  | Y   | \_  | Y   | \_  | Y   | \_  |
+| AB+       | Y     | Y   | Y   | Y   | Y   | Y   | Y   | Y   |
+
+![](art/Blood_Compatibility.png)
+
+[Blood Compatibility](https://en.wikipedia.org/wiki/Blood_type#/media/File:Blood_Compatibility.svg)
+
+The first diagram shows donor/recipient type compatibility as an order relation. How is this related to the mapping from people to blood types?
+
+Can a category be formed using blood types as objects? What would the arrows be? Would you have to add any that aren't shown in the diagram?
+
+How would you describe compatibility as a binary relation? Is it
+
+- reflexive? That would mean, everyone can receive their own blood type.
+- symmetric? What would that mean?
+- antisymmetric? What would that mean?
+- transitive? What would that mean?
+
+If it's an equivalence relation, what equivalence classes are induced by it?
+
+The article also describes the compatibility of blood plasma, shown in the next diagram.
+
+![](art/Plasma_donation_compatibility_path.png)
+
+[Plasma donation compatibility](https://en.wikipedia.org/wiki/File:Plasma_donation_compatibility_path.svg)
+
+How would you describe this as a binary relation? Answer the same questions as for the previous diagram.
+
+How does this relation compare to the one for blood compatibility?
