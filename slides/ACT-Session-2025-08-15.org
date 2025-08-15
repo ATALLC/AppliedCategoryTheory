@@ -1,0 +1,148 @@
+#+TITLE: ACT: Syntax ↔ Semantics, Blood Relations, Adjoints
+#+SUBTITLE: Choose-your-own mini-lab (Tracks A, B, C)
+#+AUTHOR: Mike Gallaher
+#+DATE: 2025-08-15 12:00 ET
+#+REVEAL_VERSION: 3.0.0
+#+REVEAL_THEME: simple
+#+REVEAL_INIT_OPTIONS: transition:'slide', slideNumber:true, hash:true, controls:true, progress:true, width:1280, height:720, margin:0.08, transitionSpeed:'fast'
+#+OPTIONS: toc:nil num:nil reveal_center:t reveal_history:t
+#+FILE_TAGS: :levelup:act
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+COMMENT: https://github.com/yjwen/org-reveal/
+
+
+* Welcome & Today’s Plan
+- Quick website update & on-ramps
+- Then *choose a track*:
+  - A) Blood Relations (relations/posets)
+  - B) Syntax vs Semantics (emoji mini-lab)
+  - C) Compilation ↔ Decompilation as Adjoints (teaser)
+- Low pressure, high curiosity — bring one question
+#+BEGIN_NOTES
+Keep this lightweight. Invite quick intros if the group is small.
+#+END_NOTES
+
+** What do you want from this hour?
+- Write 1–2 bullets you want to learn/clarify today
+- Add your name + chosen track (A/B/C)
+
+* Website updates since last time
+- Inconsistencies fixed; new *Engaging with Mathematics* page
+- Pointers: *Blood Relations*, *Compilation as Adjoints*
+- Goal: better on-ramps for different backgrounds
+#+BEGIN_NOTES
+Open the repo and briefly show the three pages.
+#+END_NOTES
+
+* Tracks Overview
+- A) *Blood Relations*: concrete relations ⇒ preorders ⇒ (thin) categories
+- B) *Syntax vs Semantics*: same meaning, different notations (English ↔ emojis)
+- C) *Compilation/Decompilation as Adjoints*: programmer-native adjunction shape
+
+* Track A — Blood Relations (hands-on)
+- Warm-up with ABO donor/recipient compatibility
+- Use it to name properties of relations and orders
+- Connect to Seven Sketches Chapter 1
+
+** A1. Warm-up questions
+- Is *can-receive-from* **reflexive**? **symmetric**? **antisymmetric**? **transitive**?
+- If we view compatibility as an order, what are *top*/*bottom* elements?
+- Mapping *person → blood type*: does this induce an **equivalence relation** on people? What are the classes?
+
+** A2. From relations to orders
+- Preorders: reflexive + transitive
+- Posets: antisymmetric preorders
+- Mini-fact: every preorder is a **thin category** (at most one morphism between objects)
+
+** A3. Whiteboard prompts (A)
+- Mark which compatibility facts make transitivity hold
+- What are the morphisms if blood types form a category?
+- Where would meets/joins show up (if at all)?
+
+** A4. Mini-takeaway (A)
+- Relations are a gentle entry to categorical thinking
+- Equivalences ↔ partitions; preorders ↔ thin categories
+
+* Track B — Syntax vs Semantics (emoji mini-lab)
+- Feel the distinction by translating the *same* content across notations
+- Link to logic/model theory (just the idea, not a deep dive)
+
+** B1. Same semantics, different syntax
+- English: "Every car has 4 wheels"
+- Emojis: "∀🚗  →  🚙⬭⬭⬭⬭" (or pick your own emoji encoding)
+- What *semantic claim* is common to both?
+
+** B2. Micro-exercises
+- Translate between English ↔ emoji for 2–3 simple statements
+- Identify the underlying *sets*, *relations*, and *quantifiers*
+- Which truths survive notation changes?
+
+** B3. Galois-connection intuition
+- Think of a *syntax space* and a *semantics space*
+- Two monotone maps ("meaning" and "presentation") can form a **Galois connection**
+- Adjunctions generalize this idea in category theory
+
+** B4. Model vs proof theory (post-it overview)
+- Model theory: structures & satisfaction (\\models)
+- Proof theory: derivations & inference rules (⊢)
+- Today: just notice they’re two lenses on the *same semantics*
+
+** B5. Whiteboard prompts (B)
+- What stays true across English/emoji renderings?
+- What’s the relation/structure we’re *really* talking about?
+
+** B6. Mini-takeaway (B)
+- Syntax is choice of notation; semantics is the invariant content
+- Category-theoretic moral: focus on *morphisms* that preserve meaning
+
+* Track C — Compilation ↔ Decompilation as Adjoints (teaser)
+- Show adjunction shape with familiar programming workflows
+
+** C1. Preorders on artifacts
+- Define a preorder on sources (e.g., "refines at least as much behavior")
+- Define a preorder on binaries (e.g., "implements at least as many behaviors")
+
+** C2. Monotone maps
+- c: Source → Binary  (compile)
+- d: Binary → Source  (decompile/abstract/interpret)
+- Both monotone with respect to the chosen preorders
+
+** C3. When c ⊣ d (Galois insertion)
+- c(s) ≤ b  ⇔  s ≤ d(b)
+- N := d ∘ c is a **closure operator** (normal form/canonicalization)
+- Read: decompile(compile(s)) is “no more specific than” s, but canonical
+
+** C4. What compilers preserve
+- Semantics is what survives compilation (independent of surface syntax)
+- Pretty-printing/formatting/emoji are syntax changes; semantics remains
+
+** C5. Whiteboard prompts (C)
+- Propose sensible preorders for your languages/tools
+- When might c ∘ d = id hold? When definitely not?
+
+** C6. Mini-takeaway (C)
+- Adjunctions capture approximation/abstraction pairs
+- Closure operators model normalization passes
+
+* Reading paths (choose your own)
+- For *math-friendly (physics)*:
+  - Seven Sketches §1.x (equivalences, orders), peek at Galois connections
+  - Optional: applications chapter excerpts for intuition
+- For *programmer-friendly*:
+  - *Engaging with Mathematics* on-ramp
+  - *Blood Relations* exercises; *Quick Start* / *Why ACT?*
+
+* Mini-assignments (pick one)
+- A: Answer 2–3 Blood-Relations prompts in the repo
+- B: Translate two emoji statements to English and name the underlying relation
+- C: Propose preorders for S and B; say whether you expect a Galois insertion and why
+
+* Leave breadcrumbs for the monthly report
+- Record: who picked which track (A/B/C)
+- Capture 1–2 questions surfaced
+- Link any notes/doodles created today
+
+* Wrap-up & Next time
+- Share one insight or confusion from your track
+- Suggest a micro-topic to go deeper on next week
+- Thanks!

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>ACT: Syntax ↔ Semantics, Blood Relations, Adjoints</title>
+<meta name="author" content="Mike Gallaher"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/simple.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">ACT: Syntax ↔ Semantics, Blood Relations, Adjoints</h1><h2 class="author">Mike Gallaher</h2><h2 class="date">2025-08-15 12:00 ET</h2><p class="date">Created: 2025-08-15 Fri 11:52</p>
+</section>
+<section>
+<section id="slide-orge112047">
+<h2 id="orge112047">Welcome &amp; Today’s Plan</h2>
+<ul>
+<li>Quick website update &amp; on-ramps</li>
+<li>Then <b>choose a track</b>:
+<ul>
+<li>A) Blood Relations (relations/posets)</li>
+<li>B) Syntax vs Semantics (emoji mini-lab)</li>
+<li>C) Compilation ↔ Decompilation as Adjoints (teaser)</li>
+
+</ul></li>
+<li>Low pressure, high curiosity — bring one question</li>
+
+</ul>
+<aside class="notes">
+<p>
+Keep this lightweight. Invite quick intros if the group is small.
+</p>
+
+</aside>
+</section>
+<section id="slide-org8c4bf33">
+<h3 id="org8c4bf33">What do you want from this hour?</h3>
+<ul>
+<li>Write 1–2 bullets you want to learn/clarify today</li>
+<li>Add your name + chosen track (A/B/C)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org022f2fd">
+<h2 id="org022f2fd">Website updates since last time</h2>
+<ul>
+<li>Inconsistencies fixed; new <b>Engaging with Mathematics</b> page</li>
+<li>Pointers: <b>Blood Relations</b>, <b>Compilation as Adjoints</b></li>
+<li>Goal: better on-ramps for different backgrounds</li>
+
+</ul>
+<aside class="notes">
+<p>
+Open the repo and briefly show the three pages.
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org9a25d70">
+<h2 id="org9a25d70">Tracks Overview</h2>
+<ul>
+<li>A) <b>Blood Relations</b>: concrete relations ⇒ preorders ⇒ (thin) categories</li>
+<li>B) <b>Syntax vs Semantics</b>: same meaning, different notations (English ↔ emojis)</li>
+<li>C) <b>Compilation/Decompilation as Adjoints</b>: programmer-native adjunction shape</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org5476eb3">
+<h2 id="org5476eb3">Track A — Blood Relations (hands-on)</h2>
+<ul>
+<li>Warm-up with ABO donor/recipient compatibility</li>
+<li>Use it to name properties of relations and orders</li>
+<li>Connect to Seven Sketches Chapter 1</li>
+
+</ul>
+</section>
+<section id="slide-orgf854216">
+<h3 id="orgf854216">A1. Warm-up questions</h3>
+<ul>
+<li>Is <b>can-receive-from</b> <b><b>reflexive</b></b>? <b><b>symmetric</b></b>? <b><b>antisymmetric</b></b>? <b><b>transitive</b></b>?</li>
+<li>If we view compatibility as an order, what are <b>top*/*bottom</b> elements?</li>
+<li>Mapping <b>person → blood type</b>: does this induce an <b><b>equivalence relation</b></b> on people? What are the classes?</li>
+
+</ul>
+</section>
+<section id="slide-org7687726">
+<h3 id="org7687726">A2. From relations to orders</h3>
+<ul>
+<li>Preorders: reflexive + transitive</li>
+<li>Posets: antisymmetric preorders</li>
+<li>Mini-fact: every preorder is a <b><b>thin category</b></b> (at most one morphism between objects)</li>
+
+</ul>
+</section>
+<section id="slide-orgd803df9">
+<h3 id="orgd803df9">A3. Whiteboard prompts (A)</h3>
+<ul>
+<li>Mark which compatibility facts make transitivity hold</li>
+<li>What are the morphisms if blood types form a category?</li>
+<li>Where would meets/joins show up (if at all)?</li>
+
+</ul>
+</section>
+<section id="slide-orgc6258a5">
+<h3 id="orgc6258a5">A4. Mini-takeaway (A)</h3>
+<ul>
+<li>Relations are a gentle entry to categorical thinking</li>
+<li>Equivalences ↔ partitions; preorders ↔ thin categories</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org07b0385">
+<h2 id="org07b0385">Track B — Syntax vs Semantics (emoji mini-lab)</h2>
+<ul>
+<li>Feel the distinction by translating the <b>same</b> content across notations</li>
+<li>Link to logic/model theory (just the idea, not a deep dive)</li>
+
+</ul>
+</section>
+<section id="slide-org7e25236">
+<h3 id="org7e25236">B1. Same semantics, different syntax</h3>
+<ul>
+<li>English: "Every car has 4 wheels"</li>
+<li>Emojis: "∀🚗  →  🚙⬭⬭⬭⬭" (or pick your own emoji encoding)</li>
+<li>What <b>semantic claim</b> is common to both?</li>
+
+</ul>
+</section>
+<section id="slide-org641405f">
+<h3 id="org641405f">B2. Micro-exercises</h3>
+<ul>
+<li>Translate between English ↔ emoji for 2–3 simple statements</li>
+<li>Identify the underlying <b>sets</b>, <b>relations</b>, and <b>quantifiers</b></li>
+<li>Which truths survive notation changes?</li>
+
+</ul>
+</section>
+<section id="slide-org9a89bb7">
+<h3 id="org9a89bb7">B3. Galois-connection intuition</h3>
+<ul>
+<li>Think of a <b>syntax space</b> and a <b>semantics space</b></li>
+<li>Two monotone maps ("meaning" and "presentation") can form a <b><b>Galois connection</b></b></li>
+<li>Adjunctions generalize this idea in category theory</li>
+
+</ul>
+</section>
+<section id="slide-orga9ba153">
+<h3 id="orga9ba153">B4. Model vs proof theory (post-it overview)</h3>
+<ul>
+<li>Model theory: structures &amp; satisfaction (\\models)</li>
+<li>Proof theory: derivations &amp; inference rules (⊢)</li>
+<li>Today: just notice they’re two lenses on the <b>same semantics</b></li>
+
+</ul>
+</section>
+<section id="slide-org0311692">
+<h3 id="org0311692">B5. Whiteboard prompts (B)</h3>
+<ul>
+<li>What stays true across English/emoji renderings?</li>
+<li>What’s the relation/structure we’re <b>really</b> talking about?</li>
+
+</ul>
+</section>
+<section id="slide-orgfb823e1">
+<h3 id="orgfb823e1">B6. Mini-takeaway (B)</h3>
+<ul>
+<li>Syntax is choice of notation; semantics is the invariant content</li>
+<li>Category-theoretic moral: focus on <b>morphisms</b> that preserve meaning</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge2bc681">
+<h2 id="orge2bc681">Track C — Compilation ↔ Decompilation as Adjoints (teaser)</h2>
+<ul>
+<li>Show adjunction shape with familiar programming workflows</li>
+
+</ul>
+</section>
+<section id="slide-org5cba98d">
+<h3 id="org5cba98d">C1. Preorders on artifacts</h3>
+<ul>
+<li>Define a preorder on sources (e.g., "refines at least as much behavior")</li>
+<li>Define a preorder on binaries (e.g., "implements at least as many behaviors")</li>
+
+</ul>
+</section>
+<section id="slide-org4095472">
+<h3 id="org4095472">C2. Monotone maps</h3>
+<ul>
+<li>c: Source → Binary  (compile)</li>
+<li>d: Binary → Source  (decompile/abstract/interpret)</li>
+<li>Both monotone with respect to the chosen preorders</li>
+
+</ul>
+</section>
+<section id="slide-org8e4fc50">
+<h3 id="org8e4fc50">C3. When c ⊣ d (Galois insertion)</h3>
+<ul>
+<li>c(s) ≤ b  ⇔  s ≤ d(b)</li>
+<li>N := d ∘ c is a <b><b>closure operator</b></b> (normal form/canonicalization)</li>
+<li>Read: decompile(compile(s)) is “no more specific than” s, but canonical</li>
+
+</ul>
+</section>
+<section id="slide-orgac9c363">
+<h3 id="orgac9c363">C4. What compilers preserve</h3>
+<ul>
+<li>Semantics is what survives compilation (independent of surface syntax)</li>
+<li>Pretty-printing/formatting/emoji are syntax changes; semantics remains</li>
+
+</ul>
+</section>
+<section id="slide-orgbb97b1d">
+<h3 id="orgbb97b1d">C5. Whiteboard prompts (C)</h3>
+<ul>
+<li>Propose sensible preorders for your languages/tools</li>
+<li>When might c ∘ d = id hold? When definitely not?</li>
+
+</ul>
+</section>
+<section id="slide-org97ae676">
+<h3 id="org97ae676">C6. Mini-takeaway (C)</h3>
+<ul>
+<li>Adjunctions capture approximation/abstraction pairs</li>
+<li>Closure operators model normalization passes</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org1ad0c66">
+<h2 id="org1ad0c66">Reading paths (choose your own)</h2>
+<ul>
+<li>For <b>math-friendly (physics)</b>:
+<ul>
+<li>Seven Sketches §1.x (equivalences, orders), peek at Galois connections</li>
+<li>Optional: applications chapter excerpts for intuition</li>
+
+</ul></li>
+<li>For <b>programmer-friendly</b>:
+<ul>
+<li><b>Engaging with Mathematics</b> on-ramp</li>
+<li><b>Blood Relations</b> exercises; <b>Quick Start</b> / <b>Why ACT?</b></li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgfeeae5b">
+<h2 id="orgfeeae5b">Mini-assignments (pick one)</h2>
+<ul>
+<li>A: Answer 2–3 Blood-Relations prompts in the repo</li>
+<li>B: Translate two emoji statements to English and name the underlying relation</li>
+<li>C: Propose preorders for S and B; say whether you expect a Galois insertion and why</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org95c6fbe">
+<h2 id="org95c6fbe">Leave breadcrumbs for the monthly report</h2>
+<ul>
+<li>Record: who picked which track (A/B/C)</li>
+<li>Capture 1–2 questions surfaced</li>
+<li>Link any notes/doodles created today</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org041e1a9">
+<h2 id="org041e1a9">Wrap-up &amp; Next time</h2>
+<ul>
+<li>Share one insight or confusion from your track</li>
+<li>Suggest a micro-topic to go deeper on next week</li>
+<li>Thanks!</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
