@@ -137,6 +137,7 @@ You can speak of “the blood-compatibility category” whose arrows point from 
 
 ## 7) References and further study
 
+- [Wikipedia article on blood types](https://en.wikipedia.org/wiki/Blood_type)
 - Fong & Spivak, “Seven Sketches in Compositionality,” Chapter 1 (preorders, partitions; introduction to Galois connections).
 - Lawvere & Schanuel, “Conceptual Mathematics,” early chapters on equivalence relations and orders.
 - (Optional) J. Baez, ACT lectures on preorders and posets (for more exercises).
