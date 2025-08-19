@@ -8,6 +8,6 @@ pack:
 			katas/*/*.md \
 			archive/*.md \
 			logseq/pages/*.org \
-			copilot/*.md \
+		  copilot/*.md copilot/*/*.md \
 	 ; do echo $$i; cat $$i; echo ---- ; done ;\
 	) > ~/act-pack.txt
