@@ -16,6 +16,34 @@
 
 ---
 
+## New? Start here (10‑minute primer)
+
+**Read (or skim) these sections to get oriented:**
+
+* In this README: **Why this kata exists**, **What you’ll build**, **Tasks (TDD‑style)**, **Edge cases & invariants**.
+* In `test-plan.md`: **Example Tests**, **Property Tests**, **Data Strategies**.
+
+**Key ideas (restated so you don’t have to context-switch):**
+
+* **Model.** An **order** is a finite mapping `item → quantity` with non‑negative integer quantities.
+* **Operation.** `combine(a, b)` merges two orders (sum overlapping quantities).
+* **Identity.** The **empty order** `e` leaves any order unchanged.
+* **Associativity.** `combine(a, combine(b, c)) == combine(combine(a, b), c)`.
+* **Canonical form.** Choose policies (recommended): drop zero‑quantity lines; normalize keys (e.g., lowercase). Document choices.
+* **TDD flow.** Start with **example tests**, then add **property tests** with Hypothesis; refactor when green.
+
+**Ready‑to‑go defaults (you can accept these):**
+
+* Environment: **Notebook/Colab**
+* Python: **3.11**
+* Packages: **pytest**, **hypothesis**
+* Install (Colab): `!pip -q install hypothesis pytest`
+* Run tests: inline (execute test cell) **or** `!pytest -q`
+
+> Prefer an AI coach? Open **[student-llm-coach.md](./student-llm-coach.md)** and say “use defaults”. It will confirm settings and guide you.
+
+---
+
 ## Why this kata exists
 
 Monoids give you **composition with guarantees**: a set `S`, an associative binary operation `⋆ : S×S → S`, and an identity element `e ∈ S` such that `e ⋆ x = x ⋆ e = x`. In practice, these laws **collapse boilerplate tests** and make refactors safer. This kata uses a simple **coffee order** model to make the laws concrete.
@@ -123,3 +151,4 @@ Changelog
 
 * 2025-08-22: Initial version (mg)
 * 2025-08-22: Added quick links, Colab `!pytest` note, learning outcomes
+* 2025-08-22: **Added “New? Start here” 10‑minute primer and defaults**
