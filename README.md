@@ -1,5 +1,7 @@
 # Applied Category Theory for Software Engineers
 
+> *Programming is just category theory by other means.*
+
 > *“Category theory is the mathematics of **composition**.  Software engineering is the **practice** of composition.”*
 
 Welcome!  This repository is the **hands‑on playground** for engineers learning Applied Category Theory (ACT) through the **LevelUp** program.  Everything here aims to turn abstract diagrams and proofs into code, infrastructure, and AI workflows you can run today.
