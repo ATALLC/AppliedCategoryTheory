@@ -1,8 +1,10 @@
 # CoffeeShop Monoid Kata — Test Plan
 
-**Scope.** Validate that `combine(a, b) -> order` forms a **monoid** over the chosen order model and that implementation is pure and canonical.
+**Scope.** Validate that `combine(a, b) -> order` forms a **monoid** over the chosen order model and that the implementation is **pure** and **canonical**.
 
 **Environments.** Notebook/Colab (preferred) or local (VS Code/terminal). Tests must run identically in both.
+
+**Quick links:** [README.md](./README.md) · [student-llm-coach.md](./student-llm-coach.md)
 
 ---
 
@@ -23,14 +25,14 @@
 
   * **Zeros** dropped (recommended) or kept.
   * **Key normalization** (e.g., lowercase) or exact match.
-* **Purity**: `combine` must not mutate inputs.
-* **Equality**: compare as mappings (order-insensitive); if canonical form chosen, compare canonicalized outputs.
+* **Purity**: `combine` must **not** mutate inputs.
+* **Equality**: compare as mappings (order‑insensitive). If you don’t enforce canonical form, compare via a normalized view.
 
 ---
 
 ## 3) Data Generation Strategies (Hypothesis)
 
-* **Keys**: small alphabet strings (e.g., `a..d`), length 1–8; optionally normalize to chosen policy.
+* **Keys**: small alphabet strings (e.g., `a..d`), length 1–8; normalize per policy.
 * **Quantities**: integers `0..20` (expand later if needed).
 * **Orders**: dicts with ≤ 6 entries.
 * **Identity**: the empty dict `{}`.
@@ -56,7 +58,7 @@
    * If zeros dropped: `combine({'latte': 1}, {'latte': 0}) == {'latte': 1}`
 5. **Purity**
 
-   * Inputs unchanged after call (e.g., re-check originals or hash snapshots).
+   * Deep‑copy inputs before calling `combine` and assert originals unchanged (e.g., using `copy.deepcopy`).
 
 ---
 
@@ -70,7 +72,7 @@
    * ∀ `a, b, c`: `combine(a, combine(b, c)) == combine(combine(a, b), c)`.
 3. **Canonical form** *(if adopted)*
 
-   * Output contains no zero-quantity lines; key normalization applied.
+   * Output contains no zero‑quantity lines; key normalization applied.
 4. **No negatives**
 
    * ∀ outputs `o`: `min(o.values(), default=0) ≥ 0`.
@@ -80,34 +82,34 @@
 
 **Hypothesis Settings**
 
-* Start small (e.g., 50–100 examples); raise after green.
-* Fix a seed (`HYPOTHESIS_SEED`) to reproduce tricky failures when needed.
+* Start small (e.g., 50–100 examples) while iterating; raise after green.
+* Set a seed to reproduce tricky failures: `HYPOTHESIS_SEED=12345 pytest -q`.
 
 ---
 
 ## 6) Edge Cases & Special Checks
 
 * Empty inputs on both sides.
-* Large quantities (upper bound) to catch integer overflow/assumptions.
+* Many overlapping keys vs. disjoint sets.
 * Keys differing only by case/whitespace if normalization chosen.
-* Many overlapping keys vs disjoint sets.
+* Upper‑bound quantities to catch overflow/assumptions.
 
 ---
 
 ## 7) Oracles & Comparison
 
-* Prefer mapping equality (`==`) for canonical forms.
-* If not canonical, compare via a **normalized view** (e.g., a helper that drops zeros/applies key policy before comparison). Keep helper in test code to avoid coupling.
+* Prefer mapping equality (`==`) when outputs are canonical.
+* Otherwise, compare via a **normalized view**: a small helper in tests that applies your zero/key policy before comparison (keep helper in test code to avoid coupling to production code).
 
 ---
 
 ## 8) Failure Triage Procedure
 
 1. Capture the **minimal counterexample** printed by Hypothesis.
-2. Classify: mutation, zero-policy, key-policy, or merge-logic.
+2. Classify: mutation, zero‑policy, key‑policy, or merge‑logic.
 3. Reproduce with a deterministic example test.
-4. Fix with the smallest change; re-run examples → properties.
-5. Record a short **decision note** if policy changed.
+4. Fix with the smallest change; re‑run examples → properties.
+5. Record a short **decision note** if policy changed (breadcrumb).
 
 ---
 
@@ -121,9 +123,9 @@
 
 ## 10) Running & Repro
 
-* **Notebook/Colab**: run property cells repeatedly after changes.
+* **Notebook/Colab**: run property cells repeatedly after changes; or run the full suite with `!pytest -q`.
 * **Local**: `pytest -q` (optionally `-k` to focus failures).
-* When a failure occurs, log the Hypothesis seed in your notes for reproducibility.
+* Log the **Hypothesis seed** in your notes for reproducibility.
 
 ---
 
@@ -140,3 +142,10 @@
 
 * Introduce integer **prices** and show which laws still hold.
 * Port the same properties to another domain (e.g., string concat) to reinforce the pattern.
+
+---
+
+Changelog
+
+* 2025-08-22: Initial version (mg)
+* 2025-08-22: Clarified purity check (deep‑copy), added seed guidance, quick links

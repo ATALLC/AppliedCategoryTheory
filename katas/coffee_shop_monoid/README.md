@@ -7,10 +7,12 @@
 **Environment.** Use what you prefer:
 
 * **Jupyter / Google Colab** (recommended for quick starts)
-* **VS Code** or any local IDE/terminal you already use
+* **VS Code (fallback)** or any local IDE/terminal you already use
+
+**Quick links:**
 
 * ➡ Test plan: [test-plan.md](./test-plan.md)
-* ➡ LLM coach prompt: [copilot-prompt.md](./student-llm-coach.md)
+* ➡ LLM coach prompt: [student-llm-coach.md](./student-llm-coach.md)
 
 ---
 
@@ -59,7 +61,8 @@ pip install -U pip hypothesis pytest
 1. Install deps (see above).
 2. Put your model + `combine` in one cell, tests in another.
 3. Use Hypothesis on test functions (decorated with `@given(...)`). Run the cell to execute tests.
-4. When a property fails, discuss the **minimal counterexample** Hypothesis shows.
+4. You can also run the full suite via: `!pytest -q`.
+5. When a property fails, discuss the **minimal counterexample** Hypothesis shows.
 
 ### Locally (VS Code or terminal)
 
@@ -93,6 +96,14 @@ pytest -q
 
 ---
 
+## Learning outcomes
+
+* State **identity** & **associativity** precisely for a concrete model.
+* Write **example tests → property tests** with Hypothesis.
+* Diagnose **minimal counterexamples** and refactor safely.
+
+---
+
 ## Teaching notes (for facilitators)
 
 * **Remove identity** and re-run: watch properties fail; discuss why.
@@ -101,3 +112,14 @@ pytest -q
 
 ---
 
+## Breadcrumbs (for monthly reporting)
+
+* Add a short note to your running log: date, environment, time spent, any surprises.
+* If you made a design choice (e.g., zero handling), record it in a `DECISIONS.md` or commit message.
+
+---
+
+Changelog
+
+* 2025-08-22: Initial version (mg)
+* 2025-08-22: Added quick links, Colab `!pytest` note, learning outcomes

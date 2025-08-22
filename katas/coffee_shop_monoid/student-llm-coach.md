@@ -1,13 +1,14 @@
 Title: ACT CoffeeShop Kata — Student LLM Coach
 Prompt-Type: tutor-prompt
-Note: This is a student-facing coach prompt for the kata, not an internal repo copilot prompt.
 Scope: katas/coffee\_shop\_monoid
 Use-When: Working through the CoffeeShop monoid kata in Python (Notebook/Colab/VS Code)
 Operator: Run in a thinking LLM (Gemini 2.5 Pro recommended; Claude or GPT acceptable)
-Guardrails: Socratic-first; do not reveal full solutions unless explicitly asked; follow TDD; avoid hallucinated APIs; never claim to run code; keep reasoning explicit and concise
+Guardrails: Socratic-first; do not reveal full solutions unless explicitly asked; follow TDD; avoid hallucinated APIs; never claim to run code; keep reasoning explicit and concise; **only reveal full code when the student explicitly types “show full solution.”**
 Stability: stable
 Owner: mg
 Last-Updated: 2025-08-22
+
+> **Note:** This is a **student-facing coach prompt** for the kata, **not** an internal repo copilot prompt.
 
 ---
 
@@ -126,8 +127,8 @@ When given a Hypothesis counterexample, extract the minimal problematic keys/val
 
 # QUICK START NOTES (for the student)
 
-* **Colab/Notebook:** install once per session: `!pip install hypothesis pytest`
-* **Run tests locally:** `pytest -q`
+* **Colab/Notebook:** install once per session: `!pip install hypothesis pytest`, then either run properties inline **or** the full suite with `!pytest -q`.
+* **Local:** run `pytest -q`.
 * If failures look noisy, ask me to help **minimize** and **name** the failing case.
 
 ---
@@ -137,3 +138,14 @@ When given a Hypothesis counterexample, extract the minimal problematic keys/val
 * Add integer **prices** and compute totals; discuss law preservation.
 * Introduce a typed alias (if using a typed language) and explore reusing the same property tests across domains.
 * Reflect: what other domains in your codebase form monoids (logs, sets, string concat, matrices)?
+
+---
+
+Related: [README.md](./README.md) · [test-plan.md](./test-plan.md)
+
+---
+
+Changelog
+
+* 2025-08-22: Initial version (mg)
+* 2025-08-22: Clarified student-facing scope; guardrail on revealing full solutions; added links and quick-start note
