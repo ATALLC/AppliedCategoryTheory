@@ -1,10 +1,32 @@
 # CoffeeShop Monoid Kata — Test Plan
 
-**Scope.** Validate that `combine(a, b) -> order` forms a **monoid** over the chosen order model and that the implementation is **pure** and **canonical**.
+**Scope.** Validate that `combine(a, b) -> order` forms a **monoid** over the chosen order model and that implementation is pure and canonical.
 
 **Environments.** Notebook/Colab (preferred) or local (VS Code/terminal). Tests must run identically in both.
 
-**Quick links:** [README.md](./README.md) · [student-llm-coach.md](./student-llm-coach.md)
+---
+
+## New? Start here (5‑minute orientation)
+
+**Read first:**
+
+* In **README.md**: *Why this kata exists*, *What you’ll build*, *Tasks (TDD‑style)*, *Edge cases & invariants*.
+* In **this file**: *Example Tests*, *Property Tests*, *Data Generation Strategies*.
+
+**Ready‑to‑go defaults (you can accept these):**
+
+* Environment: **Notebook/Colab**
+* Python: **3.11**
+* Packages: **pytest**, **hypothesis**
+* Install (Colab): `!pip -q install hypothesis pytest`
+* Run tests: inline (execute test cell) **or** `!pytest -q`
+* Repro tip: fix a Hypothesis seed when a bug appears, e.g.:
+
+  * macOS/Linux: `HYPOTHESIS_SEED=12345 pytest -q`
+  * Windows (cmd): `set HYPOTHESIS_SEED=12345 && pytest -q`
+  * Colab/notebook: `import os; os.environ['HYPOTHESIS_SEED'] = '12345'`
+
+If unsure about any of these, open **student-llm-coach.md** and say “use defaults.”
 
 ---
 
@@ -25,14 +47,14 @@
 
   * **Zeros** dropped (recommended) or kept.
   * **Key normalization** (e.g., lowercase) or exact match.
-* **Purity**: `combine` must **not** mutate inputs.
-* **Equality**: compare as mappings (order‑insensitive). If you don’t enforce canonical form, compare via a normalized view.
+* **Purity**: `combine` must not mutate inputs.
+* **Equality**: compare as mappings (order-insensitive); if canonical form chosen, compare canonicalized outputs.
 
 ---
 
 ## 3) Data Generation Strategies (Hypothesis)
 
-* **Keys**: small alphabet strings (e.g., `a..d`), length 1–8; normalize per policy.
+* **Keys**: small alphabet strings (e.g., `a..d`), length 1–8; optionally normalize to chosen policy.
 * **Quantities**: integers `0..20` (expand later if needed).
 * **Orders**: dicts with ≤ 6 entries.
 * **Identity**: the empty dict `{}`.
@@ -56,9 +78,16 @@
 4. **Zero handling (per policy)**
 
    * If zeros dropped: `combine({'latte': 1}, {'latte': 0}) == {'latte': 1}`
-5. **Purity**
+5. **Purity (no mutation)**
 
-   * Deep‑copy inputs before calling `combine` and assert originals unchanged (e.g., using `copy.deepcopy`).
+   * Use deep copies, not hashes, to verify inputs are unchanged:
+
+     ```python
+     from copy import deepcopy
+     a0, b0 = deepcopy(a), deepcopy(b)
+     _ = combine(a, b)
+     assert a == a0 and b == b0
+     ```
 
 ---
 
@@ -72,7 +101,7 @@
    * ∀ `a, b, c`: `combine(a, combine(b, c)) == combine(combine(a, b), c)`.
 3. **Canonical form** *(if adopted)*
 
-   * Output contains no zero‑quantity lines; key normalization applied.
+   * Output contains no zero-quantity lines; key normalization applied.
 4. **No negatives**
 
    * ∀ outputs `o`: `min(o.values(), default=0) ≥ 0`.
@@ -82,34 +111,34 @@
 
 **Hypothesis Settings**
 
-* Start small (e.g., 50–100 examples) while iterating; raise after green.
-* Set a seed to reproduce tricky failures: `HYPOTHESIS_SEED=12345 pytest -q`.
+* Start small (e.g., 50–100 examples); raise after green.
+* Fix a seed to reproduce tricky failures (see primer). Include the seed in your notes.
 
 ---
 
 ## 6) Edge Cases & Special Checks
 
 * Empty inputs on both sides.
-* Many overlapping keys vs. disjoint sets.
+* Large quantities (upper bound) to catch integer overflow/assumptions.
 * Keys differing only by case/whitespace if normalization chosen.
-* Upper‑bound quantities to catch overflow/assumptions.
+* Many overlapping keys vs disjoint sets.
 
 ---
 
 ## 7) Oracles & Comparison
 
-* Prefer mapping equality (`==`) when outputs are canonical.
-* Otherwise, compare via a **normalized view**: a small helper in tests that applies your zero/key policy before comparison (keep helper in test code to avoid coupling to production code).
+* Prefer mapping equality (`==`) for canonical forms.
+* If not canonical, compare via a **normalized view** (e.g., a helper that drops zeros/applies key policy before comparison). Keep helper in test code to avoid coupling.
 
 ---
 
 ## 8) Failure Triage Procedure
 
 1. Capture the **minimal counterexample** printed by Hypothesis.
-2. Classify: mutation, zero‑policy, key‑policy, or merge‑logic.
+2. Classify: mutation, zero-policy, key-policy, or merge-logic.
 3. Reproduce with a deterministic example test.
-4. Fix with the smallest change; re‑run examples → properties.
-5. Record a short **decision note** if policy changed (breadcrumb).
+4. Fix with the smallest change; re-run examples → properties.
+5. Record a short **decision note** if policy changed.
 
 ---
 
@@ -123,9 +152,9 @@
 
 ## 10) Running & Repro
 
-* **Notebook/Colab**: run property cells repeatedly after changes; or run the full suite with `!pytest -q`.
+* **Notebook/Colab**: run property cells repeatedly after changes, or `!pytest -q` for the full suite.
 * **Local**: `pytest -q` (optionally `-k` to focus failures).
-* Log the **Hypothesis seed** in your notes for reproducibility.
+* When a failure occurs, **log the Hypothesis seed** (environment variable or printed in failure) to reproduce later.
 
 ---
 
@@ -148,4 +177,4 @@
 Changelog
 
 * 2025-08-22: Initial version (mg)
-* 2025-08-22: Clarified purity check (deep‑copy), added seed guidance, quick links
+* 2025-08-22: Added 5‑minute primer, deep‑copy purity check, and seed‑based reproducibility guidance
