@@ -60,7 +60,7 @@
 *** Logic of Behavior
 **
 ** [[https://github.com/ATALLC/AppliedCategoryTheory][ATALLC/AppliedCategoryTheory]] github repo
-*** [[https://github.com/ATALLC/AppliedCategoryTheory/long-list.org][long list]]
+*** [[https://github.com/ATALLC/AppliedCategoryTheory/archive/long-list.org][long list]]
 ** [[https://www.youtube.com/watch?v=gbP5ww3U10g&list=PLhgq-BqyZ7i5Va6FzpXkcNUJIpbSacAze&index=1][Angeline Aguinaldo: Diary of a software engineer using categories]]
 * -----
 * Category theory gives us a way to think about how some things are like other things.
