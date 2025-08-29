@@ -1,0 +1,98 @@
+#+TITLE: Docs-as-Prompts through the ACT Lens
+#+SUBTITLE: Objects = Models · Morphisms = Transformations
+#+AUTHOR: Mike Gallaher
+#+DATE: 2025-08-29
+#+REVEAL_VERSION: 3.0.0
+#+REVEAL_INIT_OPTIONS: transition:'slide', slideNumber:true, hash:true, controls:true, progress:true, width:1280, height:720, margin:0.08, transitionSpeed:'fast'
+#+OPTIONS: toc:nil num:nil ^:nil
+#+FILE_TAGS: :levelup:act
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+COMMENT: https://github.com/yjwen/org-reveal/
+
+
+* Why this session
+- Quick break from math-heavy talks
+- Map our SWE pipeline (docs-as-prompts) into ACT
+- Outcome: a shared, minimal diagram teams can adopt
+
+* Thesis
+- Treat each project *document* as a representation of a *model*
+- Treat each pipeline step as a *model transformation*
+- Make the arrows explicit; insist on diagrams that commute
+
+* Two categories (Doc & Mod)
+- /Doc/: artifacts (problem, context pack, ADRs, API spec, tests)
+- /Mod/: system models (requirements, behavior, structure, data, test model)
+- Interpretation functor: ⟦–⟧ : Doc → Mod
+- Rendering functor: R : Mod → Doc
+- Ideal: R ⊣ ⟦–⟧ (adjunction) → small traceability gap
+
+** Reading the adjunction (intuition)
+- Parse → Model → Render ≈ original doc
+- Render → Parse ≈ original model
+- Deviations = drift we can measure and fix
+
+* The pipeline as a string diagram
+#+begin_example
+Doc --⟦–⟧--> Mod --normalize/elaborate--> Mod --realize--> Impl
+                      \                                 |
+                       \-- derive properties/tests ----> Evidence
+   (lens) <---------------------------------------------/
+#+end_example
+- ⟦–⟧: interpret docs into typed models
+- normalize/elaborate: make implicit structure explicit; allocate responsibilities
+- realize: code/config/infra; properties→tests produce Evidence
+- lens: disciplined putback from Impl/Evidence to Doc/Mod
+
+* NASA “Elegant Systems Engineering” (model zoo)
+- Needs, functions, behavior/state, structure, interfaces, risks, V&V plans
+- Think: distinct objects in *Mod*; arrows relate views
+- Consistency as commuting diagrams across views
+
+* MBSE / SysML as concrete carriers
+- SysML model = one object in *Mod*; diagrams are *views*
+- Each viewpoint behaves like a functor from “whole model” → “view”
+- Limits/pullbacks: views agree on shared parts (interfaces)
+- Lenses: bidirectional sync (get/putback laws)
+
+* Reuse via universal constructions
+- Pullback: synchronize two components over a shared interface
+- Pushout: merge independent extensions along a common base
+- Products/sums: composition over ad-hoc glue
+
+* Critic loops & tests as structure
+- Competing prompts/tools = parallel functors
+- Critics/tests = natural transformations that compare pipelines
+- Choose the pipeline that “commutes tighter” with intent
+
+* What to watch (non-commuting squares)
+- Requirements → Tests → Impl  vs  Requirements → Impl → Tests
+- SysML allocation ↔ code ownership mapping
+- API spec ↔ client stubs ↔ contract tests
+
+* 5-minute hands-on (pairs)
+- Pick 2–3 artifacts from a current project
+- Draw objects and arrows; mark one square you expect to commute
+- Check where it *doesn’t* → name the missing morphism or law
+
+* Discussion prompts
+- Where does our ⟦–⟧ (Doc→Mod) break today?
+- Which lenses (putback rules) do we trust in practice?
+- What universal pattern would simplify a gnarly integration?
+- How do we encode “evidence” so the square closes automatically?
+
+* Grounding in our practice
+- Kickoff-assistant: builds minimal Doc that interprets cleanly to Mod
+- Wednesday whiteboard: Doc object that revealed new morphisms (reuse)
+- SysML users: you already have arrows; connect them to tests/code/docs
+
+* Next steps (lightweight)
+- Adopt a small “project category” template (objects + arrows)
+- Make the Doc→Mod interpreter explicit in kickoff-assistant
+- Add lens rules from Evidence back to Doc/Mod
+- Measure one square for commutativity per project
+
+* References
+- NASA: *Elegant Systems Engineering* (overview of model types)
+- LevelUp: docs-as-prompts; critic loops; kickoff-assistant
+- MBSE/SysML practice notes (views, allocation, traceability)

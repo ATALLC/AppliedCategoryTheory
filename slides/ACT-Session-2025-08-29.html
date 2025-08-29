@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Docs-as-Prompts through the ACT Lens</title>
+<meta name="author" content="Mike Gallaher"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Docs-as-Prompts through the ACT Lens</h1><h2 class="author">Mike Gallaher</h2><h2 class="date">2025-08-29</h2><p class="date">Created: 2025-08-29 Fri 11:57</p>
+</section>
+<section>
+<section id="slide-org7448428">
+<h2 id="org7448428">Why this session</h2>
+<ul>
+<li>Quick break from math-heavy talks</li>
+<li>Map our SWE pipeline (docs-as-prompts) into ACT</li>
+<li>Outcome: a shared, minimal diagram teams can adopt</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org6ef7f6b">
+<h2 id="org6ef7f6b">Thesis</h2>
+<ul>
+<li>Treat each project <b>document</b> as a representation of a <b>model</b></li>
+<li>Treat each pipeline step as a <b>model transformation</b></li>
+<li>Make the arrows explicit; insist on diagrams that commute</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org287d906">
+<h2 id="org287d906">Two categories (Doc &amp; Mod)</h2>
+<ul>
+<li><i>Doc</i>: artifacts (problem, context pack, ADRs, API spec, tests)</li>
+<li><i>Mod</i>: system models (requirements, behavior, structure, data, test model)</li>
+<li>Interpretation functor: ⟦–⟧ : Doc → Mod</li>
+<li>Rendering functor: R : Mod → Doc</li>
+<li>Ideal: R ⊣ ⟦–⟧ (adjunction) → small traceability gap</li>
+
+</ul>
+</section>
+<section id="slide-orgbd6e818">
+<h3 id="orgbd6e818">Reading the adjunction (intuition)</h3>
+<ul>
+<li>Parse → Model → Render ≈ original doc</li>
+<li>Render → Parse ≈ original model</li>
+<li>Deviations = drift we can measure and fix</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org44f8452">
+<h2 id="org44f8452">The pipeline as a string diagram</h2>
+<pre class="example" id="org42031db">
+Doc --⟦–⟧--&gt; Mod --normalize/elaborate--&gt; Mod --realize--&gt; Impl
+                      \                                 |
+                       \-- derive properties/tests ----&gt; Evidence
+   (lens) &lt;---------------------------------------------/
+</pre>
+<ul>
+<li>⟦–⟧: interpret docs into typed models</li>
+<li>normalize/elaborate: make implicit structure explicit; allocate responsibilities</li>
+<li>realize: code/config/infra; properties→tests produce Evidence</li>
+<li>lens: disciplined putback from Impl/Evidence to Doc/Mod</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org062fe52">
+<h2 id="org062fe52">NASA “Elegant Systems Engineering” (model zoo)</h2>
+<ul>
+<li>Needs, functions, behavior/state, structure, interfaces, risks, V&amp;V plans</li>
+<li>Think: distinct objects in <b>Mod</b>; arrows relate views</li>
+<li>Consistency as commuting diagrams across views</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga826db3">
+<h2 id="orga826db3">MBSE / SysML as concrete carriers</h2>
+<ul>
+<li>SysML model = one object in <b>Mod</b>; diagrams are <b>views</b></li>
+<li>Each viewpoint behaves like a functor from “whole model” → “view”</li>
+<li>Limits/pullbacks: views agree on shared parts (interfaces)</li>
+<li>Lenses: bidirectional sync (get/putback laws)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgca99ad3">
+<h2 id="orgca99ad3">Reuse via universal constructions</h2>
+<ul>
+<li>Pullback: synchronize two components over a shared interface</li>
+<li>Pushout: merge independent extensions along a common base</li>
+<li>Products/sums: composition over ad-hoc glue</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org513bbce">
+<h2 id="org513bbce">Critic loops &amp; tests as structure</h2>
+<ul>
+<li>Competing prompts/tools = parallel functors</li>
+<li>Critics/tests = natural transformations that compare pipelines</li>
+<li>Choose the pipeline that “commutes tighter” with intent</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org4a388ac">
+<h2 id="org4a388ac">What to watch (non-commuting squares)</h2>
+<ul>
+<li>Requirements → Tests → Impl  vs  Requirements → Impl → Tests</li>
+<li>SysML allocation ↔ code ownership mapping</li>
+<li>API spec ↔ client stubs ↔ contract tests</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org726b403">
+<h2 id="org726b403">5-minute hands-on (pairs)</h2>
+<ul>
+<li>Pick 2–3 artifacts from a current project</li>
+<li>Draw objects and arrows; mark one square you expect to commute</li>
+<li>Check where it <b>doesn’t</b> → name the missing morphism or law</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org6a90457">
+<h2 id="org6a90457">Discussion prompts</h2>
+<ul>
+<li>Where does our ⟦–⟧ (Doc→Mod) break today?</li>
+<li>Which lenses (putback rules) do we trust in practice?</li>
+<li>What universal pattern would simplify a gnarly integration?</li>
+<li>How do we encode “evidence” so the square closes automatically?</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org187b0fa">
+<h2 id="org187b0fa">Grounding in our practice</h2>
+<ul>
+<li>Kickoff-assistant: builds minimal Doc that interprets cleanly to Mod</li>
+<li>Wednesday whiteboard: Doc object that revealed new morphisms (reuse)</li>
+<li>SysML users: you already have arrows; connect them to tests/code/docs</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org46fbb23">
+<h2 id="org46fbb23">Next steps (lightweight)</h2>
+<ul>
+<li>Adopt a small “project category” template (objects + arrows)</li>
+<li>Make the Doc→Mod interpreter explicit in kickoff-assistant</li>
+<li>Add lens rules from Evidence back to Doc/Mod</li>
+<li>Measure one square for commutativity per project</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga32de2f">
+<h2 id="orga32de2f">References</h2>
+<ul>
+<li>NASA: <b>Elegant Systems Engineering</b> (overview of model types)</li>
+<li>LevelUp: docs-as-prompts; critic loops; kickoff-assistant</li>
+<li>MBSE/SysML practice notes (views, allocation, traceability)</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
