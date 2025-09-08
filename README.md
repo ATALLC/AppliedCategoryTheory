@@ -90,7 +90,7 @@ If you're a programmer:
 │   ├── papers.md           # seminal & practical research papers  📄
 │   └── books.md            # recommended books & chapters  📚
 ├── pages/                  # study materials, notes
-├── slides/                 # reveal.js presentations (HTML)
+├── sessions/               # reveal.js presentations (HTML)
 ├── Makefile                # `make pack` to bundle uploads for ChatGPT
 └── …
 ```

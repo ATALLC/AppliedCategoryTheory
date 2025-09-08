@@ -3,6 +3,7 @@ pack:
 			Makefile \
 			*.md \
 			pages/*.md \
+			sessions/*.org \
 			resources/*.md \
 			demos/*.md \
 			katas/*/*.md \
