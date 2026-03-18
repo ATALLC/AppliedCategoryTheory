@@ -8,6 +8,8 @@ Welcome!  This repository is the **hands‑on playground** for engineers learnin
 
 👉 **New to LevelUp?** See the companion page **[Applied Category Theory in LevelUp](https://github.com/ATALLC/LevelUp/blob/master/pages/applied-category-theory-in-levelup.md)** for the bigger picture, quick wins, and how ACT threads through our projects.
 
+Maintainers and assistants should start with [AGENTS.md](./AGENTS.md).
+
 ---
 
 ## Table of Contents
@@ -82,6 +84,7 @@ If you're a programmer:
 
 ```
 /
+├── AGENTS.md               ← maintainer entrypoint
 ├── README.md               ← you are here
 ├── katas/                  # bite‑sized exercises (monoids, functors, profunctors)
 ├── demos/                  # end‑to‑end examples (wiring‑diagram ⇒ Airflow DAG, etc.)
@@ -91,7 +94,8 @@ If you're a programmer:
 │   └── books.md            # recommended books & chapters  📚
 ├── pages/                  # study materials, notes
 ├── sessions/               # reveal.js presentations (HTML)
-├── Makefile                # `make pack` to bundle uploads for ChatGPT
+├── Makefile                # `make pack` to build a chat-fallback context pack
+├── copilot/                # legacy prompt-era reference material
 └── …
 ```
 
@@ -115,7 +119,8 @@ If you're a programmer:
 Reading is good; **experimenting, questioning, and teaching back are better**.  To contribute:
 
 1. Fork the repo and hack on a kata or demo.
-2. Run `make pack` to bundle new docs/code for ChatGPT uploads.
+2. Run `make pack` to build a chat-fallback context pack when direct repo
+   access is not the practical path.
 3. Open a PR **or** share your branch in `#level-up` for early feedback.
 
 We welcome issues, examples, and errata—especially from real production pain points.

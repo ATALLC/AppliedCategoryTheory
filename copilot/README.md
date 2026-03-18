@@ -1,3 +1,7 @@
+> Legacy note: `copilot/` is retained as prompt-era reference material only.
+> For current maintenance, start with [`../AGENTS.md`](../AGENTS.md) and
+> [`../README.md`](../README.md). Do not add new operational guidance here.
+
 This directory exists to make it easy for **AI assistants** (and humans using
 them) to **maintain and extend ACT** without guesswork. It holds
 instructions, prompts, and checklists that capture how we work here.
