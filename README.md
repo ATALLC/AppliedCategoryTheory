@@ -8,7 +8,9 @@ Welcome!  This repository is the **hands‑on playground** for engineers learnin
 
 👉 **New to LevelUp?** See the companion page **[Applied Category Theory in LevelUp](https://github.com/ATALLC/LevelUp/blob/master/pages/applied-category-theory-in-levelup.md)** for the bigger picture, quick wins, and how ACT threads through our projects.
 
-Maintainers and assistants should start with [AGENTS.md](./AGENTS.md).
+Maintainers and assistants should start with [AGENTS.md](./AGENTS.md). The
+repo-local agent onboarding, memory, templates, and plan surfaces live in
+[.agents](./.agents/README.md).
 
 ---
 
@@ -85,6 +87,8 @@ If you're a programmer:
 ```
 /
 ├── AGENTS.md               ← maintainer entrypoint
+├── .agents/                # agent onboarding, memory, templates, plans
+├── .agentsignore           # default agent read boundaries
 ├── README.md               ← you are here
 ├── katas/                  # bite‑sized exercises (monoids, functors, profunctors)
 ├── demos/                  # end‑to‑end examples (wiring‑diagram ⇒ Airflow DAG, etc.)
@@ -95,11 +99,11 @@ If you're a programmer:
 ├── pages/                  # study materials, notes
 ├── sessions/               # reveal.js presentations (HTML)
 ├── Makefile                # `make pack` to build a chat-fallback context pack
-├── copilot/                # legacy prompt-era reference material
 └── …
 ```
 
 > Massive link lists have been **moved into [resources](./resources)** to keep this README scannable.
+> Agent support files now live in [`.agents`](./.agents/README.md).
 
 ---
 

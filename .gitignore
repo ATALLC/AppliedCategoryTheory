@@ -2,3 +2,9 @@
 *-
 *.swp
 *.autosave.*
+.agents/handoffs/*
+!.agents/handoffs/.gitignore
+.agents/logs/*
+!.agents/logs/.gitignore
+.agents/pipeline.lock
+.agents/**/*.af

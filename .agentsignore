@@ -1,0 +1,12 @@
+# Default context boundaries for agents working in ACT.
+# Explicit human task direction can override these defaults.
+
+.git/
+.agents/handoffs/
+.agents/logs/
+.agents/pipeline.lock
+logseq/logseq/
+sessions/*.html
+*~
+*.swp
+*.autosave.*
