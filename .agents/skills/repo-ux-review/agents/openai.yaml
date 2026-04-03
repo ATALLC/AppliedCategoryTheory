@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo UX Review"
+  short_description: "Score repo usability and onboarding clarity"
+  default_prompt: "Use $repo-ux-review to score this repository and write a remediation plan."

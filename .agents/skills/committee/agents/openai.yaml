@@ -1,0 +1,4 @@
+interface:
+  display_name: "Committee"
+  short_description: "Stress-test decisions with five adversarial voices"
+  default_prompt: "Use $committee to stress-test this decision with five adversarial perspectives."

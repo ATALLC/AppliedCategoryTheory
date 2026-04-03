@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "committee": {
+      "source": "/home/mg/Documents/lu/ai-tools",
+      "sourceType": "local",
+      "computedHash": "b1e4ca27ac406200c5203879ca9787ee9d6a6b8b8fb0bc74ac12e2e8eff5ea09"
+    },
+    "repo-adaptation": {
+      "source": "/home/mg/Documents/lu/skills/skills/pragsmike/repo-adaptation",
+      "sourceType": "local",
+      "computedHash": "9c27b7b7769a360707cf07b96fd0abc68b5f610036099f1a0301c1664625f285"
+    },
+    "repo-ux-review": {
+      "source": "/home/mg/Documents/lu/ai-tools",
+      "sourceType": "local",
+      "computedHash": "bc883f1ea4c95a0bfaaf9791a82ed27b52a555f202ee176723736e0dd2058682"
+    }
+  }
+}
